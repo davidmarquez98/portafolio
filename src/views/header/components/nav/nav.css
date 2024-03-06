@@ -1,0 +1,45 @@
+
+.nav-container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 600px;
+}
+
+.nav-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 30%;
+    backdrop-filter: blur(10px);
+}
+
+.nav-lista{
+    display: flex;
+    gap: 80px;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-lista li a,
+.nav-lista li a :active,
+.nav-lista li a :focus{
+    cursor: pointer;
+    color: #795548;
+    text-decoration: none !important;
+}
+
+li h3{
+    color: #795548;
+    font-size: 16px
+
+}
+
+/* background-color: rgba(184, 184, 184, 0.3);
+border-radius: 20px; */
+

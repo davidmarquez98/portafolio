@@ -1,0 +1,13 @@
+.logo-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo-content{
+    cursor: pointer;
+}
+
+.logo-content h1{
+    color: #795548;
+}
