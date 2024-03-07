@@ -30,14 +30,13 @@ ul{
 .nav-lista li a :active,
 .nav-lista li a :focus{
     cursor: pointer;
-    color: #795548;
+    color: var(--secondary-color);
     text-decoration: none !important;
 }
 
 li h3{
-    color: #795548;
+    color: var(--secondary-color);
     font-size: 16px
-
 }
 
 /* background-color: rgba(184, 184, 184, 0.3);

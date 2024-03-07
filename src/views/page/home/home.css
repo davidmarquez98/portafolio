@@ -43,3 +43,48 @@
 .texto__descripcion{
     font-size: 20px;
 }
+
+.home-second-container{
+    width: 30%;
+}
+
+.home-second-content{
+    position: relative;
+}
+
+.imagen-computadora{
+    width: 500px;
+}
+.icono-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.icono-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    height: 50%;
+}
+
+.icono-content a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 20%;
+    height: 100%;
+}
+
+.home-icono {
+    font-size: 40px !important;
+    transition: font-size .3s ease !important; /* Transición de tamaño de fuente */
+}
+
+.home-icono:hover {
+    font-size: 50px !important;
+}

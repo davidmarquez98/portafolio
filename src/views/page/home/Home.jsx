@@ -1,5 +1,10 @@
 import './home.css';
 
+import IconoLinkedin from '../../../icons/IconoLinkedin';
+import IconoGithub from '../../../icons/IconoGithub';
+
+import imagen from './../../../computadora.png'
+
 function Home(){
     return (
         <div className="home-container">
@@ -13,9 +18,15 @@ function Home(){
                         </p>
                     </div>
                 </div>
-                <div className=''>
+                <div className='home-second-container'>
                     <div>
-                        <p>DESCRIPCION</p>
+                        <img src={imagen} className='imagen-computadora'></img>
+                        <div className='icono-container'>
+                            <div className='icono-content'>
+                                <a><IconoLinkedin className="home-icono" /></a>
+                                <a><IconoGithub className="home-icono" /></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #795548;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -11,4 +16,12 @@ body{
 #root{
   height: 100%;
   width: 100%;
+}
+
+.icono-default__color{
+  color: var(--secondary-color);
+}
+
+.icono-default__mid{
+  font-size: 50px !important;
 }
