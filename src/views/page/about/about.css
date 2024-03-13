@@ -1,0 +1,31 @@
+.introduccion-content{
+    display: flex;
+    margin: 200px;
+}
+
+.informacion__texto{
+    color: var(--secondary-color);
+}
+.perfil-container{
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.perfil-content{
+    position: relative;
+    width: 350px;
+    height: 466px;
+    border-radius: 20px;
+}
+
+.perfil-fade{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.imagen-perfil{
+    position: absolute;
+    width: 100%;
+    border-radius: 10% 10% 0 0;
+}

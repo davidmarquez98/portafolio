@@ -5,6 +5,7 @@ import './App.css'
 
 import Header from './../views/header/Header.jsx';
 import Body from '../views/page/body/Body.jsx';
+import Footer from './../views/footer/Footer.jsx';
 
 import Router from "./../router/index.jsx";
 
@@ -16,11 +17,10 @@ function App() {
 
         <Header/>
 
-        <Body/>
-
-        {/* <Footer/> */}
-
         <Router/>
+
+        <Footer/>
+
 
       </div>
   )
