@@ -1,6 +1,6 @@
 import './logo.css';
 
-import imagen from './../../../../computadora.png'
+import imagen from './../../../../../assets/images/computadora.png'
 
 function Logo(){
     return (

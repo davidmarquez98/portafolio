@@ -2,21 +2,26 @@
     width: 100%;
 }
 
-.about-content{
 
+/* INTRODUCCION */
+.introduccion-content{
+    display: flex;
 }
 
-.introduccion-container{
+/* SOBRE MI */
+.sobre-mi-container{
     width: 90%;
     margin: auto;
     width: 100%;
     height: 100%;
 }
 
-.introduccion-content{
+.sobre-mi-content{
     display: flex;
+    flex-direction: column;
 }
 
+/* INFORMACION */
 .informacion-container{
     display: flex;
     align-items: center;
@@ -26,20 +31,28 @@
     color: var(--primary-color);
 }
 
-.informacion-content{
+.sobre-mi-titulo-content {
+    margin: 0 0 50px 30px;
+    width: 40%;
+}
+
+.sobre-mi-titulo-content h3{
+    font-size: 35px;
+    color: var(--principal-color-green);
+}
+
+.informacion__card{
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    margin-bottom: -80px;
-    /* background-color: var(--secondary-color); */
-    /* background-color: #6D4C41; */
-    background-color: #196158;
+    background-color: var(--principal-color-green);
     font-size: 20px;
     padding: 25px;
     border-radius: 5px;
+    gap: 25px;
+    margin-bottom: -80px;
 }
 
-
+/* PERFIL */
 .perfil-container{
     border-radius: 20px;
     width: 30%;
@@ -64,13 +77,71 @@
     border-radius: 10% 10% 0 0;
 }
 
+
+/* EXPERIENCIA */
 .experiencia-container{
     height: 100vh;
-    background-color: #196158;
+    background-color: var(--principal-color-green);
+    /* background-color: #91B88D; */
     margin-top: 200px;
+}
+
+.experiencia-titulo-container{
+    height: 200px;
+}
+
+.experiencia-titulo-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: auto;
 }
 
 .experiencia-titulo{
     color: var(--primary-color);
     font-size: 35px;
+}
+
+.experiencia-informacion-container{
+    width: 100%;
+}
+
+.experiencia-informacion-content{
+    background-color: #799B76;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+}
+
+
+.trabajo-header{
+    display: flex;
+    gap: 40px;
+    padding: 25px 0 10px 25px;
+    font-size: 18px
+}
+
+.trabajo-nombre{
+    color: var(--primary-color);
+}
+
+.trabajo-tiempo{
+    /* color: var(--primary-color); */
+    color: var(--primary-color);
+}
+.trabajo-parrafo{
+    margin: 0 10px 20px 20px;
+    color: var(--primary-color);
+}
+
+.empresa-imagen-container{
+    width: 40%;
+}
+
+.byma-imagen{
+    width: 250px;
 }

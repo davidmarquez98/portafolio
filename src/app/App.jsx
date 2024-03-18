@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './App.css'
 
-import Header from './../views/header/Header.jsx';
+import Header from './../views/components/header/Header.jsx';
 import Body from '../views/page/body/Body.jsx';
-import Footer from './../views/footer/Footer.jsx';
+import Footer from './../views/components/footer/Footer.jsx';
 
 import Router from "./../router/index.jsx";
 
