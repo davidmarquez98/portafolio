@@ -2,7 +2,6 @@
     width: 100%;
 }
 
-
 /* INTRODUCCION */
 .introduccion-content{
     display: flex;
@@ -80,9 +79,8 @@
 
 /* EXPERIENCIA */
 .experiencia-container{
-    height: 100vh;
+    height: 90vh;
     background-color: var(--principal-color-green);
-    /* background-color: #91B88D; */
     margin-top: 200px;
 }
 
@@ -122,7 +120,7 @@
     display: flex;
     gap: 40px;
     padding: 25px 0 10px 25px;
-    font-size: 18px
+    font-size: 16px
 }
 
 .trabajo-nombre{
@@ -130,18 +128,60 @@
 }
 
 .trabajo-tiempo{
-    /* color: var(--primary-color); */
     color: var(--primary-color);
 }
 .trabajo-parrafo{
     margin: 0 10px 20px 20px;
+    font-size: 15px;
     color: var(--primary-color);
 }
 
 .empresa-imagen-container{
+    display: flex;
+    align-items: center;
+    margin: 10px;
     width: 40%;
 }
 
 .byma-imagen{
     width: 250px;
+}
+
+.exp-hab-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.habilidades-container{
+    position: absolute;
+    bottom: -50px;
+    background-color: #799B76;
+    width: 60%;
+    height: 160px;
+}
+
+.habilidades-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habilidades-titulo-container{
+    padding: 15px;
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.habilidades-logo-content{
+    display: flex;
+    gap: 30px;
+}
+
+.logo-default{
+    width: 50px;
+}
+
+.logo-bigger{
+    width: 130px;
 }

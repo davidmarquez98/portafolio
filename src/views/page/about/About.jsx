@@ -2,6 +2,14 @@ import "./about.css";
 import perfil from "./../../../perfil.jpeg";
 import byma_logo from "./../../../assets/images/byma-logo.png";
 
+import react_logo from "./../../../assets/images/react-logo.png";
+import vue_logo from "./../../../assets/images/vue-logo.png";
+import quarkus_logo from "./../../../assets/images/quarkus-logo.png";
+import spring_logo from "./../../../assets/images/spring-logo.png";
+import oracle_logo from "./../../../assets/images/oracle-logo.png";
+import docker_logo from "./../../../assets/images/docker-logo.png";
+import kubernetes_logo from "./../../../assets/images/kubernetes-logo.png";
+
 function About(){
     return (
         <div className="about-container">
@@ -42,7 +50,7 @@ function About(){
 
                 
                 {/* EXPERIENCIA */}
-                <div>
+                <div className="exp-hab-container">
                     <div className="experiencia-container">
                         <div className="experiencia-content">
                             <div className="experiencia-titulo-container">
@@ -58,9 +66,9 @@ function About(){
                                             <div className="trabajo-header">
                                                 <h3 className="trabajo-nombre">BYMA, Caja de Valores</h3><h3 className="trabajo-tiempo">2022 OCTUBRE - ACTUALIDAD </h3>
                                             </div>
-                                            <p className="trabajo-parrafo">I specialize in tools like Quarkus, Apache Kafka, JWT, Hibernate, and Panache for efficient backend implementation. 
+                                            <p className="trabajo-parrafo">I specialize in tools like <b>Quarkus</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b>, and <b>Panache</b> for efficient backend implementation. 
                                             We practice reactive programming to ensure that APIs are as efficient as possible for the system. In the realm of databases, we use Oracle, ensuring comprehensive data management. 
-                                            For frontend development, we employ VueJS to create sophisticated and highly functional user interfaces.</p>
+                                            For frontend development, we employ <b>VueJS</b> to create sophisticated and highly functional user interfaces.</p>
                                         </div>
                                     </div>
 
@@ -74,13 +82,35 @@ function About(){
                         </div>
                     </div>
 
-                    <div className="">
-                        <div>
-                            <div>
-                                HABLIDADES
+                    <div className="habilidades-container">
+                        <div className="habilidades-content">
+                            <div className="habilidades-titulo-container">
+                                <h4>HABLIDADES</h4>
                             </div>
-                            <div>
-
+                            <div className="habilidades-logo-container">
+                                <div className="habilidades-logo-content">
+                                    <div className="logo-container">
+                                        <img className="logo-default" src={react_logo}></img>
+                                    </div>
+                                    <div className="logo-container">
+                                        <img className="logo-default" src={vue_logo}></img>
+                                    </div>
+                                    <div className="logo-container">
+                                        <img className="logo-default" src={quarkus_logo}></img>
+                                    </div>
+                                    <div className="logo-container"> 
+                                        <img className="logo-default" src={spring_logo}></img>
+                                    </div>
+                                    <div className="logo-container">
+                                        <img className="logo-default" src={kubernetes_logo}></img>
+                                    </div>
+                                    <div className="logo-container">
+                                        <img className="logo-bigger" src={docker_logo}></img>
+                                    </div>
+                                    <div className="logo-container">
+                                        <img className="logo-bigger" src={oracle_logo}></img>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
