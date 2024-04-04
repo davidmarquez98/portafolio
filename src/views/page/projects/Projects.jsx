@@ -1,6 +1,18 @@
 import "./projects.css";
 
+import { FaReact } from "react-icons/fa";
+
+import Card from "./components/Card.jsx"
+
 function Projects(){
+
+    let todoProject = {
+        iconos: [ <FaReact/> ],
+        isDisabled: true
+    };
+    
+    let projects = [ todoProject ];
+
 
     return (
         <div className="proyecto-container">
@@ -12,24 +24,10 @@ function Projects(){
                 </div>
                 <div className="lista-proyectos-container">
                     <div className="lista-proyectos-content">
-                        <div className="card-project-container">
-                            <div className="card-project-content">
-                                <div className="card-project-info">
-                                    <h5 className="card-titulo">TODO</h5>
-                                    <p>
-                                        <b>"Todo"</b> es una aplicación diseñada para ayudar a los usuarios a organizar y gestionar sus tareas diarias de manera eficiente. Proporciona una interfaz intuitiva que permite a los usuarios crear, editar,
-                                         y eliminar tareas, así como establecer prioridades y plazos. Con "Taskify", los usuarios pueden mejorar su productividad y gestionar su tiempo de manera más efectiva.
-                                    </p>
-                                    <div className="lista-tools">
-                                        <div>JAVA</div>
-                                        <div>REACT</div>
-                                    </div>
-                                </div>
-                                <div className="card-project-logo"> 
-                                    LOGO 
-                                </div>
-                            </div>
-                        </div>
+                        {
+                            projects.map(project => <Card iconos={ project.iconos } isDisabled={project.isDisabled}/>)
+                        }
+                        
                     </div>
                 </div>
             </div>

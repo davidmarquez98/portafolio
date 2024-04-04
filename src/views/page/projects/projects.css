@@ -12,37 +12,6 @@
     color: var(--secondary-color);
 }
 
-.card-project-container{
-    /* border: 1px solid black; */
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    width: 80%;
-    margin: auto;
-    padding: 30px;
-}
-
-.card-project-content{
-    color: var(--secondary-color);
-    display: flex;
-}
-
-.card-project-info{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.card-titulo{
-    font-size: 28px;
-}
-
-.card-project-logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35%;
-}
-
-.lista-tools{
-    display: flex;
+.lista-proyectos-content{
+    margin: 50px 0;
 }
