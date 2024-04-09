@@ -29,17 +29,9 @@ function Card(props){
                 {
                     props.isDisabled ?  <div className="card-icono-development">
                                             <FaCodeBranch className="icono-development"/>
-                                            <span className="icono-development-text"><b>En desarrollo</b></span>
+                                            <span className="icono-development-text"><b>En desarrollo..</b></span>
                                         </div>  : <></>
                 }
-                {/* (
-                    if(props.isDisabled){
-                        <div>
-                        <FaCodeBranch/>
-                    </div>
-
-                    }
-                ) */}
             </div>
             <div className="card-project-container-disabled"></div>
         </div>

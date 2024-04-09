@@ -49,73 +49,80 @@ function About(){
                 </div>
 
                 
-                {/* EXPERIENCIA */}
-                <div className="exp-hab-container">
-                    <div className="experiencia-container">
-                        <div className="experiencia-content">
-                            <div className="experiencia-titulo-container">
-                                <div className="experiencia-titulo-content">
-                                    <h4 className="experiencia-titulo">EXPERIENCIA</h4>
-                                </div>
-                            </div>
-                            <div className="experiencia-informacion-container">
-                                <div className="experiencia-informacion-content">
-
-                                    <div className="trabajo-container">
-                                        <div className="trabajo-content">
-                                            <div className="trabajo-header">
-                                                <h3 className="trabajo-nombre">BYMA, Caja de Valores</h3><h3 className="trabajo-tiempo">2022 OCTUBRE - ACTUALIDAD </h3>
+                    <div className="habilidades-experiencia-container">  
+                        <div className="habilidades-experiencia-content">
+                                            {/* HABILIDADES */}
+                            <div className="habilidades-container">
+                                <div className="habilidades-content">
+                                    <div className="habilidades-titulo-container">
+                                        <div className="habilidades-titulo-content">
+                                            <h4>HABILIDADES</h4>
+                                        </div>
+                                    </div>
+                                    <div className="habilidades-logo-container">
+                                        <div className="habilidades-logo-content">
+                                            <div className="logo-container">
+                                                <img className="logo-default" src={react_logo}></img>
                                             </div>
-                                            <p className="trabajo-parrafo">I specialize in tools like <b>Quarkus</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b>, and <b>Panache</b> for efficient backend implementation. 
-                                            We practice reactive programming to ensure that APIs are as efficient as possible for the system. In the realm of databases, we use Oracle, ensuring comprehensive data management. 
-                                            For frontend development, we employ <b>VueJS</b> to create sophisticated and highly functional user interfaces.</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="empresa-imagen-container">
-                                        <div className="empresa-imagen-content">
-                                            <img className="byma-imagen" src={byma_logo}></img>
+                                            <div className="logo-container">
+                                                <img className="logo-default" src={vue_logo}></img>
+                                            </div>
+                                            <div className="logo-container">
+                                                <img className="logo-default" src={quarkus_logo}></img>
+                                            </div>
+                                            <div className="logo-container"> 
+                                                <img className="logo-default" src={spring_logo}></img>
+                                            </div>
+                                            <div className="logo-container">
+                                                <img className="logo-default" src={kubernetes_logo}></img>
+                                            </div>
+                                            <div className="logo-container">
+                                                <img className="logo-bigger" src={docker_logo}></img>
+                                            </div>
+                                            <div className="logo-container">
+                                                <img className="logo-bigger" src={oracle_logo}></img>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div className="habilidades-container">
-                        <div className="habilidades-content">
-                            <div className="habilidades-titulo-container">
-                                <h4>HABLIDADES</h4>
-                            </div>
-                            <div className="habilidades-logo-container">
-                                <div className="habilidades-logo-content">
-                                    <div className="logo-container">
-                                        <img className="logo-default" src={react_logo}></img>
+                                            {/* EXPERIENCIA */}
+                            <div className="experiencia-container">
+                                <div className="experiencia-content">
+                                    <div className="experiencia-titulo-container">
+                                        <div className="experiencia-titulo-content">
+                                            <h4 className="experiencia-titulo">EXPERIENCIA</h4>
+                                        </div>
                                     </div>
-                                    <div className="logo-container">
-                                        <img className="logo-default" src={vue_logo}></img>
-                                    </div>
-                                    <div className="logo-container">
-                                        <img className="logo-default" src={quarkus_logo}></img>
-                                    </div>
-                                    <div className="logo-container"> 
-                                        <img className="logo-default" src={spring_logo}></img>
-                                    </div>
-                                    <div className="logo-container">
-                                        <img className="logo-default" src={kubernetes_logo}></img>
-                                    </div>
-                                    <div className="logo-container">
-                                        <img className="logo-bigger" src={docker_logo}></img>
-                                    </div>
-                                    <div className="logo-container">
-                                        <img className="logo-bigger" src={oracle_logo}></img>
+                                    <div className="experiencia-informacion-container">
+                                        <div className="experiencia-informacion-content">
+
+                                            <div className="trabajo-container">
+                                                <div className="trabajo-content">
+                                                    <div className="trabajo-header">
+                                                        <h3 className="trabajo-nombre">BYMA, Caja de Valores</h3><h3 className="trabajo-tiempo">2022 OCTUBRE - ACTUALIDAD </h3>
+                                                    </div>
+                                                    <p className="trabajo-parrafo">I specialize in tools like <b>Quarkus</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b>, and <b>Panache</b> for efficient backend implementation. 
+                                                    We practice reactive programming to ensure that APIs are as efficient as possible for the system. In the realm of databases, we use Oracle, ensuring comprehensive data management. 
+                                                    For frontend development, we employ <b>VueJS</b> to create sophisticated and highly functional user interfaces.</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="empresa-imagen-container">
+                                                <div className="empresa-imagen-content">
+                                                    <img className="byma-imagen" src={byma_logo}></img>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>                     
                     </div>
-                
-                </div>
+
+
+        
             </div>
         </div>
     );
