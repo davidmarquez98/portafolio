@@ -1,3 +1,50 @@
+h1, h3, p{
+    position: relative;
+}
+
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: var(--primary-color);
+    border-left: 5px solid var(--secondary-color);
+    animation: escribir 1s steps(16) forwards, desaparecer 1s forwards;
+}
+
+h3 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: var(--primary-color);
+    border-left: 5px solid var(--secondary-color);
+    animation: escribir 1s steps(16) forwards, desaparecer 1s forwards;
+    animation-delay: 1s;
+}
+
+p span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: var(--primary-color);
+    border-left: 5px solid var(--secondary-color);
+    animation: escribir 1s steps(16) forwards, desaparecer 1s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+@keyframes desaparecer {
+    from { width: 5px }
+    to { width: 0 }
+}
+
+
+  
+
+
 .home-container{
     display: flex;
     width: 100%;

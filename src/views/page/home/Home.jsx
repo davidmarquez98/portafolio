@@ -9,10 +9,10 @@ function Home(){
             <div className="home-content">
                 <div className="texto-container">
                     <div className="texto-content">
-                        <h1 className='texto__titulo'>Hola, Soy David.</h1>
-                        <h3 className='texto__subtitulo'>Desarrollador Full Stack.</h3>
+                        <h1 className='texto__titulo'>Hola, Soy David.<span>&#160;</span></h1>
+                        <h3 className='texto__subtitulo'>Desarrollador Full Stack.<span>&#160;</span></h3>
                         <p className='texto__descripcion'>
-                            Me apasiona la programacion y conocer el mundo!
+                            Me apasiona la programacion y conocer el mundo!<span>&#160;</span>
                         </p>
                     </div>
                 </div>
