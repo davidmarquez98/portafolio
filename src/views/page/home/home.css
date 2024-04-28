@@ -1,50 +1,54 @@
+/* ANIMACION TITULO */
 h1, h3, p{
     position: relative;
 }
 
-h1 span {
-    position:absolute;
-    right:0;
-    width:0;
+h1 span, 
+h3 span,
+p span{
+    position: absolute;
+    right: 0;
+    width: 100%;
     background: var(--primary-color);
-    border-left: 5px solid var(--secondary-color);
-    animation: escribir 1s steps(16) forwards, desaparecer 1s forwards;
+    border-left: 5px solid transparent; 
 }
 
-h3 span {
-    position:absolute;
-    right:0;
-    width:0;
-    background: var(--primary-color);
-    border-left: 5px solid var(--secondary-color);
-    animation: escribir 1s steps(16) forwards, desaparecer 1s forwards;
-    animation-delay: 1s;
+/*
+
+border-left: 5px solid var(--secondary-color);
+
+*/
+
+h1 span{
+    animation: escribir .8s steps(16) forwards, aparecer 0s forwards, desaparecer 0s .84s forwards;
+}
+
+h3 span{
+    animation: escribir .8s 1s steps(16) forwards, aparecer 0s 1s forwards, desaparecer 0s 1.84s forwards;
 }
 
 p span {
-    position:absolute;
-    right:0;
-    width:0;
-    background: var(--primary-color);
-    border-left: 5px solid var(--secondary-color);
-    animation: escribir 1s steps(16) forwards, desaparecer 1s forwards;
-    animation-delay: 2s;
+    animation: escribir .8s 2s steps(16) forwards, aparecer 0s 2s forwards, desaparecer 0s 2.84s forwards;
 }
 
 @keyframes escribir {
-    from { width: 100% }
-    to { width:0 }
+    from { width: 100% } /* Comienza con borde transparente */
+    to { width: 0; border-color: transparent; }
+}
+
+@keyframes aparecer {
+    from { border-color: transparent; }
+    to { border-color: var(--secondary-color); }
 }
 
 @keyframes desaparecer {
-    from { width: 5px }
-    to { width: 0 }
+    from { border-color: var(--secondary-color); }
+    to { border-color: transparent; }
 }
-
 
   
 
-
+/**/
 .home-container{
     display: flex;
     width: 100%;
@@ -67,13 +71,14 @@ p span {
 
 .texto-content{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    text-align: center;
     margin: auto;
-    width: 80%;
 }
 
+/* h1 */
 .texto__titulo{
+    width: 960px;
     font-size: 100px;
     color: #6D4C41;
 }
@@ -82,12 +87,16 @@ p span {
     color: #8D6E63;
 }
 
+/* h3 */
 .texto__subtitulo{
+    width: 750px;
     font-size: 50px;
     margin-bottom: 30px;
 }
 
+/* p */
 .texto__descripcion{
+    width: 565px;
     font-size: 20px;
 }
 

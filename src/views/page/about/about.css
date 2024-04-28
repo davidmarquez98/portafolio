@@ -9,10 +9,8 @@
 
 /* SOBRE MI */
 .sobre-mi-container{
-    width: 90%;
     margin: auto;
     width: 100%;
-    height: 100%;
 }
 
 .sobre-mi-content{
@@ -28,7 +26,6 @@
     width: 70%;
     padding: 0 80px;
     color: var(--secondary-color);
-    /* color: var(--primary-color); */
 }
 
 .sobre-mi-titulo-content {
@@ -54,8 +51,14 @@
     margin-bottom: -80px;
 }
 
+.informacion__texto{
+    line-height: 1.3;
+}
+
 /* PERFIL */
 .perfil-container{
+    display: flex;
+    align-items: end;
     border-radius: 20px;
     width: 30%;
 }

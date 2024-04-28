@@ -22,8 +22,10 @@ function App() {
     console.log(isDarkModeActivated);
 
     if(isDarkModeActivated){
+      console.log("DARK MODE");
       setClassName("dark-mode");
     }else{
+      console.log("LIGHT MODE");
       setClassName("app");
     }
   }, [ setClassName ])

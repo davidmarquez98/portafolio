@@ -28,7 +28,9 @@ function About(){
                                             </div>
                                         </div>
                                         <div className="informacion__card">
-                                            <p className="informacion__texto">Tengo 26 años y resido en <b>Buenos Aires, Argentina.</b> Mi mayor anhelo es explorar Europa y diversos países extranjeros para sumergirme en su cultura, historia y tradiciones. 
+                                            <p className="informacion__texto">Tengo 26 años y resido en <b>Buenos Aires, Argentina.</b> Tengo más de 2 años desarrollando como <b>programador Full Stack</b>, lo que me ha permitido explorar mi pasión por la tecnología y ampliar mis habilidades en el ámbito informático.
+                                            <br/>
+                                            Mi mayor anhelo es explorar Europa y diversos países extranjeros para sumergirme en su cultura, historia y tradiciones. 
                                             En mis momentos libres, disfruto de una amplia gama de actividades, desde ver películas, escuchar música y leer novelas y mangas hasta programar y jugar videojuegos.
                                             También comparto momentos especiales con amigos jugando a la pelota y saliendo a tomar algo con mi novia. 
                                             Encuentro paz y tranquilidad en los días lluviosos, y me encanta experimentar en la cocina de vez en cuando.</p>

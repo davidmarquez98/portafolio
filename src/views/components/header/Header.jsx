@@ -7,26 +7,25 @@ import Mode from './components/mode/Mode.jsx';
 function Header(){
 
     const setMode = (isDark) => {
-        console.log("dentro de la funcion setMode de Header");
+        console.log("dentro de la funcion setMode");
         console.log(isDark);
         console.log(typeof isDark);
 
         if(isDark != null){
             console.log("Dentro del if de setMode");
-            localStorage.setItem("darkMode", true);
-        }else{
-            console.log("Dentro del else de setMode");
+            localStorage.setItem("darkMode", isDark);
         }
     }
 
-    function getMode(){
+    const getMode = () => {
         const isDark = JSON.parse(localStorage.getItem("darkMode"));
         console.log("isDark dentro de getMode de Header");
         console.log(isDark);
         console.log(typeof isDark);
-        // return null;
+        console.log(localStorage);
         return isDark;
     }
+
     
     return (
         <header>
@@ -36,7 +35,7 @@ function Header(){
 
                 <Nav/>
 
-                <Mode setMode={setMode} isDark={getMode()}/>
+                <Mode setMode={setMode} getMode={getMode}/>
 
             </div>
         </header>

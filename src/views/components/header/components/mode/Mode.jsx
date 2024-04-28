@@ -1,18 +1,21 @@
 import { IoIosRadioButtonOn } from "react-icons/io";
 import "./mode.css";
 
-function Mode(props){
+function Mode({getMode , setMode }){
 
     console.log("isDark dentro de Mode")
-    console.log(props.isDark);
+    console.log(getMode());
 
     const handleClick = () => {
-        console.log("Aa")
-        console.log(props.isDark)
+        console.log("--------------");
+        console.log("DENTRO DE HANDLECLICK")
+        console.log(getMode())
         // Cambiar el modo oscuro
-        const currentMode = !props.isDark;
+        const currentMode = !getMode();
         console.log(currentMode)
-        props.setMode(currentMode); // Invertir el modo actual
+        console.log("--------------");
+        setMode(currentMode); // Invertir el modo actual
+
     }
     
     return (
