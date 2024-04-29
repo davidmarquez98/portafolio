@@ -54,11 +54,11 @@ input:focus{
     visibility: hidden;
 }
 
-button{
+/* button{
     font-weight: bolder;
     background-color: #E5DDBE;
     color: var(--secondary-color);
     border: none;
     height: 40px;
     cursor: pointer;
-}
+} */

@@ -16,9 +16,9 @@ function Nav(){
                     <li>
                         <Link to="/projects"><h3>Projects</h3></Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/contact"><h3>Contact</h3></Link>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </div>

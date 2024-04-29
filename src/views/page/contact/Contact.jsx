@@ -17,20 +17,7 @@ function Contact(){
 
     const sendEmail = async () => {
 
-        const resend = new Resend('re_123456789');
         
-        const { data, error } = await resend.emails.send({
-            from: 'Acme <onboarding@resend.dev>',
-            to: ['delivered@resend.dev'],
-            subject: 'Hello World',
-            html: '<strong>It works!</strong>',
-        });
-    
-        if (error) {
-            return console.error({ error });
-        }
-    
-        console.log({ data });
     };
 
 
@@ -40,7 +27,6 @@ function Contact(){
                 <div>
                     <h3 className="contact-titulo">Contact Us</h3>
                 </div>
-                -+
                 <div className="form-container">
                     <div className="form-content">
                         <div>

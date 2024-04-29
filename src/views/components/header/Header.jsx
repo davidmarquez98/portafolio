@@ -3,6 +3,7 @@ import './header.css'
 import Logo from './components/logo/Logo.jsx';
 import Nav from './components/nav/Nav.jsx';
 import Mode from './components/mode/Mode.jsx';
+import Languages from './components/languages/languages.jsx';
 
 function Header(){
 
@@ -34,6 +35,8 @@ function Header(){
                 <Logo/>
 
                 <Nav/>
+
+                <Languages/>
 
                 <Mode setMode={setMode} getMode={getMode}/>
 

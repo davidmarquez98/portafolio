@@ -1,0 +1,18 @@
+.languages-container{
+    margin-left: 1450px;
+}
+
+.languages-content{
+    display: flex;
+    gap: 30px;
+}
+
+.english-flag{
+    cursor: pointer;
+    width: 40px;
+}
+
+.spanish-flag{
+    cursor: pointer;
+    width: 40px;
+}

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     height: 60px;
-    width: 520px;
+    width: 400px;
     background-color: rgb(252, 243, 207, 0.7);
     /* background-color: rgb(241, 241, 241, .5); */
     backdrop-filter: blur(10px);
