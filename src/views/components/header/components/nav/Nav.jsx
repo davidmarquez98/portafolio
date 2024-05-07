@@ -11,10 +11,10 @@ function Nav(){
                         <Link to="/"><h3>Home</h3></Link>
                     </li>
                     <li>
-                        <Link to="/about"><h3>About</h3></Link>
+                        <Link to="/about"><h3>Sobre Mi</h3></Link>
                     </li>
                     <li>
-                        <Link to="/projects"><h3>Projects</h3></Link>
+                        <Link to="/projects"><h3>Projectos</h3></Link>
                     </li>
                     {/* <li>
                         <Link to="/contact"><h3>Contact</h3></Link>
