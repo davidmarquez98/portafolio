@@ -1,6 +1,7 @@
 :root {
   --primary-color: #FCF3CF;
   --secondary-color: #795548;
+  
   --principal-color-green: #196158;
   --primary-color-dark-mode: #003B32;
 }
@@ -16,6 +17,13 @@
   box-sizing: border-box;
   font-family: 'MiFuente', sans-serif; /* Usa tu fuente personalizada como fuente principal */
 }
+
+body{
+  padding: 0 !important;
+  overflow: auto !important;
+}
+
+
 
 /* Cambiar el color del scrollbar */
 ::-webkit-scrollbar {

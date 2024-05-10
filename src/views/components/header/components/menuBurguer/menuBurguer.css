@@ -1,0 +1,19 @@
+.burguer-container{
+    display: flex;
+    justify-content: end;
+}
+
+
+.burguer-content{
+    margin: 50px 110px 50px;
+}
+
+.burguer-icono{
+    font-size: 45px !important;
+}
+
+.menu-content{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}

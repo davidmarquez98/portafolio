@@ -37,17 +37,17 @@ function Home(){
                     <div className='home-second-content'>
                         <div className='icono-container'>
                             <div className='icono-content'>
-                                <div className='logo-container'>
+                                <div className='home-logo-container'>
                                     <button onClick={() => openWindowToSendEmail()}>
                                         <IconoEmail className="home-icono"/>
                                     </button>
                                 </div>
 
-                                <div className='logo-container'>
+                                <div className='home-logo-container'>
                                     <a href="https://www.linkedin.com/in/david-ariel-marquez/" target="_blank"><IconoLinkedin className="home-icono" /></a>
                                 </div>
                                 
-                                <div className='logo-container'>
+                                <div className='home-logo-container'>
                                     <a href="https://github.com/davidmarquez98" target="_blank"><IconoGithub className="home-icono" /></a>
                                 </div>
                             </div>

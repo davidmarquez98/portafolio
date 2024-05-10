@@ -1,40 +1,42 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 import './App.css'
 
 import Header from './../views/components/header/Header.jsx';
 import Footer from './../views/components/footer/Footer.jsx';
 
+import { useLocalStorage } from '../helper/helper.js';
+
 import Router from "./../router/index.jsx";
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   let [ className, setClassName ] = useState("app");
-  localStorage.setItem("darkMode", false);
+  let [ isDarkMode, setIsDarkMode ] = useLocalStorage("isDarkMode", false);
 
+  // const [darkModeChanged, setDarkModeChanged] = useState(false); // Estado para rastrear cambios
   useEffect(() => {
 
-    let isDarkModeActivatedString = localStorage.getItem("darkMode");
-    let isDarkModeActivated = JSON.parse(isDarkModeActivatedString);
+    const currentDarkMode = isDarkMode;
 
-    console.log("isDark: ");
-    console.log(isDarkModeActivated);
-
-    if(isDarkModeActivated){
-      console.log("DARK MODE");
-      setClassName("dark-mode");
-    }else{
-      console.log("LIGHT MODE");
+    if (currentDarkMode) {
+      setClassName("app-dark-mode");
+    } else {
       setClassName("app");
     }
-  }, [ setClassName ])
+
+  }, [isDarkMode]);
 
 
   return (
       <div className={className}>
 
-        <Header/>
+        <Header>
+          {{
+            isDarkMode,
+            setIsDarkMode
+          }}
+        </Header>
 
         <Router/>
 

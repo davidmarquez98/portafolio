@@ -4,7 +4,7 @@
   background-color: var(--primary-color);
 }
 
-.dark-mode{
+.app-dark-mode{
   background-color: var(--primary-color-dark-mode);
 }
 
