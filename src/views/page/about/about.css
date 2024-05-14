@@ -9,7 +9,6 @@
 
 /* SOBRE MI */
 .sobre-mi-container{
-    margin: auto;
     width: 100%;
 }
 
@@ -85,7 +84,7 @@
 .habilidades-experiencia-container{
     display: flex;
     height: 60vh;
-    margin-top: 200px;
+    margin-top: 310px;
     background-color: var(--secondary-color);
 }
 

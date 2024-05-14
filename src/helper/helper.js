@@ -1,16 +1,25 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const useLocalStorage = (key, initialValue) =>{
-    const [ storedValue, setStoredValue ] = useState(() => {
-        try{
-            const item = localStorage.getItem(key);
 
-            return item ? JSON.parse(item) : initialValue;
-        }catch(error){
-            return initialValue;
+    const [ item, setItem ] = useState(initialValue);
+    const [ sincronizedItem, setSincronizedItem ] = useState(false);
+
+    localStorage.setItem(key, JSON.stringify(item));
+
+    useEffect(() => {
+        console.log(item);
+        setItem(JSON.parse(localStorage.getItem(key)));
+        setSincronizedItem(true);
+    }, [sincronizedItem])
+
+    const sincronizeItem = () => {
+        setSincronizedItem(false);
+    }
+
+    return {
+            item,
+            sincronizeItem
         }
-    });
-
-    return [ storedValue, setStoredValue ];
 
 };

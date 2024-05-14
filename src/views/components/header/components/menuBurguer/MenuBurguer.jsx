@@ -2,14 +2,12 @@ import * as React from 'react';
 
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-
 import './menuBurguer.css';
 import Mode from './../mode/Mode.jsx';
 import Languages from './../languages/languages.jsx';
 import IconoMenuBurguer from './../../../../../icons/IconoMenuBurguer.jsx'
 
-export default function MenuBurguer({ isDarkMode, setIsDarkMode }) {
+export default function MenuBurguer() {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -17,18 +15,16 @@ export default function MenuBurguer({ isDarkMode, setIsDarkMode }) {
   const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = () => setAnchorEl(null);
 
-  console.log(isDarkMode);
-
 
   const setMode = (isDark) => {
     if(isDark != null){
         console.log("Dentro del if de setMode");
-        localStorage.setItem("darkMode", JSON.stringify(isDark));
+        localStorage.setItem("isDarkMode", JSON.stringify(isDark));
     }
 }
 
 const getMode = () => {
-    const isDark = JSON.parse(localStorage.getItem("darkMode"));
+    const isDark = JSON.parse(localStorage.getItem("isDarkMode"));
     console.log("isDark dentro de getMode de Header");
     console.log(isDark);
     console.log(typeof isDark);

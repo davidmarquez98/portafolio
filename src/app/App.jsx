@@ -12,12 +12,16 @@ import Router from "./../router/index.jsx";
 function App() {
 
   let [ className, setClassName ] = useState("app");
-  let [ isDarkMode, setIsDarkMode ] = useLocalStorage("isDarkMode", false);
+  let { item: darkMode, sincronizeItem } = useLocalStorage("isDarkMode", false);
+
+  // sincronizeItem();
 
   // const [darkModeChanged, setDarkModeChanged] = useState(false); // Estado para rastrear cambios
   useEffect(() => {
 
-    const currentDarkMode = isDarkMode;
+    console.log(darkMode);
+
+    const currentDarkMode = darkMode;
 
     if (currentDarkMode) {
       setClassName("app-dark-mode");
@@ -25,17 +29,13 @@ function App() {
       setClassName("app");
     }
 
-  }, [isDarkMode]);
+  });
 
 
   return (
       <div className={className}>
 
         <Header>
-          {{
-            isDarkMode,
-            setIsDarkMode
-          }}
         </Header>
 
         <Router/>
