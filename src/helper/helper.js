@@ -1,25 +1,32 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
-export const useLocalStorage = (key, initialValue) =>{
+export const useLocalStorage = (key, initialValue) => {
+  const [storedValue, setStoredValue] = useState(() => {
+    const item = localStorage.getItem(key);
+    return item ? JSON.parse(item) : initialValue;
+  });
 
-    const [ item, setItem ] = useState(initialValue);
-    const [ sincronizedItem, setSincronizedItem ] = useState(false);
-
-    localStorage.setItem(key, JSON.stringify(item));
-
-    useEffect(() => {
-        console.log(item);
-        setItem(JSON.parse(localStorage.getItem(key)));
-        setSincronizedItem(true);
-    }, [sincronizedItem])
-
-    const sincronizeItem = () => {
-        setSincronizedItem(false);
+  useEffect(() => {
+    function checkUserData(event) {
+      if (event.key === key) {
+        const newValue = JSON.parse(event.newValue);
+        if (newValue !== storedValue) { // Comparamos con el valor actual
+          setStoredValue(newValue);
+        }
+      }
     }
 
-    return {
-            item,
-            sincronizeItem
-        }
+    window.addEventListener('storage', checkUserData);
 
+    return () => {
+      window.removeEventListener('storage', checkUserData);
+    };
+  }, [key, storedValue]); // Añadimos storedValue a las dependencias del efecto
+
+  const setValue = (value) => {
+    setStoredValue(value);
+    localStorage.setItem(key, JSON.stringify(value));
+  };
+
+  return [storedValue, setValue];
 };
