@@ -1,10 +1,10 @@
 import { IoIosRadioButtonOn } from "react-icons/io";
 import "./mode.css";
 
-function Mode({ sincronizeItem }){
+function Mode({ setMode, getMode }){
 
     const handleClick = () => {
-        const currentMode = !getMode();
+        const currentMode = !getMode;
         setMode(currentMode);
     }
     

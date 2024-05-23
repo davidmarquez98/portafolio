@@ -9,8 +9,9 @@ function Card(props){
                 <div className="card-project-info">
                     <h5 className="card-titulo">TODO</h5>
                     <p>
-                        <b>"Todo"</b> es una aplicación diseñada para ayudar a los usuarios a organizar y gestionar sus tareas diarias de manera eficiente. Proporciona una interfaz intuitiva que permite a los usuarios crear, editar,
-                        y eliminar tareas, así como establecer prioridades y plazos. Con "Taskify", los usuarios pueden mejorar su productividad y gestionar su tiempo de manera más efectiva.
+                        <b>"Todo"</b> es una aplicación diseñada para ayudar a los usuarios a organizar y gestionar sus tareas diarias de manera eficiente. 
+                        Proporciona una interfaz intuitiva que permite a los usuarios crear, editar, y eliminar tareas, así como establecer prioridades y plazos. 
+                        Con "Todo", los usuarios pueden mejorar su productividad y gestionar su tiempo de manera más efectiva.
                     </p>
                     <div className="lista-tools">
                         {props.iconos.map(Icono => {

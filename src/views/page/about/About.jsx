@@ -11,9 +11,19 @@ import docker_logo from "./../../../assets/images/docker-logo.png";
 import kubernetes_logo from "./../../../assets/images/kubernetes-logo.png";
 
 function About(){
+
+
+    window.sr = ScrollReveal();
+
+    sr.reveal('.habilidades-experiencia-container', {
+        duration: 1000,
+        origin: 'top',
+        distance: '0px'  // Positivo para desplazar hacia arriba desde abajo
+    });
     return (
         <div className="about-container">
             <div className="about-content">
+
 
                 {/* INTRODUCCION */}
                 <div className="sobre-mi-container">
@@ -24,11 +34,11 @@ function About(){
                                     <div className="informacion-content">
                                         <div className="sobre-mi-titulo-container">
                                             <div className="sobre-mi-titulo-content">
-                                                <h3 className="sobre-mi-titulo">Un poco sobre mi..</h3>
+                                                <h3 className="sobre-mi-titulo">Un poco sobre mí...</h3>
                                             </div>
                                         </div>
                                         <div className="informacion__card">
-                                            <p className="informacion__texto">Tengo 26 años y resido en <b>Buenos Aires, Argentina.</b> Tengo más de 2 años desarrollando como <b>programador Full Stack</b>, lo que me ha permitido explorar mi pasión por la tecnología y ampliar mis habilidades en el ámbito informático.
+                                            <p className="informacion__texto">Tengo 26 años y vivo en <b>Buenos Aires, Argentina.</b> Tengo más de 2 años desarrollando como <b>programador Full Stack</b>, lo que me ha permitido explorar mi pasión por la tecnología y ampliar mis habilidades en el ámbito informático.
                                             <br/>
                                             Mi mayor anhelo es explorar Europa y diversos países extranjeros para sumergirme en su cultura, historia y tradiciones. 
                                             En mis momentos libres, disfruto de una amplia gama de actividades, desde ver películas, escuchar música y leer novelas y mangas hasta programar y jugar videojuegos.
@@ -103,11 +113,17 @@ function About(){
                                             <div className="trabajo-container">
                                                 <div className="trabajo-content">
                                                     <div className="trabajo-header">
-                                                        <h3 className="trabajo-nombre">BYMA, Caja de Valores</h3><h3 className="trabajo-tiempo">2022 OCTUBRE - ACTUALIDAD </h3>
+                                                        <h3 className="trabajo-nombre">BYMA, Caja de Valores</h3><h3 className="trabajo-puesto trabajo-secondary-titulo">Desarrollador de Software</h3>
                                                     </div>
-                                                    <p className="trabajo-parrafo">I specialize in tools like <b>Quarkus</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b>, and <b>Panache</b> for efficient backend implementation. 
+                                                    <h3 className="trabajo-tiempo trabajo-secondary-titulo">2022 Octubre - Actualidad</h3>
+                                                    <p className="trabajo-parrafo">Me especializo en herramientas como <b>Quarkus</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b> y <b>Panache</b> para 
+                                                    una implementación backend eficiente. Practicamos la <b>programación reactiva</b> para garantizar que las API sean lo más eficientes posible para el sistema. 
+                                                    En el ámbito de las bases de datos utilizamos <b>Oracle</b>, asegurando una gestión integral de los datos. Para el desarrollo frontend, empleamos <b>VueJS</b> para 
+                                                    crear interfaces de usuario sofisticadas y altamente funcionales.
+                                                    {/* I specialize in tools like <b>Quarkus</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b>, and <b>Panache</b> for efficient backend implementation. 
                                                     We practice reactive programming to ensure that APIs are as efficient as possible for the system. In the realm of databases, we use Oracle, ensuring comprehensive data management. 
-                                                    For frontend development, we employ <b>VueJS</b> to create sophisticated and highly functional user interfaces.</p>
+                                                    For frontend development, we employ <b>VueJS</b> to create sophisticated and highly functional user interfaces. */}
+                                                    </p>
                                                 </div>
                                             </div>
 

@@ -16,10 +16,6 @@ function Header(){
 
                 <MenuBurger/>
 
-                {/* <Languages/>
-
-                <Mode setMode={setMode} getMode={getMode}/> */}
-
             </div>
         </header>
     );

@@ -6,6 +6,7 @@ import './menuBurguer.css';
 import Mode from './../mode/Mode.jsx';
 import Languages from './../languages/languages.jsx';
 import IconoMenuBurguer from './../../../../../icons/IconoMenuBurguer.jsx'
+// import { useDarkMode } from '../../../../../helper/helper.js';
 
 export default function MenuBurguer() {
 
@@ -15,22 +16,24 @@ export default function MenuBurguer() {
   const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = () => setAnchorEl(null);
 
+//   const [ isDarkMode, setDarkMode ] = useDarkMode();
 
-  const setMode = (isDark) => {
-    if(isDark != null){
-        console.log("Dentro del if de setMode");
-        localStorage.setItem("isDarkMode", JSON.stringify(isDark));
-    }
-}
 
-const getMode = () => {
-    const isDark = JSON.parse(localStorage.getItem("isDarkMode"));
-    console.log("isDark dentro de getMode de Header");
-    console.log(isDark);
-    console.log(typeof isDark);
-    console.log(localStorage);
-    return isDark;
-}
+//   const setMode = (isDark) => {
+//     if(isDark != null){
+//         console.log("Dentro del if de setMode");
+//         localStorage.setItem("isDarkMode", JSON.stringify(isDark));
+//     }
+// }
+
+// const getMode = () => {
+//     const isDark = JSON.parse(localStorage.getItem("isDarkMode"));
+//     console.log("isDark dentro de getMode de Header");
+//     console.log(isDark);
+//     console.log(typeof isDark);
+//     console.log(localStorage);
+//     return isDark;
+// }
 
   return (
     <div className='burguer-container header__item'>
@@ -65,7 +68,8 @@ const getMode = () => {
             >
                 <div className='menu-content'>
                     <Languages/>
-                    <Mode setMode={setMode} getMode={getMode}/>
+                    {/* <Mode setMode={setDarkMode} getMode={isDarkMode}/> */}
+                    <Mode />
                 </div>
             </Menu>
         </div>
