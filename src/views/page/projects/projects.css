@@ -1,0 +1,17 @@
+.titulo-main-container{
+    display: flex;
+    height: 200px;
+}
+
+.titulo-main-content{
+    margin: auto;
+}
+
+.titulo-main{
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+.lista-proyectos-content{
+    margin: 50px 0;
+}

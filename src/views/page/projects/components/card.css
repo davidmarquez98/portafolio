@@ -1,0 +1,102 @@
+.card-project-container{
+    position: relative;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    padding: 30px 30px 10px 30px;
+    cursor: pointer;
+    transition: all .5s ease; /* Transición suave */
+}
+
+.card-icono-development{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    position: absolute;
+    left: 600px;
+    top: 50px;
+    opacity: 0;
+    transition: all .3s ease;
+    color: #4E4E4E;
+}
+
+.icono-development{
+    font-size: 60px;
+}
+
+.icono-development-text{
+    font-size: 20px;
+}
+
+.card-project-container-disabled{
+    transition: all .3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .2); 
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 100000;
+}
+
+.card-project-container:hover {
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+.card-project-container:hover .card-icono-development{
+    opacity: 1;
+}
+
+.card-project-container:hover .card-project-container-disabled{
+    opacity: 1;
+}
+
+.card-project-container:hover .card-project-info{
+    opacity: .2;
+}
+
+.card-project-container:hover .card-project-logo{
+    opacity: .2;
+}
+
+
+.card-project-content{
+    position: relative;
+    display: flex;
+}
+
+.card-project-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--secondary-color);
+}
+
+.card-titulo{
+    color: var(--secondary-color);
+    font-size: 28px;
+}
+
+.card-project-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+}
+
+.lista-tools{
+    display: flex;
+    color: var(--secondary-color);
+}
+
+.card-icono-default{
+    color: var(--secondary-color);
+    font-size: 40px;
+}
