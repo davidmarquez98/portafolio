@@ -8,10 +8,10 @@ import Contact from "../views/page/contact/Contact.jsx";
 export default function Router() {
   return (
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/projects" element={<Projects/>}/>
-        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/portafolio" element={<Home/>}/>
+        <Route path="/portafolio/about" element={<About/>}/>
+        <Route path="/portafolio/projects" element={<Projects/>}/>
+        <Route path="/portafolio/contact" element={<Contact/>}/>
       </Routes>
   );
 }
