@@ -8,13 +8,13 @@ function Nav(){
             <div className='nav-content'>
                 <ul className='nav-lista'>
                     <li>
-                        <Link to="/"><h3>Home</h3></Link>
+                        <Link to="/portafolio"><h3>Home</h3></Link>
                     </li>
                     <li>
-                        <Link to="/about"><h3>Sobre Mi</h3></Link>
+                        <Link to="/portafolio/about"><h3>Sobre Mi</h3></Link>
                     </li>
                     <li>
-                        <Link to="/projects"><h3>Projectos</h3></Link>
+                        <Link to="/portafolio/projects"><h3>Projectos</h3></Link>
                     </li>
                 </ul>
             </div>
