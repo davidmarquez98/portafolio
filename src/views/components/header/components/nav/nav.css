@@ -39,16 +39,12 @@ ul{
 
 .nav-item_selected{
     border-radius: 50px;
-    background-color: #D5C1BC;
+    background-color: #D5CAC7;
 }
 
 li{
+    padding: 12px;
     text-align: center;
-
-}
-
-li button{
-    margin: 12px;
 }
 
 li h3{

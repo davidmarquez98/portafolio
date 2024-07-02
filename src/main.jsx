@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom/client'
 
 import { BrowserRouter } from "react-router-dom";
 
+import LocationWatcher from './router/LocationWatcher.jsx';
+
 import App from './app/App.jsx'
-import './index.css'
+import './index.css';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -1,12 +1,16 @@
 import './logo.css';
 
+import { Link } from "react-router-dom";
+
 import imagen from './../../../../../assets/images/computadora.png'
 
 function Logo(){
     return (
         <div className='logo-container header__item'>
             <div className='logo-content'>
-                <img src={imagen} className='imagen-computadora'></img>
+                <Link to="/portafolio">
+                    <img src={imagen} className='imagen-computadora'></img>
+                </Link>
             </div>
         </div>
     );

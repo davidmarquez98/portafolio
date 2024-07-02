@@ -1,4 +1,9 @@
 import "./about.css";
+
+import { useEffect } from "react";
+import { AnimatePresence, motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import perfil from "./../../../perfil.jpeg";
 import byma_logo from "./../../../assets/images/byma-logo.png";
 
@@ -11,56 +16,78 @@ import docker_logo from "./../../../assets/images/docker-logo.png";
 import kubernetes_logo from "./../../../assets/images/kubernetes-logo.png";
 
 function About(){
+    // window.sr = ScrollReveal();
 
+    // sr.reveal('.habilidades-experiencia-container', {
+    //     duration: 1000,
+    //     origin: 'top',
+    //     distance: '0px'  // Positivo para desplazar hacia arriba desde abajo
+    // });
 
-    window.sr = ScrollReveal();
+    const controls = useAnimation();
+    const [ref, inView] = useInView({ threshold: 0.2 });
 
-    sr.reveal('.habilidades-experiencia-container', {
-        duration: 1000,
-        origin: 'top',
-        distance: '0px'  // Positivo para desplazar hacia arriba desde abajo
-    });
+    useEffect(() => {
+        if (inView) {
+          controls.start('visible');
+        } else {
+          controls.start('hidden');
+        }
+    }, [controls, inView]);
+
     return (
         <div className="about-container">
             <div className="about-content">
 
-
-                {/* INTRODUCCION */}
-                <div className="sobre-mi-container">
-                    <div className="sobre-mi-content">
-                        <div className="introduccion-container">
-                            <div className="introduccion-content">
-                                <div className="informacion-container">
-                                    <div className="informacion-content">
-                                        <div className="sobre-mi-titulo-container">
-                                            <div className="sobre-mi-titulo-content">
-                                                <h3 className="sobre-mi-titulo">Un poco sobre mí...</h3>
+                <AnimatePresence>
+                    {/* INTRODUCCION */}
+                    <motion.div className="sobre-mi-container"         
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: .5 }} // Especifica la duración de la animación en segundos
+                                >
+                        <div className="sobre-mi-content">
+                            <div className="introduccion-container">
+                                <div className="introduccion-content">
+                                    <div className="informacion-container">
+                                        <div className="informacion-content">
+                                            <div className="sobre-mi-titulo-container">
+                                                <div className="sobre-mi-titulo-content">
+                                                    <h3 className="sobre-mi-titulo">Un poco sobre mí...</h3>
+                                                </div>
+                                            </div>
+                                            <div className="informacion__card">
+                                                <p className="informacion__texto">Tengo 26 años y vivo en <b>Buenos Aires, Argentina.</b> Tengo más de 2 años desarrollando como <b>programador Full Stack</b>, lo que me ha permitido explorar mi pasión por la tecnología y ampliar mis habilidades en el ámbito informático.
+                                                <br/>
+                                                Mi mayor anhelo es explorar Europa y diversos países extranjeros para sumergirme en su cultura, historia y tradiciones. 
+                                                En mis momentos libres, disfruto de una amplia gama de actividades, desde ver películas, escuchar música y leer novelas y mangas hasta programar y jugar videojuegos.
+                                                También comparto momentos especiales con amigos jugando a la pelota y saliendo a tomar algo con mi novia. 
+                                                Encuentro paz y tranquilidad en los días lluviosos, y me encanta experimentar en la cocina de vez en cuando.</p>
+                                                <span><b>Mi filosofía de vida se centra en aprender, crecer y mejorar constantemente, valorando las pequeñas alegrías que la vida tiene para ofrecer y manteniéndome en 
+                                                constante movimiento.</b></span>
                                             </div>
                                         </div>
-                                        <div className="informacion__card">
-                                            <p className="informacion__texto">Tengo 26 años y vivo en <b>Buenos Aires, Argentina.</b> Tengo más de 2 años desarrollando como <b>programador Full Stack</b>, lo que me ha permitido explorar mi pasión por la tecnología y ampliar mis habilidades en el ámbito informático.
-                                            <br/>
-                                            Mi mayor anhelo es explorar Europa y diversos países extranjeros para sumergirme en su cultura, historia y tradiciones. 
-                                            En mis momentos libres, disfruto de una amplia gama de actividades, desde ver películas, escuchar música y leer novelas y mangas hasta programar y jugar videojuegos.
-                                            También comparto momentos especiales con amigos jugando a la pelota y saliendo a tomar algo con mi novia. 
-                                            Encuentro paz y tranquilidad en los días lluviosos, y me encanta experimentar en la cocina de vez en cuando.</p>
-                                            <span><b>Mi filosofía de vida se centra en aprender, crecer y mejorar constantemente, valorando las pequeñas alegrías que la vida tiene para ofrecer y manteniéndome en 
-                                            constante movimiento.</b></span>
-                                        </div>
                                     </div>
-                                </div>
-                                <div className="perfil-container">
-                                    <div className="perfil-content">
-                                        <img className="imagen-perfil" src={perfil}></img>
-                                        <div className="perfil-fade"></div>
+                                    <div className="perfil-container">
+                                        <div className="perfil-content">
+                                            <img className="imagen-perfil" src={perfil}></img>
+                                            <div className="perfil-fade"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </motion.div>
+                </AnimatePresence>
 
-                
+                <motion.div ref={ref}
+                            initial="hidden"
+                            animate={controls}
+                            variants={{
+                                visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+                                hidden: { opacity: 0, y: 50 },
+                            }}>
                     <div className="habilidades-experiencia-container">  
                         <div className="habilidades-experiencia-content">
                                             {/* HABILIDADES */}
@@ -138,8 +165,7 @@ function About(){
                             </div>
                         </div>                     
                     </div>
-
-
+                </motion.div>
         
             </div>
         </div>
