@@ -118,7 +118,7 @@ function About(){
                                                     <h3 className="trabajo-tiempo trabajo-secondary-titulo">2022 Octubre - Actualidad</h3>
                                                     <p className="trabajo-parrafo">Me especializo en herramientas como <b>Quarkus</b>, <b>Spring</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b> y <b>Panache</b> para 
                                                     una implementación backend eficiente. Practicamos la <b>programación reactiva</b> para garantizar que las API sean lo más eficientes posible para el sistema. 
-                                                    En el ámbito de las bases de datos utilizamos <b>Oracle</b>, asegurando una gestión integral de los datos. Para el desarrollo frontend, empleamos <b>VueJS</b> y <b>ReactJs</b> para 
+                                                    En el ámbito de las bases de datos utilizamos <b>Oracle</b>, asegurando una gestión integral de los datos. Para el desarrollo frontend, empleamos <b>VueJS</b> y <b>ReactJS</b> para 
                                                     crear interfaces de usuario sofisticadas y altamente funcionales.
                                                     {/* I specialize in tools like <b>Quarkus</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b>, and <b>Panache</b> for efficient backend implementation. 
                                                     We practice reactive programming to ensure that APIs are as efficient as possible for the system. In the realm of databases, we use Oracle, ensuring comprehensive data management. 

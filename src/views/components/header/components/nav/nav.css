@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     height: 60px;
-    width: 550px;
+    width: 600px;
     background-color: rgb(252, 243, 207, 0.7);
     /* background-color: rgb(241, 241, 241, .5); */
     backdrop-filter: blur(10px);
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 .nav-lista{
@@ -37,8 +37,18 @@ ul{
     text-decoration: none !important;
 }
 
+.nav-item_selected{
+    border-radius: 50px;
+    background-color: #D5C1BC;
+}
+
 li{
-    width: 100px;
+    text-align: center;
+
+}
+
+li button{
+    margin: 12px;
 }
 
 li h3{
