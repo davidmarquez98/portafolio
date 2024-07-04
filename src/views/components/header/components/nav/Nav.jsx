@@ -21,7 +21,7 @@ function Nav(){
 
 
     const styleSelected = () => {
-        return path == stringPortfolio ? styleNameSelected.home : 
+        return path == stringPortfolio ||  path == (stringPortfolio + '/') ? styleNameSelected.home : 
                                 path == stringAboutMe ?  styleNameSelected.aboutMe :
                                 path == stringProjects ?  styleNameSelected.projects : {};
     }
