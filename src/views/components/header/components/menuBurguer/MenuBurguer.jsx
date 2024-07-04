@@ -44,6 +44,23 @@ export default function MenuBurguer() {
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
             onClick={handleClick}
+            sx={{
+                '&:hover': {
+                    backgroundColor: 'inherit', // Quitar el cambio de color de fondo
+                    boxShadow: 'none' // Quitar el efecto de sombra
+                },
+                '&:active': {
+                    backgroundColor: 'inherit', // Quitar el cambio de color de fondo al hacer clic
+                    boxShadow: 'none' // Quitar el efecto de sombra al hacer clic
+                },
+                '&:focus': {
+                    backgroundColor: 'inherit', // Quitar el cambio de color de fondo al enfocar
+                    boxShadow: 'none' // Quitar el efecto de sombra al enfocar
+                },
+                '& .MuiTouchRipple-root': {
+                    display: 'none', // Deshabilitar el efecto ripple
+                },
+            }}
             >
                 <IconoMenuBurguer className="burguer-icono"/>
             </Button>

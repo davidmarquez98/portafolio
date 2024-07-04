@@ -44,6 +44,7 @@ ul{
     background-color: #D5CAC7;
     width: 20%;
     height: 42px;
+    transition: all ease .5s;
 }
 
 .nav-item_selected{

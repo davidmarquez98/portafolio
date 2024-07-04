@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import './nav.css';
 
@@ -12,34 +12,35 @@ function Nav(){
     const stringProjects = "/portafolio/projects";
 
     const styleNameSelected = {
-        home: "left: 20px",
-        aboutMe: "left: 0px",
-        projects: "rigth: 20px"
+        home: { left: '53px' },
+        aboutMe: { left: '215px' },
+        projects: { left: '400px' }
     };
 
-    // let [ nowPage, setNowPage ] = useState("portafolio"); 
     let [ path, setPath ] = useState("");
 
-    const validateNavItem = (namePageToValidate) => path == namePageToValidate ? 'nav-item_selected' : '';
 
-    const styleSelected = () => path == stringPortfolio ? styleNameSelected.home : 
+    const styleSelected = () => {
+        return path == stringPortfolio ? styleNameSelected.home : 
                                 path == stringAboutMe ?  styleNameSelected.aboutMe :
-                                path == stringProjects ?  styleNameSelected.projects : '';
+                                path == stringProjects ?  styleNameSelected.projects : {};
+    }
 
 
     return (
         <div className='nav-container'>
             <LocationWatcher setLocation={setPath}/>
             <div className='nav-content'>
-                <div className="circle-name-selected" style={styleSelected}/>
+                <div className="circle-name-selected" style={styleSelected()}/>
+                {/* <div className="circle-name-selected"/> */}
                 <ul className='nav-lista'>
-                    <li className={ validateNavItem(stringPortfolio)}>
+                    <li>
                         <Link to="/portafolio"><h3>Home</h3></Link>
                     </li>
-                    <li className={ validateNavItem(stringAboutMe) }>
+                    <li>
                         <Link to="/portafolio/about"><h3>Sobre Mi</h3></Link>
                     </li>
-                    <li className={ validateNavItem(stringProjects) }>
+                    <li>
                         <Link to="/portafolio/projects"><h3>Projectos</h3></Link>
                     </li>
                 </ul>
