@@ -7,7 +7,6 @@
     height: 60px;
     width: 600px;
     background-color: rgb(252, 243, 207, 0.7);
-    /* background-color: rgb(241, 241, 241, .5); */
     backdrop-filter: blur(10px);
     border-radius: 50px;
     margin-top: -20px;
@@ -62,6 +61,10 @@ li h3{
     font-size: 16px
 }
 
-/* background-color: rgba(184, 184, 184, 0.3);
-border-radius: 20px; */
+@media (max-width: 400px){
+
+    .nav-container{
+        display: none;
+    }
+}
 

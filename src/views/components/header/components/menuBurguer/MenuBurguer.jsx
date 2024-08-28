@@ -16,25 +16,6 @@ export default function MenuBurguer() {
   const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = () => setAnchorEl(null);
 
-//   const [ isDarkMode, setDarkMode ] = useDarkMode();
-
-
-//   const setMode = (isDark) => {
-//     if(isDark != null){
-//         console.log("Dentro del if de setMode");
-//         localStorage.setItem("isDarkMode", JSON.stringify(isDark));
-//     }
-// }
-
-// const getMode = () => {
-//     const isDark = JSON.parse(localStorage.getItem("isDarkMode"));
-//     console.log("isDark dentro de getMode de Header");
-//     console.log(isDark);
-//     console.log(typeof isDark);
-//     console.log(localStorage);
-//     return isDark;
-// }
-
   return (
     <div className='burguer-container header__item'>
         <div className='burguer-content'>
@@ -73,9 +54,7 @@ export default function MenuBurguer() {
                 MenuListProps={{
                 'aria-labelledby': 'basic-button'
                 }}
-                sx={{   
-                        left: '-80px' 
-                    }} 
+ 
                 PaperProps={{ 
                     style: {
                         boxShadow: '0px 5px 5px rgba(0, 0, 0, .2)',

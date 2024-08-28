@@ -16,3 +16,19 @@
 .imagen-computadora{
     width: 80px;
 }
+
+@media (max-width: 400px){
+
+    .logo-container{
+        justify-content: start;
+        align-items: start;
+    }
+
+    .logo-content{
+        margin: 30px;
+    }
+
+    .imagen-computadora{
+        width: 30px;
+    }
+}

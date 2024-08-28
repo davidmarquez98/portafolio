@@ -9,3 +9,15 @@ footer{
     font-size: 15px;
     color: var(--secondary-color);
 }
+
+@media (max-width: 400px){
+
+    footer{
+        margin-top: 150px;
+        height: 100px;
+    }
+
+    .footer-titulo{
+        font-size: 10px;
+    }
+}
