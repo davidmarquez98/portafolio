@@ -218,6 +218,10 @@
 }
 
 @media (max-width: 450px){
+    .informacion-container{
+        padding: 0;
+    }
+
     .introduccion-content{
         display: flex;
         align-items: center;
@@ -229,7 +233,10 @@
     }
 
     .sobre-mi-titulo-content h3{
-        font-size: 30px;
+        font-size: 20px;
     }
-
+    
+    .informacion__card{
+        font-size: 10px;
+    }
 }

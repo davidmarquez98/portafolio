@@ -159,6 +159,10 @@ button{
         gap: 20px;
     }
 
+    .sobre-mi-titulo-container{
+        padding: 20px;
+    }
+
     .texto-container{
         width: 100%;
     }
@@ -194,4 +198,16 @@ button{
     .home-icono:hover {
         font-size: 40px !important;
     }
+
+    .perfil-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 140px;
+    }
+
+    .imagen-perfil{
+        width: 100px !important;
+    }
+
 }
