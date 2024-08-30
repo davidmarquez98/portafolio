@@ -163,6 +163,10 @@ button{
         padding: 20px;
     }
 
+    .informacion__card{
+        margin: 20px;
+    }
+
     .texto-container{
         width: 100%;
     }
@@ -199,15 +203,11 @@ button{
         font-size: 40px !important;
     }
 
-    .perfil-content{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 140px;
-    }
-
     .imagen-perfil{
         width: 100px !important;
     }
 
+    .habilidades-experiencia-container{
+        margin-top: 370px !important;
+    }
 }

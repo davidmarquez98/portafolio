@@ -218,6 +218,10 @@
 }
 
 @media (max-width: 450px){
+
+    .about-content{
+        padding-top: 50px;
+    }
     .informacion-container{
         padding: 0;
     }
@@ -235,8 +239,28 @@
     .sobre-mi-titulo-content h3{
         font-size: 20px;
     }
-    
+
+    .perfil-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 180px;
+    }
+
     .informacion__card{
         font-size: 10px;
+    }
+
+    /*  */
+
+    .habilidades-experiencia-content{
+        flex-direction: column;
+    }
+    .habilidades-titulo-content h4{
+        font-size: 30px;
+    }
+
+    .trabajo-header h3{
+        font-size: 15px;
     }
 }
