@@ -1,7 +1,7 @@
 import { IoIosRadioButtonOn } from "react-icons/io";
 import "./mode.css";
 
-function Mode({ setMode, getMode }){
+function Mode({ setMode, getMode, className }){
 
     const handleClick = () => {
         const currentMode = !getMode;
@@ -12,7 +12,7 @@ function Mode({ setMode, getMode }){
         <div className='mode-container'>
             <div className='mode-content'>
                 <button onClick={handleClick}>
-                    <IoIosRadioButtonOn className="button-dark-mode"/>
+                    <IoIosRadioButtonOn className={`button-dark-mode ${className}`}/>
                 </button>
             </div>
         </div>

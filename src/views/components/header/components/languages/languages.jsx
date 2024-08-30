@@ -7,7 +7,7 @@ import spanishFlag from "./../../../../../assets/images/spanish.png"
 
 
 // HAY QUE AGREGAR UN MENU BURGUER PARA LENGUAJES Y DARK MODE BUTTON
-const Languages = () => {
+const Languages = ({ className }) => {
 
     const español = 'es'; 
     const ingles = 'en'; 
@@ -27,11 +27,11 @@ const Languages = () => {
                         nowLanguage == español ? 
                         (
                             <button onClick={() => cambiarLenguaje(ingles)}>
-                                <img src={englishFlag} className="english-flag"></img>
+                                <img src={englishFlag} className={`english-flag ${className}`}></img>
                             </button>
                         ) : (
                             <button onClick={() => cambiarLenguaje(español)}>
-                                <img src={spanishFlag} className="spanish-flag"></img>
+                                <img src={spanishFlag} className={`spanish-flag ${className}`}></img>
                             </button>
                         )
                     }

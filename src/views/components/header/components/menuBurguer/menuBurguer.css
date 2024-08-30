@@ -17,10 +17,9 @@
     margin: 20px;
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
     .burguer-container{
-        display: flex;
-        justify-content: end;
+        display: none;
     }
 
     .burguer-content{

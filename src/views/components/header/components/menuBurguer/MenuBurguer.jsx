@@ -2,11 +2,11 @@ import * as React from 'react';
 
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
+
 import './menuBurguer.css';
 import Mode from './../mode/Mode.jsx';
 import Languages from './../languages/languages.jsx';
 import IconoMenuBurguer from './../../../../../icons/IconoMenuBurguer.jsx'
-// import { useDarkMode } from '../../../../../helper/helper.js';
 
 export default function MenuBurguer() {
 
@@ -64,7 +64,6 @@ export default function MenuBurguer() {
             >
                 <div className='menu-content'>
                     <Languages/>
-                    {/* <Mode setMode={setDarkMode} getMode={isDarkMode}/> */}
                     <Mode />
                 </div>
             </Menu>

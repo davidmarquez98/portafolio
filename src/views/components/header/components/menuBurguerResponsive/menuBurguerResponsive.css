@@ -1,0 +1,60 @@
+.menuBurguerResponsive-container{
+    display: flex;
+    justify-content: end;
+}
+
+.menuBurguerResponsive_opcion__container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.menuBurguerResponsive_opcion_second__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 40px;
+}
+
+.menuBurguerResponsive__opcion_lista{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px 0px 0px;
+    width: 100%;
+}
+
+.menuBurguerResponsive_opcion{
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.menuBurguerResponsive__opcion_icono{
+    font-size: 30px !important;
+}
+
+.menuBurguerResponsive_opcion__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+  }
+
+.menuBurguerResponsive_languages{
+    width: 50px;
+}
+
+.menuBurguerResponsive_mode{
+    font-size: 50px;
+}
+
+
+@media (min-width: 450px){
+    .menuBurguerResponsive-container{
+        display: none;
+    }
+}
