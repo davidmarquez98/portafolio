@@ -216,3 +216,20 @@
 .logo-bigger{
     width: 130px;
 }
+
+@media (max-width: 450px){
+    .introduccion-content{
+        display: flex;
+        align-items: center;
+    }
+
+    .sobre-mi-titulo-content{
+        width: 100%;
+        margin: 0;
+    }
+
+    .sobre-mi-titulo-content h3{
+        font-size: 30px;
+    }
+
+}
