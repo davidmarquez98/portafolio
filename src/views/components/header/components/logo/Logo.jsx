@@ -6,7 +6,7 @@ import imagen from './../../../../../assets/images/computadora.png'
 
 function Logo(){
     return (
-        <div className='logo-container header__item'>
+        <div className='logo-computer-container header__item'>
             <div className='logo-content'>
                 <Link to="/portafolio">
                     <img src={imagen} className='imagen-computadora'></img>

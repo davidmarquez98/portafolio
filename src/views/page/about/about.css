@@ -1,5 +1,6 @@
 .about-container{
     width: 100%;
+    margin-top: 200px;
 }
 
 /* INTRODUCCION */
@@ -84,8 +85,8 @@
 
 .habilidades-experiencia-container{
     display: flex;
-    height: 60vh;
-    margin-top: 310px;
+    /* height: 60vh; */
+    margin-top: 600px;
     background-color: var(--secondary-color);
 }
 
@@ -183,7 +184,7 @@
 /* HABILIDADES */
 .habilidades-container{
     height: 100%;
-    width: 80%;
+    width: 100%;
     /* background-color: #799B76; */
     /* background-color: var(--primary-color); */
 }
@@ -218,10 +219,10 @@
 }
 
 @media (max-width: 450px){
-
-    .about-content{
-        padding-top: 50px;
+    .about-container{
+        margin-top: 0px;
     }
+
     .informacion-container{
         padding: 0;
     }
@@ -237,7 +238,7 @@
     }
 
     .sobre-mi-titulo-content h3{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .perfil-content{
@@ -253,14 +254,54 @@
 
     /*  */
 
+    .habilidades-experiencia-container{
+        margin-top: 250px !important;
+    }
+
     .habilidades-experiencia-content{
         flex-direction: column;
+        height: 150vh;
     }
-    .habilidades-titulo-content h4{
-        font-size: 30px;
+
+    .habilidades-titulo-content h4, .experiencia-titulo{
+        font-size: 25px;
+    }
+
+
+    .habilidades-logo-container{
+        width: 80%;
+    }
+
+    .habilidades-logo-content{
+        flex-wrap: wrap;
     }
 
     .trabajo-header h3{
         font-size: 15px;
+    }
+
+    .trabajo-parrafo{
+        font-size: 10px;
+    }
+
+    .trabajo-secondary-titulo{
+        font-size: 15px;
+    }
+
+    .byma-imagen{
+        width: 100px;
+    }
+
+    .logo-default{
+        width: 40px;
+    }
+
+    .logo-bigger{
+        width: 80px;
+    }
+
+    .logo-container{
+        display: flex;
+        align-items: center;
     }
 }

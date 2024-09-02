@@ -1,4 +1,4 @@
-.logo-container{
+.logo-computer-container{
     display: flex;
     justify-content: start;
     align-items: center;
@@ -19,7 +19,7 @@
 
 @media (max-width: 450px){
 
-    .logo-container{
+    .logo-computer-container{
         justify-content: start;
         align-items: start;
     }
