@@ -28,7 +28,7 @@ export default function MenuBurguerResponsive() {
     <div>
         <ul className={'menuBurguerResponsive__opcion_lista'}>
             <li className='menuBurguerResponsive_opcion'>
-                <Link to="/portafolio">
+                <Link to="/portafolio" onClick={toggleDrawer(false)}>
                     <div className='menuBurguerResponsive_opcion__container'>
                         <div>
                             <IconoHome className={'menuBurguerResponsive__opcion_icono'}/>
@@ -40,7 +40,7 @@ export default function MenuBurguerResponsive() {
                 </Link>
             </li>
             <li className='menuBurguerResponsive_opcion'>
-                <Link to="/portafolio/about">
+                <Link to="/portafolio/about" onClick={toggleDrawer(false)}>
                     <div className='menuBurguerResponsive_opcion__container'>
                         <div>
                             <IconoAbout className={'menuBurguerResponsive__opcion_icono'}/>
@@ -52,7 +52,7 @@ export default function MenuBurguerResponsive() {
                 </Link>
             </li>
             <li className='menuBurguerResponsive_opcion'>
-                <Link to="/portafolio/projects">
+                <Link to="/portafolio/projects" onClick={toggleDrawer(false)}>
                     <div className='menuBurguerResponsive_opcion__container'>
                         <div>
                             <IconoProjects className={'menuBurguerResponsive__opcion_icono'}/>

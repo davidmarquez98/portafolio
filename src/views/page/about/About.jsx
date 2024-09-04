@@ -16,16 +16,8 @@ import docker_logo from "./../../../assets/images/docker-logo.png";
 import kubernetes_logo from "./../../../assets/images/kubernetes-logo.png";
 
 function About(){
-    // window.sr = ScrollReveal();
-
-    // sr.reveal('.habilidades-experiencia-container', {
-    //     duration: 1000,
-    //     origin: 'top',
-    //     distance: '0px'  // Positivo para desplazar hacia arriba desde abajo
-    // });
-
     const controls = useAnimation();
-    const [ref, inView] = useInView({ threshold: 0.2 });
+    const [ref, inView] = useInView({ threshold: 0.1 });
 
     useEffect(() => {
         if (inView) {
@@ -85,8 +77,8 @@ function About(){
                             initial="hidden"
                             animate={controls}
                             variants={{
-                                visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-                                hidden: { opacity: 0, y: 50 },
+                                visible: { opacity: 1, y: -100, transition: { duration: 1 } },
+                                hidden: { opacity: 0, y: -70 },
                             }}>
                     <div className="habilidades-experiencia-container">  
                         <div className="habilidades-experiencia-content">

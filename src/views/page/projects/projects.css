@@ -15,3 +15,14 @@
 .lista-proyectos-content{
     margin: 50px 0;
 }
+
+@media (max-width: 450px){
+
+    .titulo-main-container{
+        height: 100px;
+    }
+
+    .titulo-main{
+        font-size: 20px;
+    }
+}
