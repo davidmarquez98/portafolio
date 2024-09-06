@@ -25,7 +25,7 @@ export default function MenuBurguerResponsive() {
   };
 
   const DrawerList = (
-    <div>
+    <div className='drawerList'>
         <ul className={'menuBurguerResponsive__opcion_lista'}>
             <li className='menuBurguerResponsive_opcion'>
                 <Link to="/portafolio" onClick={toggleDrawer(false)}>

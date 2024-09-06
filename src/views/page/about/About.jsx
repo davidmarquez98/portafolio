@@ -129,26 +129,29 @@ function About(){
                                     <div className="experiencia-informacion-container">
                                         <div className="experiencia-informacion-content">
 
-                                            <div className="trabajo-container">
-                                                <div className="trabajo-content">
-                                                    <div className="trabajo-header">
-                                                        <h3 className="trabajo-nombre">BYMA, Caja de Valores</h3><h3 className="trabajo-puesto trabajo-secondary-titulo">Desarrollador de Software</h3>
-                                                    </div>
-                                                    <h3 className="trabajo-tiempo trabajo-secondary-titulo">2022 Octubre - Actualidad</h3>
-                                                    <p className="trabajo-parrafo">Me especializo en herramientas como <b>Quarkus</b>, <b>Spring</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b> y <b>Panache</b> para 
-                                                    una implementación backend eficiente. Practicamos la <b>programación reactiva</b> para garantizar que las API sean lo más eficientes posible para el sistema. 
-                                                    En el ámbito de las bases de datos utilizamos <b>Oracle</b>, asegurando una gestión integral de los datos. Para el desarrollo frontend, empleamos <b>VueJS</b> y <b>ReactJS</b> para 
-                                                    crear interfaces de usuario sofisticadas y altamente funcionales.
-                                                    {/* I specialize in tools like <b>Quarkus</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b>, and <b>Panache</b> for efficient backend implementation. 
-                                                    We practice reactive programming to ensure that APIs are as efficient as possible for the system. In the realm of databases, we use Oracle, ensuring comprehensive data management. 
-                                                    For frontend development, we employ <b>VueJS</b> to create sophisticated and highly functional user interfaces. */}
-                                                    </p>
-                                                </div>
+                                            <div className="trabajo-header">
+                                                        <h3 className="trabajo-nombre">BYMA, Caja de Valores</h3>
+                                                        <h3 className="trabajo-puesto trabajo-secondary-titulo">Desarrollador de Software</h3>
                                             </div>
+                                            <div className="trabajo-info">
+                                                <div className="trabajo-container">
+                                                    <div className="trabajo-content">
+                                                        <h3 className="trabajo-tiempo trabajo-secondary-titulo">2022 Octubre - Actualidad</h3>
+                                                        <p className="trabajo-parrafo">Me especializo en herramientas como <b>Quarkus</b>, <b>Spring</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b> y <b>Panache</b> para 
+                                                        una implementación backend eficiente. Practicamos la <b>programación reactiva</b> para garantizar que las API sean lo más eficientes posible para el sistema. 
+                                                        En el ámbito de las bases de datos utilizamos <b>Oracle</b>, asegurando una gestión integral de los datos. Para el desarrollo frontend, empleamos <b>VueJS</b> y <b>ReactJS</b> para 
+                                                        crear interfaces de usuario sofisticadas y altamente funcionales.
+                                                        {/* I specialize in tools like <b>Quarkus</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b>, and <b>Panache</b> for efficient backend implementation. 
+                                                        We practice reactive programming to ensure that APIs are as efficient as possible for the system. In the realm of databases, we use Oracle, ensuring comprehensive data management. 
+                                                        For frontend development, we employ <b>VueJS</b> to create sophisticated and highly functional user interfaces. */}
+                                                        </p>
+                                                    </div>
+                                                </div>
 
-                                            <div className="empresa-imagen-container">
-                                                <div className="empresa-imagen-content">
-                                                    <img className="byma-imagen" src={byma_logo}></img>
+                                                <div className="empresa-imagen-container">
+                                                    <div className="empresa-imagen-content">
+                                                        <img className="byma-imagen" src={byma_logo}></img>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
