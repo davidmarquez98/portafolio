@@ -23,12 +23,12 @@
 }
 
 .icono-development{
-    color: var(--secondary-color);
+    color: #9c7567;
     font-size: 60px;
 }
 
 .icono-development-text{
-    color: var(--secondary-color);
+    color: #9c7567;
     font-size: 20px;
 }
 
@@ -67,7 +67,6 @@
 .card-project-container:hover .card-project-logo{
     opacity: .2;
 }
-
 
 .card-project-content{
     position: relative;
@@ -129,7 +128,6 @@
     }
 
     .card-project-container:hover {
-        box-shadow: none;
         transform: translateY(0px);
     }
     
@@ -141,14 +139,13 @@
         opacity: 1;
     }
 
-    .card-project-container-disabled{
+    .card-project-container-disabled, .disabled{
         background-color: transparent;
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     }
 
     .card-icono-development, .card-project-container-disabled{
         display: none;
-        /* left: 0; */
     }
 
     .card-icono-development-responsive{

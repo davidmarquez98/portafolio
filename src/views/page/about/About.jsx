@@ -131,12 +131,23 @@ function About(){
 
                                             <div className="trabajo-header">
                                                         <h3 className="trabajo-nombre">BYMA, Caja de Valores</h3>
-                                                        <h3 className="trabajo-puesto trabajo-secondary-titulo">Desarrollador de Software</h3>
+
+                                                        
+                                                        <div className="trabajo-secondary-titulo-container">
+                                                            <span className="trabajo_separation__header">•</span>
+                                                            <h3 className="trabajo-puesto trabajo-secondary-titulo">Desarrollador de Software</h3>
+                                                        </div>
+                                                        <div className="trabajo-secondary-titulo-container">
+                                                            <span className="trabajo_separation__header">•</span>
+                                                            <h3 className="trabajo-tiempo trabajo-secondary-titulo">2022 Octubre - Actualidad</h3>
+                                                        </div>
                                             </div>
+                                            {/* <div className="trabajo_tiempo__container">
+                                                <h3 className="trabajo-tiempo trabajo-secondary-titulo">2022 Octubre - Actualidad</h3>
+                                            </div> */}
                                             <div className="trabajo-info">
                                                 <div className="trabajo-container">
                                                     <div className="trabajo-content">
-                                                        <h3 className="trabajo-tiempo trabajo-secondary-titulo">2022 Octubre - Actualidad</h3>
                                                         <p className="trabajo-parrafo">Me especializo en herramientas como <b>Quarkus</b>, <b>Spring</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b> y <b>Panache</b> para 
                                                         una implementación backend eficiente. Practicamos la <b>programación reactiva</b> para garantizar que las API sean lo más eficientes posible para el sistema. 
                                                         En el ámbito de las bases de datos utilizamos <b>Oracle</b>, asegurando una gestión integral de los datos. Para el desarrollo frontend, empleamos <b>VueJS</b> y <b>ReactJS</b> para 

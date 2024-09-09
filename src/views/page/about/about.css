@@ -132,11 +132,12 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
-    padding: 25px;
+    padding: 15px 25px;
 }
 
 .trabajo-header{
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     font-size: 18px;
     padding: 30px 20px 0;
@@ -145,28 +146,46 @@
 .trabajo-info{
     display: flex;
     flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.trabajo-secondary-titulo-container{
+    display: flex;
+    gap: 20px;
+}
+
+.trabajo_separation__header_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trabajo_separation__header{
+    margin-top: -4px;
+    font-size: 30px;
+    color: #B08879;
 }
 
 .trabajo-nombre{
     color: var(--secondary-color);
 }
 
-.trabajo-puesto{
-    /* font-size: 18px; */
-}
 .trabajo-secondary-titulo{
     font-size: 20px;
     color: #B08879;
 }
 
+.trabajo_tiempo__container{
+    padding: 20px 20px 0;
+}
+
 .trabajo-tiempo{
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
 
 .trabajo-parrafo{
     margin-top: 2px;
     line-height: 1.3;
-    /* margin: 0 10px 20px 20px; */
     font-size: 16px;
     color: var(--secondary-color);
 }
@@ -174,7 +193,6 @@
 .empresa-imagen-container{
     display: flex;
     align-items: center;
-    /* margin: 10px; */
     width: 35%;
 }
 
@@ -190,10 +208,7 @@
 
 /* HABILIDADES */
 .habilidades-container{
-    /* height: 100%; */
     width: 100%;
-    /* background-color: #799B76; */
-    /* background-color: var(--primary-color); */
 }
 
 .habilidades-content{
@@ -211,6 +226,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .habilidades-logo-content{
@@ -272,7 +288,6 @@
     }
 
     /*  */
-
     .habilidades-experiencia-container{
         margin-top: 250px !important;
     }
@@ -286,7 +301,6 @@
         font-size: 25px;
     }
 
-
     .habilidades-logo-container{
         width: 80%;
     }
@@ -297,14 +311,38 @@
 
     .trabajo-header{
         padding-top: 20px;
+        gap: 10px;
     }
 
-    .trabajo-header h3{
+    .trabajo_separation__header{
+        font-size: 20px;
+    }
+
+    .trabajo-secondary-titulo-container{
+        display: flex;
+        padding-left: 15px;
+        margin-bottom: -5px;
+        gap: 2px;
+    }
+    
+    .trabajo-nombre{
         font-size: 15px;
+    }
+
+    .trabajo-secondary-titulo-container h3{
+        font-size: 13px;
     }
 
     .trabajo-parrafo{
         font-size: 10px;
+    }
+
+    .trabajo-content{
+        padding: 10px 5px 15px 15px;
+    }
+
+    .trabajo-secondary-titulo{
+        margin-left: 10px;
     }
 
     .trabajo-secondary-titulo{
