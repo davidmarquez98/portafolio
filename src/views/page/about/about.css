@@ -325,7 +325,9 @@
         gap: 2px;
     }
     
-
+    .trabajo-nombre{
+        font-size: 15px;
+    }
 
     .trabajo-secondary-titulo-container h3{
         font-size: 13px;
