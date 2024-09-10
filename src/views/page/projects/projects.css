@@ -18,6 +18,10 @@
 
 @media (max-width: 450px){
 
+    .proyecto-container{
+        margin-bottom: 230px;
+    }
+
     .titulo-main-container{
         height: 100px;
     }
