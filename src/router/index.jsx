@@ -7,7 +7,7 @@ import Contact from "../views/page/contact/Contact.jsx";
 export default function AppRouter() {
   return (
     <Routes>
-      <Route path="/" element={<Home/>}/>
+      <Route path="/portafolio" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/projects" element={<Projects/>}/>
       <Route path="/contact" element={<Contact/>}/>

@@ -7,7 +7,7 @@ import LocationWatcher from './../../../../../router/LocationWatcher.jsx'
 
 function Nav(){
 
-    const stringPortfolio = "/";
+    const stringPortfolio = "/portafolio";
     const stringAboutMe = "/about";
     const stringProjects = "/projects";
 
