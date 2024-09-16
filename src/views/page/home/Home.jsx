@@ -44,6 +44,12 @@ function Home(){
                         </div>
                         <div className='home-second-container'>
                             <div className='home-second-content'>
+                                {/* <div className="perfil-container">
+                                        <div className="perfil-content">
+                                            <img className="imagen-perfil" src={perfil}></img>
+                                            <div className="perfil-fade"></div>
+                                        </div>
+                                    </div> */}
                                 <div className='icono-container'>
                                     <div className='icono-content'>
                                         <div className='home-logo-container'>

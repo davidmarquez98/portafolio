@@ -9,6 +9,10 @@
 }
 
 /* SOBRE MI */
+.sobre-mi-titulo-container{
+    padding: 10px 25px;
+}
+
 .sobre-mi-container{
     width: 100%;
 }
@@ -255,16 +259,25 @@
 
 @media (max-width: 450px){
     .about-container{
-        margin-top: 20px;
+        margin-top: 0;
     }
 
     .informacion-container{
         padding: 0;
+        width: 100%;
+    }
+
+    .introduccion-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .introduccion-content{
         display: flex;
         align-items: center;
+        justify-content: center;
+        width: 90%;
     }
 
     .sobre-mi-titulo-content{
@@ -276,15 +289,19 @@
         font-size: 15px;
     }
 
-    .perfil-content{
+    .perfil-container{
+        display: none;
+    }
+
+    /* .perfil-content{
         display: flex;
         align-items: center;
         justify-content: center;
         padding-bottom: 180px;
-    }
+    } */
 
     .informacion__card{
-        font-size: 8px;
+        font-size: 10.5px;
     }
 
     /*  */

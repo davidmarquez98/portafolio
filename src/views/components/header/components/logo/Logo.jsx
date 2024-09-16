@@ -8,7 +8,7 @@ function Logo(){
     return (
         <div className='logo-computer-container header__item'>
             <div className='logo-content'>
-                <Link to="/portafolio">
+                <Link to="/">
                     <img src={imagen} className='imagen-computadora'></img>
                 </Link>
             </div>
