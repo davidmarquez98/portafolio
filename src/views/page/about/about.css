@@ -305,8 +305,11 @@
     }
 
     /*  */
+    /* .habilidades-experiencia-container{
+        margin-top: 100px !important;
+    } */
     .habilidades-experiencia-container{
-        margin-top: 250px !important;
+        margin-top: 50px !important;
     }
 
     .habilidades-experiencia-content{

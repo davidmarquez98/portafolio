@@ -17,7 +17,7 @@ import kubernetes_logo from "./../../../assets/images/kubernetes-logo.png";
 
 function About(){
     const controls = useAnimation();
-    const [ref, inView] = useInView({ threshold: 0.1 });
+    const [ref, inView] = useInView({ threshold: .04 });
 
     useEffect(() => {
         if (inView) {
@@ -77,8 +77,8 @@ function About(){
                             initial="hidden"
                             animate={controls}
                             variants={{
-                                visible: { opacity: 1, y: -100, transition: { duration: 1 } },
-                                hidden: { opacity: 0, y: -70 },
+                                visible: { opacity: 1, y: 0, transition: { duration: .5 } },
+                                hidden: { opacity: 0, y: 0},
                             }}>
                     <div className="habilidades-experiencia-container">  
                         <div className="habilidades-experiencia-content">
