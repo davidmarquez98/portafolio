@@ -58,13 +58,13 @@ export default function MenuBurguerResponsive() {
                             <IconoProjects className={'menuBurguerResponsive__opcion_icono'}/>
                         </div>
                         <div className='menuBurguerResponsive_opcion__text'>
-                            <h3>Projectos</h3>
+                            <h3>Proyectos</h3>
                         </div>
                     </div>
                 </Link>
             </li>
         </ul>
-        <Divider/>
+        {/* <Divider/>
         <ul className={'menuBurguerResponsive__opcion_lista'}>
             <li>
                 <div className='menuBurguerResponsive_opcion__container'>
@@ -78,7 +78,7 @@ export default function MenuBurguerResponsive() {
                     </div>
                 </div>
             </li>
-        </ul>
+        </ul> */}
     </div>
 
   );

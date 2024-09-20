@@ -17,7 +17,7 @@ import kubernetes_logo from "./../../../assets/images/kubernetes-logo.png";
 
 function About(){
     const controls = useAnimation();
-    const [ref, inView] = useInView({ threshold: .04 });
+    const [ref, inView] = useInView({ threshold: .06 });
 
     useEffect(() => {
         if (inView) {

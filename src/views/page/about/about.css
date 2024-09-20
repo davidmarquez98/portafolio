@@ -257,7 +257,7 @@
     width: 160px;
 }
 
-@media (max-width: 450px){
+@media (max-width: 800px){
     .about-container{
         margin-top: 0;
     }
@@ -280,6 +280,9 @@
         width: 90%;
     }
 
+    .sobre-mi-content{
+        margin-top: 100px;
+    }
     .sobre-mi-titulo-content{
         width: 100%;
         margin: 0;
@@ -293,28 +296,17 @@
         display: none;
     }
 
-    /* .perfil-content{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 180px;
-    } */
-
     .informacion__card{
         font-size: 10.5px;
     }
 
-    /*  */
-    /* .habilidades-experiencia-container{
-        margin-top: 100px !important;
-    } */
     .habilidades-experiencia-container{
-        margin-top: 50px !important;
+        margin-top: 300px !important;
     }
 
     .habilidades-experiencia-content{
         flex-direction: column;
-        gap: 60px;
+        gap: 20px;
     }
 
     .habilidades-titulo-content h4, .experiencia-titulo{

@@ -117,7 +117,7 @@
     display: none;
 }
 
-@media (max-width: 450px){
+@media (max-width: 800px){
 
     .card-titulo{
         font-size: 20px;

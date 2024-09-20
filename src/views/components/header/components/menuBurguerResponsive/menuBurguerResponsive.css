@@ -57,7 +57,7 @@ a {
 }
 
 
-@media (min-width: 450px){
+@media (min-width: 800px){
     .menuBurguerResponsive-container{
         display: none;
     }
