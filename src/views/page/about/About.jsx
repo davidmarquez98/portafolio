@@ -14,6 +14,8 @@ import spring_logo from "./../../../assets/images/spring-logo.png";
 import oracle_logo from "./../../../assets/images/oracle-logo.png";
 import docker_logo from "./../../../assets/images/docker-logo.png";
 import kubernetes_logo from "./../../../assets/images/kubernetes-logo.png";
+import tailwind_logo from "./../../../assets/images/tailwind-logo.png";
+import bootstrap_logo from "./../../../assets/images/bootstrap-logo.png";
 
 function About(){
     const controls = useAnimation();
@@ -97,6 +99,12 @@ function About(){
                                             </div>
                                             <div className="logo-container">
                                                 <img className="logo-default" src={vue_logo}></img>
+                                            </div>
+                                            <div className="logo-container">
+                                                <img className="logo-default" src={tailwind_logo}></img>
+                                            </div>
+                                            <div className="logo-container">
+                                                <img className="logo-default" src={bootstrap_logo}></img>
                                             </div>
                                             <div className="logo-container">
                                                 <img className="logo-default" src={quarkus_logo}></img>
