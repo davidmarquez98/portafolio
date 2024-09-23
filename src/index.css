@@ -1,60 +1,55 @@
 :root {
+  /* Light Mode */
   --primary-color: #FCF3CF;
   --secondary-color: #795548;
   
+    /* Dark Mode */
   --principal-color-green: #196158;
   --primary-color-dark-mode: #003B32;
 }
 
 @font-face {
-  font-family: 'MiFuente'; /* El nombre de la fuente que quieres usar */
-  src: url('./assets/fonts/CourierPrime-Regular.ttf'); /* La ruta a tu archivo de fuente y su formato */
+  font-family: 'MiFuente';
+  src: url('./assets/fonts/CourierPrime-Regular.ttf');
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'MiFuente', sans-serif; /* Usa tu fuente personalizada como fuente principal */
+  font-family: 'MiFuente', sans-serif;
 }
-
-body{
-  padding: 0 !important;
-  overflow: auto !important;
-}
-
-
-
-/* Cambiar el color del scrollbar */
-::-webkit-scrollbar {
-  width: 15px; /* Cambiar el ancho del scrollbar */
-}
-
-::-webkit-scrollbar-track {
-  background: #DFD5AA ; /* Cambiar el color de fondo del track */
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background: var(--secondary-color); /* Cambiar el color del thumb (barra deslizante) */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Cambiar el color del thumb cuando se pasa el mouse sobre él */
-}
-/* body{
-  height: 2000vh;
-} */
 
 #root{
   height: 100%;
   width: 100%;
 }
 
-.icono-default__color{
+
+/* Icons */
+.icon-default--color{
   color: var(--secondary-color);
 }
 
-.icono-default__mid{
+.icon-default--mid{
   font-size: 50px !important;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #DFD5AA ;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

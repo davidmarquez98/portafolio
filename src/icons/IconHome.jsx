@@ -1,7 +1,7 @@
 import HomeIcon from '@mui/icons-material/Home';
 
 function IconoHome({ className }){
-    return (<HomeIcon className={`icono-default__color ${className}`}/>);
+    return (<HomeIcon className={`icon-default--color${className}`}/>);
 };
 
 export default IconoHome;

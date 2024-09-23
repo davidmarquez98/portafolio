@@ -5,17 +5,17 @@ import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import perfil from "./../../../perfil.jpeg";
-import byma_logo from "./../../../assets/images/byma-logo.png";
+import byma_logo from "./../../../assets/images/logos/byma-logo.png";
 
-import react_logo from "./../../../assets/images/react-logo.png";
-import vue_logo from "./../../../assets/images/vue-logo.png";
-import quarkus_logo from "./../../../assets/images/quarkus-logo.png";
-import spring_logo from "./../../../assets/images/spring-logo.png";
-import oracle_logo from "./../../../assets/images/oracle-logo.png";
-import docker_logo from "./../../../assets/images/docker-logo.png";
-import kubernetes_logo from "./../../../assets/images/kubernetes-logo.png";
-import tailwind_logo from "./../../../assets/images/tailwind-logo.png";
-import bootstrap_logo from "./../../../assets/images/bootstrap-logo.png";
+import react_logo from "./../../../assets/images/logos/react-logo.png";
+import vue_logo from "./../../../assets/images/logos/vue-logo.png";
+import quarkus_logo from "./../../../assets/images/logos/quarkus-logo.png";
+import spring_logo from "./../../../assets/images/logos/spring-logo.png";
+import oracle_logo from "./../../../assets/images/logos/oracle-logo.png";
+import docker_logo from "./../../../assets/images/logos/docker-logo.png";
+import kubernetes_logo from "./../../../assets/images/logos/kubernetes-logo.png";
+import tailwind_logo from "./../../../assets/images/logos/tailwind-logo.png";
+import bootstrap_logo from "./../../../assets/images/logos/bootstrap-logo.png";
 
 function About(){
     const controls = useAnimation();

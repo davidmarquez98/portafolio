@@ -379,4 +379,8 @@
     .logo-bigger{
         width: 80px;
     }
+
+    .imagen-perfil{
+        width: 100px !important;
+    }
 }

@@ -10,63 +10,49 @@ function Home(){
 
     const openWindowToSendEmail = () => {
 
-        // Definir los detalles del correo electrónico
-        const email = 'destinatario@example.com';
-        const subject = 'Asunto del correo electrónico';
-        const body = 'Contenido del correo electrónico';
+        const email = 'davidarielmarquez@outlook.com';
+        const mailtoUrl = `mailto:${email}`;
 
-        // Crear la URL con el esquema mailto:
-        const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-        // Abrir el cliente de correo electrónico predeterminado del usuario
         window.open(mailtoUrl);
     };
 
     return (
         <AnimatePresence>
-            {/* INTRODUCCION */}
-            <motion.div className="sobre-mi-container"         
-                        initial={{ opacity: 0 }}
+            <motion.div initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: .5 }} // Especifica la duración de la animación en segundos
+                        transition={{ duration: .5 }}
                         >
-                <div className="home-container">
-                    <div className="home-content">
-                        <div className="texto-container">
-                            <div className="texto-content">
-                                <h1 className='texto__titulo'>Hola, Soy David.<span>&#160;</span></h1>
-                                <h3 className='texto__subtitulo'>Desarrollador Full Stack.<span>&#160;</span></h3>
-                                <p className='texto__descripcion'>
+                <div className="home__container">
+                    <div className="home__content">
+                        <div className="home__texto__container">
+                            <div className="home__texto__content">
+                                <h1 className='home__texto__titulo'>Hola, Soy David.<span>&#160;</span></h1>
+                                <h3 className='home__texto__subtitulo'>Desarrollador Full Stack.<span>&#160;</span></h3>
+                                <p className='home__texto__descripcion'>
                                     Me apasiona la programación y conocer el mundo!<span>&#160;</span>
                                 </p>
                             </div>
                         </div>
-                        <div className='home-second-container'>
-                            <div className='home-second-content'>
-                                {/* <div className="perfil-container">
-                                        <div className="perfil-content">
-                                            <img className="imagen-perfil" src={perfil}></img>
-                                            <div className="perfil-fade"></div>
-                                        </div>
-                                    </div> */}
-                                <div className='icono-container'>
-                                    <div className='icono-content'>
-                                        <div className='home-logo-container'>
+                        <div className='home__iconos__container'>
+                            <div className='home__iconos__content'>
+                                <div className='iconos__container'>
+                                    <div className='iconos__content'>
+                                        <div className='iconos__item'>
                                             <button onClick={() => openWindowToSendEmail()}>
-                                                <IconoEmail className="home-icono"/>
+                                                <IconoEmail className="home__icono"/>
                                             </button>
                                         </div>
 
-                                        <div className='home-logo-container'>
+                                        <div className='iconos__item'>
                                             <a href="https://www.linkedin.com/in/david-ariel-marquez/" target="_blank">
-                                                <IconoLinkedin className="home-icono" />
+                                                <IconoLinkedin className="home__icono" />
                                             </a>
                                         </div>
                                         
-                                        <div className='home-logo-container'>
+                                        <div className='iconos__item'>
                                             <a href="https://github.com/davidmarquez98" target="_blank">
-                                                <IconoGithub className="home-icono" />
+                                                <IconoGithub className="home__icono" />
                                             </a>
                                         </div>
                                     </div>

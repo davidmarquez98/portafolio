@@ -2,8 +2,8 @@ import "./languages.css";
 
 import { useState } from 'react';
 
-import englishFlag from "./../../../../../assets/images/english.png"
-import spanishFlag from "./../../../../../assets/images/spanish.png"
+import englishFlag from "./../../../../../assets/images/languages/english.png"
+import spanishFlag from "./../../../../../assets/images/languages/spanish.png"
 
 
 // HAY QUE AGREGAR UN MENU BURGUER PARA LENGUAJES Y DARK MODE BUTTON

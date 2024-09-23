@@ -1,11 +1,13 @@
-/* ANIMACION TITULO */
-h1, h3, p{
+/* Animation Title */
+.home__texto__titulo, 
+.home__texto__subtitulo, 
+.home__texto__descripcion{
     position: relative;
 }
 
-h1 span, 
-h3 span,
-p span{
+.home__texto__titulo span, 
+.home__texto__subtitulo span,
+.home__texto__descripcion span{
     position: absolute;
     right: 0;
     width: 100%;
@@ -13,26 +15,20 @@ p span{
     border-left: 5px solid transparent; 
 }
 
-/*
-
-border-left: 5px solid var(--secondary-color);
-
-*/
-
-h1 span{
+.home__texto__titulo span{
     animation: escribir .8s steps(16) forwards, aparecer 0s forwards, desaparecer 0s .84s forwards;
 }
 
-h3 span{
+.home__texto__subtitulo span{
     animation: escribir .8s 1s steps(16) forwards, aparecer 0s 1s forwards, desaparecer 0s 1.84s forwards;
 }
 
-p span {
+.home__texto__descripcion span {
     animation: escribir .8s 2s steps(16) forwards, aparecer 0s 2s forwards, desaparecer 0s 2.84s forwards;
 }
 
 @keyframes escribir {
-    from { width: 100% } /* Comienza con borde transparente */
+    from { width: 100% } 
     to { width: 0; border-color: transparent; }
 }
 
@@ -49,13 +45,13 @@ p span {
   
 
 /**/
-.home-container{
+.home__container{
     display: flex;
     width: 100%;
     height: 70vh;
 }
 
-.home-content{
+.home__content{
     display: flex;
     margin: auto;
     width: 90%;
@@ -65,11 +61,11 @@ p span {
     width: 50%;
 }
 
-.texto-container{
+.home__texto__container{
     width: 70%;
 }
 
-.texto-content{
+.home__texto__content{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -77,47 +73,45 @@ p span {
 }
 
 /* h1 */
-.texto__titulo{
+.home__texto__titulo{
     width: 960px;
     font-size: 100px;
     color: #6D4C41;
 }
 
-.texto__subtitulo, .texto__descripcion{
+.home__texto__subtitulo, .home__texto__descripcion{
     color: #8D6E63;
 }
 
-/* h3 */
-.texto__subtitulo{
+.home__texto__subtitulo{
     width: 750px;
     font-size: 50px;
     margin-bottom: 30px;
 }
 
 /* p */
-.texto__descripcion{
+.home__texto__descripcion{
     width: 565px;
     font-size: 20px;
 }
 
-.home-second-container{
+.home__iconos__container{
     width: 30%;
 }
 
-.home-second-content{
+.home__iconos__content{
     display: flex;
     justify-content: center;
     height: 50%;
 }
 
-.icono-container{
+.iconos__container{
     display: flex;
     justify-content: center;
     width: 60%;
-    /* margin-top: 30px; */
 }
 
-.icono-content{
+.iconos__content{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,7 +119,7 @@ p span {
     width: 100%;
 }
 
-.home-logo-container{
+.iconos__item{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,24 +128,24 @@ p span {
     height: 100%;
 }
 
-button{
+.iconos__item button{
     cursor: pointer;
     border: none;
     background-color: transparent;
 }
 
-.home-icono {
+.home__icono{
     font-size: 40px !important;
     transition: font-size .3s ease !important; /* Transición de tamaño de fuente */
 }
 
-.home-icono:hover {
+.home__icono:hover {
     font-size: 50px !important;
 }
 
 @media (max-width: 800px){
 
-    .home-content{
+    .home__content{
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -163,43 +157,39 @@ button{
         margin: 20px;
     }
 
-    .texto-container{
+    .home__texto__container{
         width: 100%;
     }
 
-    .texto-content{
+    .home__texto__content{
         gap: 10px;
     }
     
-    .texto__titulo{
+    .home__texto__titulo{
         width: 100%;
         font-size: 30px;
     }
 
-    .texto__subtitulo{
+    .home__texto__subtitulo{
         width: 100%;
         font-size: 20px;
         margin: 0;
     }
 
-    .texto__descripcion{
+    .home__texto__descripcion{
         width: 100%;
         font-size: 10px;
     }
     
-    .icono-content{
+    .home__iconos__content{
         gap: 70px;
     }
 
-    .home-icono {
+    .home__icono{
         font-size: 40px !important;
     }
 
-    .home-icono:hover {
+    .home__icono:hover {
         font-size: 40px !important;
-    }
-
-    .imagen-perfil{
-        width: 100px !important;
     }
 }
