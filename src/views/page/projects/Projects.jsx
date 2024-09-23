@@ -27,7 +27,7 @@ function Projects(){
                             <div>
                                 <div className="titulo-main-container">
                                     <div className="titulo-main-content">
-                                        <h3 className="titulo-main">Projectos</h3>
+                                        <h3 className="titulo-main">Proyectos</h3>
                                     </div>
                                 </div>
                                 <div className="lista-proyectos-container">

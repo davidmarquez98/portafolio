@@ -41,7 +41,7 @@ function Nav(){
                         <Link to="/about"><h3>Sobre Mi</h3></Link>
                     </li>
                     <li>
-                        <Link to="/projects"><h3>Projectos</h3></Link>
+                        <Link to="/projects"><h3>Proyectos</h3></Link>
                     </li>
                 </ul>
             </div>
