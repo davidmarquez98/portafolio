@@ -28,19 +28,20 @@ function Nav(){
 
 
     return (
-        <div className='nav-container'>
+        <div className='nav__container'>
             <LocationWatcher setLocation={setPath}/>
-            <div className='nav-content'>
-                <div className="circle-name-selected" style={styleSelected()}/>
-                {/* <div className="circle-name-selected"/> */}
-                <ul className='nav-lista'>
-                    <li>
+            <div className='nav__content'>
+
+                <div className="nav__circle--selected" style={styleSelected()}/>
+
+                <ul className='nav__lista'>
+                    <li className="nav__item">
                         <Link to="/"><h3>Home</h3></Link>
                     </li>
-                    <li>
+                    <li className="nav__item">
                         <Link to="/about"><h3>Sobre Mi</h3></Link>
                     </li>
-                    <li>
+                    <li className="nav__item">
                         <Link to="/projects"><h3>Proyectos</h3></Link>
                     </li>
                 </ul>

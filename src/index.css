@@ -21,13 +21,13 @@
 }
 
 #root{
-  height: 100%;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 
 /* Icons */
-.icon-default--color{
+.icon--default--color{
   color: var(--secondary-color);
 }
 

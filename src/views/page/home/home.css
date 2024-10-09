@@ -57,10 +57,6 @@
     width: 90%;
 }
 
-.home__item{
-    width: 50%;
-}
-
 .home__texto__container{
     width: 70%;
 }
@@ -74,7 +70,6 @@
 
 /* h1 */
 .home__texto__titulo{
-    width: 960px;
     font-size: 100px;
     color: #6D4C41;
 }
@@ -84,14 +79,14 @@
 }
 
 .home__texto__subtitulo{
-    width: 750px;
+    /* width: 750px; */
     font-size: 50px;
     margin-bottom: 30px;
 }
 
 /* p */
 .home__texto__descripcion{
-    width: 565px;
+    /* width: 565px; */
     font-size: 20px;
 }
 

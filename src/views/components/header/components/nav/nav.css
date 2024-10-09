@@ -1,5 +1,5 @@
 
-.nav-container{
+.nav__container{
     z-index: 100;
     position: fixed;
     display: flex;
@@ -12,7 +12,7 @@
     margin-top: -20px;
 }
 
-.nav-content{
+.nav__content{
     position: relative;
     display: flex;
     justify-content: center;
@@ -20,30 +20,30 @@
     width: 100%;
 }
 
-.nav-lista{
+.nav__lista{
     display: flex;
     gap: 80px;
-}
-
-ul{
     list-style: none;
 }
 
-.nav-lista li a,
-.nav-lista li a :active,
-.nav-lista li a :focus{
+
+.nav__item a,
+.nav__item a :active,
+.nav__item a :focus{
     cursor: pointer;
     color: var(--secondary-color);
     text-decoration: none !important;
 }
 
-.circle-name-selected{
+.nav__circle--selected{
+    z-index: -1;
     position: absolute;
     border-radius: 50px;
     background-color: #D5CAC7;
     width: 20%;
     height: 42px;
     transition: all ease .5s;
+
 }
 
 .nav-item_selected{
@@ -51,19 +51,19 @@ ul{
     background-color: #D5CAC7;
 }
 
-li{
+.nav__item{
     padding: 12px;
     text-align: center;
 }
 
-li h3{
+.nav__item h3{
     color: var(--secondary-color);
     font-size: 16px
 }
 
 @media (max-width: 800px){
 
-    .nav-container{
+    .nav__container{
         display: none;
     }
 }
