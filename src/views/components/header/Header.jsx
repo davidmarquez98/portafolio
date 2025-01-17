@@ -8,7 +8,7 @@ import MenuBurguerResponsive from './components/menuBurguerResponsive/MenuBurgue
 function Header(){
     
     return (
-        <header>
+        <header class="w-full">
             <div className='header-content'>
 
                 <Logo/>
