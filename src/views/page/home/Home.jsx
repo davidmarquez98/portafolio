@@ -2,11 +2,15 @@ import './home.css';
 
 import { AnimatePresence, motion } from "framer-motion";
 
+import { useSelector } from 'react-redux';
+
 import IconoEmail from '../../../icons/IconEmail';
 import IconoLinkedin from '../../../icons/IconoLinkedin';
 import IconoGithub from '../../../icons/IconoGithub';
 
 function Home(){
+
+    const isDarkmodeActivated = useSelector((state) => state.darkMode.isActivated)
 
     const openWindowToSendEmail = () => {
 
@@ -35,21 +39,15 @@ function Home(){
                     <div className="home-content">
                         <div className="texto-container">
                             <div className="texto-content">
-                                <h1 className='texto__titulo'>Hola, Soy David.<span>&#160;</span></h1>
-                                <h3 className='texto__subtitulo'>Desarrollador Full Stack.<span>&#160;</span></h3>
-                                <p className='texto__descripcion'>
+                                <h1 className={ isDarkmodeActivated ? "texto__titulo" : "texto__titulo dark-mode-color-sec"}>Hola, Soy David.<span>&#160;</span></h1>
+                                <h3 className= { isDarkmodeActivated ? 'texto__subtitulo' : 'texto__subtitulo dark-mode-color-third' }>Desarrollador Full Stack.<span>&#160;</span></h3>
+                                <p className={ isDarkmodeActivated ? 'texto__descripcion' : 'texto__descripcion dark-mode-color-third' }>
                                     Me apasiona la programación y conocer el mundo!<span>&#160;</span>
                                 </p>
                             </div>
                         </div>
                         <div className='home-second-container'>
                             <div className='home-second-content'>
-                                {/* <div className="perfil-container">
-                                        <div className="perfil-content">
-                                            <img className="imagen-perfil" src={perfil}></img>
-                                            <div className="perfil-fade"></div>
-                                        </div>
-                                    </div> */}
                                 <div className='icono-container'>
                                     <div className='icono-content'>
                                         <div className='home-logo-container'>

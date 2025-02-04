@@ -2,8 +2,9 @@
   --primary-color: #FCF3CF;
   --secondary-color: #795548;
   
-  --principal-color-green: #196158;
-  --primary-color-dark-mode: #003B32;
+  --primary-color-dark-mode: #3a4b3d;
+  --secondary-color-dark-mode: #aec7b2;
+  --tertiary-color-dark-mode: #96b89c;
 }
 
 @font-face {
@@ -42,9 +43,6 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* Cambiar el color del thumb cuando se pasa el mouse sobre él */
 }
-/* body{
-  height: 2000vh;
-} */
 
 #root{
   height: 100%;
@@ -57,4 +55,12 @@ body{
 
 .icono-default__mid{
   font-size: 50px !important;
+}
+
+.dark-mode-color-sec{
+  color: var(--secondary-color-dark-mode);
+}
+
+.dark-mode-color-third{
+  color: var(  --tertiary-color-dark-mode);
 }

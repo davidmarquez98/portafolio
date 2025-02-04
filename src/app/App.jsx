@@ -1,4 +1,3 @@
-import { useEffect, useState, useRef } from 'react';
 import { AnimatePresence, motion } from "framer-motion";
 
 import { useSelector } from 'react-redux';
@@ -15,9 +14,6 @@ import Router from "./../router/index.jsx";
 function App() {
 
   const isDarkmodeActivated = useSelector((state) => state.darkMode.isActivated)
-  console.log(isDarkmodeActivated)
-
-  let [ className, setClassName ] = useState("app");
 
   return (
       <div className={isDarkmodeActivated ? "app" : "app-dark-mode"}>
