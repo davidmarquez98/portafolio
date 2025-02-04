@@ -1,6 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import { AnimatePresence, motion } from "framer-motion";
 
+import { useSelector } from 'react-redux';
+
 import './App.css'
 
 import Header from './../views/components/header/Header.jsx';
@@ -12,11 +14,13 @@ import Router from "./../router/index.jsx";
 
 function App() {
 
+  const isDarkmodeActivated = useSelector((state) => state.darkMode.isActivated)
+  console.log(isDarkmodeActivated)
+
   let [ className, setClassName ] = useState("app");
 
-
   return (
-      <div className={className}>
+      <div className={isDarkmodeActivated ? "app" : "app-dark-mode"}>
           <AnimatePresence>
             <motion.div className="sobre-mi-container"         
                         initial={{ opacity: 0 }}

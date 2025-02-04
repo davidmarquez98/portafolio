@@ -11,11 +11,10 @@ import './index.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router basename="/">
-      {/* <Provider store={store}> 
-        <App />
-      </Provider> */}
-      <App />
 
+      <Provider store={store}> 
+        <App />
+      </Provider>
       
     </Router>
   </React.StrictMode>

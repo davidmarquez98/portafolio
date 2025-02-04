@@ -1,13 +1,13 @@
 import { IoIosRadioButtonOn } from "react-icons/io";
+import { useDispatch } from "react-redux";
+import { changeMode } from "../../../../../redux/darkmodeSlide";
 import "./mode.css";
 
 function Mode({ setMode, getMode, className }){
 
-    const handleClick = () => {
-        const currentMode = !getMode;
-        setMode(currentMode);
-    }
-    
+    const dispatch = useDispatch();
+    const handleClick = () => dispatch(changeMode());
+
     return (
         <div className='mode-container'>
             <div className='mode-content'>
