@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
+import { useSelector } from 'react-redux';
+
 import './nav.css';
 
 import LocationWatcher from './../../../../../router/LocationWatcher.jsx'
 
 function Nav(){
+
+    const isDarkmodeActivated = useSelector((state) => state.darkMode.isActivated)
+
 
     const stringPortfolio = "/";
     const stringAboutMe = "/about";
@@ -28,20 +33,20 @@ function Nav(){
 
 
     return (
-        <div className='nav-container'>
+        <div className={ isDarkmodeActivated ? 'nav-container dark-mode-background-color-third': 'nav-container' }>
             <LocationWatcher setLocation={setPath}/>
             <div className='nav-content'>
-                <div className="circle-name-selected" style={styleSelected()}/>
+                <div className={ isDarkmodeActivated ? "circle-name-selected dark-mode-background-color-sec" : "circle-name-selected" } style={styleSelected()}/>
                 {/* <div className="circle-name-selected"/> */}
                 <ul className='nav-lista'>
                     <li>
-                        <Link to="/"><h3>Home</h3></Link>
+                        <Link to="/"><h3 className={ isDarkmodeActivated ? "dark-mode-color-prim" : ""}>Home</h3></Link>
                     </li>
                     <li>
-                        <Link to="/about"><h3>Sobre Mi</h3></Link>
+                        <Link to="/about"><h3 className={ isDarkmodeActivated ? "dark-mode-color-prim" : ""}>Sobre Mi</h3></Link>
                     </li>
                     <li>
-                        <Link to="/projects"><h3>Proyectos</h3></Link>
+                        <Link to="/projects"><h3 className={ isDarkmodeActivated ? "dark-mode-color-prim" : ""}>Proyectos</h3></Link>
                     </li>
                 </ul>
             </div>

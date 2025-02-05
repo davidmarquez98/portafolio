@@ -57,10 +57,22 @@ body{
   font-size: 50px !important;
 }
 
+.dark-mode-color-prim{
+  color: var(--primary-color-dark-mode);
+}
+
 .dark-mode-color-sec{
   color: var(--secondary-color-dark-mode);
 }
 
 .dark-mode-color-third{
   color: var(  --tertiary-color-dark-mode);
+}
+
+.dark-mode-background-color-sec{
+  background-color: var(--secondary-color-dark-mode);
+}
+
+.dark-mode-background-color-third{
+  background-color: var(  --tertiary-color-dark-mode);
 }

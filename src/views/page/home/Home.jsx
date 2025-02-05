@@ -39,9 +39,9 @@ function Home(){
                     <div className="home-content">
                         <div className="texto-container">
                             <div className="texto-content">
-                                <h1 className={ isDarkmodeActivated ? "texto__titulo" : "texto__titulo dark-mode-color-sec"}>Hola, Soy David.<span>&#160;</span></h1>
-                                <h3 className= { isDarkmodeActivated ? 'texto__subtitulo' : 'texto__subtitulo dark-mode-color-third' }>Desarrollador Full Stack.<span>&#160;</span></h3>
-                                <p className={ isDarkmodeActivated ? 'texto__descripcion' : 'texto__descripcion dark-mode-color-third' }>
+                                <h1 className={ isDarkmodeActivated ? "texto__titulo dark-mode-color-sec" : "texto__titulo"}>Hola, Soy David.<span>&#160;</span></h1>
+                                <h3 className= { isDarkmodeActivated ? 'texto__subtitulo dark-mode-color-third' : 'texto__subtitulo' }>Desarrollador Full Stack.<span>&#160;</span></h3>
+                                <p className={ isDarkmodeActivated ? 'texto__descripcion dark-mode-color-third' : 'texto__descripcion' }>
                                     Me apasiona la programación y conocer el mundo!<span>&#160;</span>
                                 </p>
                             </div>
@@ -52,19 +52,19 @@ function Home(){
                                     <div className='icono-content'>
                                         <div className='home-logo-container'>
                                             <button onClick={() => openWindowToSendEmail()}>
-                                                <IconoEmail className="home-icono"/>
+                                                <IconoEmail className={ isDarkmodeActivated ? "home-icono dark-mode-color-sec" : "home-icono"}/>
                                             </button>
                                         </div>
 
                                         <div className='home-logo-container'>
                                             <a href="https://www.linkedin.com/in/david-ariel-marquez/" target="_blank">
-                                                <IconoLinkedin className="home-icono" />
+                                                <IconoLinkedin className={ isDarkmodeActivated ? "home-icono dark-mode-color-sec" : "home-icono"} />
                                             </a>
                                         </div>
                                         
                                         <div className='home-logo-container'>
                                             <a href="https://github.com/davidmarquez98" target="_blank">
-                                                <IconoGithub className="home-icono" />
+                                                <IconoGithub className={ isDarkmodeActivated ? "home-icono dark-mode-color-sec" : "home-icono"} />
                                             </a>
                                         </div>
                                     </div>

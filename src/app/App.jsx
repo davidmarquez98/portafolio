@@ -16,7 +16,7 @@ function App() {
   const isDarkmodeActivated = useSelector((state) => state.darkMode.isActivated)
 
   return (
-      <div className={isDarkmodeActivated ? "app" : "app-dark-mode"}>
+      <div className={isDarkmodeActivated ? "app-dark-mode" : "app" }>
           <AnimatePresence>
             <motion.div className="sobre-mi-container"         
                         initial={{ opacity: 0 }}

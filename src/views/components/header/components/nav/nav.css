@@ -33,7 +33,6 @@ ul{
 .nav-lista li a :active,
 .nav-lista li a :focus{
     cursor: pointer;
-    color: var(--secondary-color);
     text-decoration: none !important;
 }
 
