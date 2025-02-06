@@ -1,14 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit"
 
-const initialState = { isActivated: false };
+const initialState = { value: "light" };
 
-const darkmodeSlide = createSlice({
-    name: "darkMode",
+const modeSlide = createSlice({
+    name: "mode",
     initialState,
     reducers: {
-        changeMode: (state) => { state.isActivated = !state.isActivated }
+        changeMode: (state) => { state.value = state.value === "light" ? "dark" : "light" }
     }
 });
 
-export const { changeMode } = darkmodeSlide.actions;
-export default darkmodeSlide.reducer;
+export const { changeMode } = modeSlide.actions;
+export default modeSlide.reducer;

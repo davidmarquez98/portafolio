@@ -1,4 +1,3 @@
-
 .nav-container{
     z-index: 100;
     position: fixed;
@@ -6,10 +5,17 @@
     justify-content: center;
     height: 60px;
     width: 600px;
-    background-color: rgb(252, 243, 207, 0.7);
     backdrop-filter: blur(10px);
     border-radius: 50px;
     margin-top: -20px;
+}
+
+.nav-container.light{
+    background-color: rgb(252, 243, 207, 0.7);
+}
+
+.nav-container.dark{
+    color: var(--tertiary-color-dark-mode);
 }
 
 .nav-content{
@@ -39,10 +45,18 @@ ul{
 .circle-name-selected{
     position: absolute;
     border-radius: 50px;
-    background-color: #D5CAC7;
     width: 20%;
     height: 42px;
     transition: all ease .5s;
+}
+
+.circle-name-selected.light{
+    background-color: #D5CAC7;
+}
+
+.circle-name-selected.dark{
+    /* background-color: var( --tertiary-color-dark-mode); */
+    background-color: #677a69;
 }
 
 .nav-item_selected{
@@ -56,8 +70,15 @@ li{
 }
 
 li h3{
-    color: var(--secondary-color);
     font-size: 16px
+}
+
+.nav-lista .light{
+    color: var(--secondary-color);
+}
+
+.nav-lista .dark{
+    color: var(--secondary-color-dark-mode);
 }
 
 @media (max-width: 800px){

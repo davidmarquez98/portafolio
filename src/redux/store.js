@@ -3,7 +3,7 @@ import darkmodeSlide from "./darkmodeSlide.js";
 
 const store = configureStore({
     reducer: {
-        darkMode: darkmodeSlide
+        mode: darkmodeSlide
     }
 })
 

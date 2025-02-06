@@ -6,6 +6,13 @@
 }
 
 .button-dark-mode{
-    color: var(--secondary-color);
     font-size: 40px;
+}
+
+.button-dark-mode.light{
+    color: var(--secondary-color);
+}
+
+.button-dark-mode.dark{
+    color: var(--primary-color-dark-mode);
 }

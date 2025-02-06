@@ -3,8 +3,6 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 
-import { useSelector } from 'react-redux';
-
 import './menuBurguer.css';
 import Mode from './../mode/Mode.jsx';
 import Languages from './../languages/languages.jsx';
@@ -12,7 +10,6 @@ import IconoMenuBurguer from './../../../../../icons/IconoMenuBurguer.jsx'
 
 export default function MenuBurguer() {
 
-   const isDarkmodeActivated = useSelector((state) => state.darkMode.isActivated)
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -47,7 +44,7 @@ export default function MenuBurguer() {
                 },
             }}
             >
-                <IconoMenuBurguer className={ isDarkmodeActivated ? "burguer-icono dark-mode-color-sec" : "burguer-icono" }/>
+                <IconoMenuBurguer className="burguer-icono"/>
             </Button>
             
             <Menu
