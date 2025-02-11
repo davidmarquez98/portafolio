@@ -10,7 +10,7 @@ import Card from "./components/Card.jsx"
 
 function Projects(){
 
-    const isDarkmodeActivated = useSelector((state) => state.darkMode.isActivated)
+    const mode = useSelector((state) => state.mode.value);
 
     let todoProject = {
         iconos: [ <FaReact/> ],
@@ -31,7 +31,7 @@ function Projects(){
                             <div>
                                 <div className="titulo-main-container">
                                     <div className="titulo-main-content">
-                                        <h3 className={ isDarkmodeActivated ? "titulo-main dark-mode-color-sec" : "titulo-main" }>Proyectos</h3>
+                                        <h3 className={`titulo-main ${mode}`}>Proyectos</h3>
                                     </div>
                                 </div>
                                 <div className="lista-proyectos-container">
