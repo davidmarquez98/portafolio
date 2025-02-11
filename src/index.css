@@ -3,7 +3,8 @@
   --secondary-color: #795548;
   
   --primary-color-dark-mode: #3a4b3d;
-  --secondary-color-dark-mode: #aec7b2;
+  /* --secondary-color-dark-mode: #aec7b2; */
+  --secondary-color-dark-mode: #677a69;
   --tertiary-color-dark-mode: #96b89c;
 }
 
@@ -49,9 +50,14 @@ body{
   width: 100%;
 }
 
-.icono-default__color{
+.icono-default__color.light{
   color: var(--secondary-color);
 }
+
+.icono-default__color.dark{
+  color: var(--tertiary-color-dark-mode);
+}
+
 
 .icono-default__mid{
   font-size: 50px !important;

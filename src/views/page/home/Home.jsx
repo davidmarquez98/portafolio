@@ -1,5 +1,7 @@
 import './home.css';
 
+import { useSelector } from 'react-redux';
+
 import { AnimatePresence, motion } from "framer-motion";
 
 import IconoEmail from '../../../icons/IconEmail';
@@ -8,6 +10,8 @@ import IconoGithub from '../../../icons/IconoGithub';
 
 function Home(){
 
+    const mode = useSelector((state) => state.mode.value);
+    
     const openWindowToSendEmail = () => {
 
         // Definir los detalles del correo electrónico
@@ -35,9 +39,9 @@ function Home(){
                     <div className="home-content">
                         <div className="texto-container">
                             <div className="texto-content">
-                                <h1 className="texto__titulo">Hola, Soy David.<span>&#160;</span></h1>
-                                <h3 className='texto__subtitulo'>Desarrollador Full Stack.<span>&#160;</span></h3>
-                                <p className='texto__descripcion'>
+                                <h1 className={`texto__titulo ${mode}`}>Hola, Soy David.<span>&#160;</span></h1>
+                                <h3 className={`texto__subtitulo ${mode}`}>Desarrollador Full Stack.<span>&#160;</span></h3>
+                                <p className={`texto__descripcion ${mode}`}>
                                     Me apasiona la programación y conocer el mundo!<span>&#160;</span>
                                 </p>
                             </div>
@@ -48,19 +52,19 @@ function Home(){
                                     <div className='icono-content'>
                                         <div className='home-logo-container'>
                                             <button onClick={() => openWindowToSendEmail()}>
-                                                <IconoEmail className="home-icono"/>
+                                                <IconoEmail className={`home-icono ${mode}`}/>
                                             </button>
                                         </div>
 
                                         <div className='home-logo-container'>
                                             <a href="https://www.linkedin.com/in/david-ariel-marquez/" target="_blank">
-                                                <IconoLinkedin className="home-icono" />
+                                                <IconoLinkedin className={`home-icono ${mode}`} />
                                             </a>
                                         </div>
                                         
                                         <div className='home-logo-container'>
                                             <a href="https://github.com/davidmarquez98" target="_blank">
-                                                <IconoGithub className="home-icono" />
+                                                <IconoGithub className={`home-icono ${mode}`} />
                                             </a>
                                         </div>
                                     </div>

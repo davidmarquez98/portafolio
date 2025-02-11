@@ -78,7 +78,7 @@ li h3{
 }
 
 .nav-lista .dark{
-    color: var(--secondary-color-dark-mode);
+    color: var(--tertiary-color-dark-mode);
 }
 
 @media (max-width: 800px){

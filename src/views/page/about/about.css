@@ -37,25 +37,41 @@
     width: 40%;
 }
 
-.sobre-mi-titulo-content h3{
+.sobre-mi-titulo-content  h3{
     font-size: 35px;
+}
+
+.sobre-mi-titulo-content.light  h3{
     color: var(--secondary-color);
-    /* color: var(--principal-color-green); */
+}
+
+.sobre-mi-titulo-content.dark  h3{
+    color: var(--tertiary-color-dark-mode);
 }
 
 .informacion__card{
     display: flex;
     flex-direction: column;
-    /* background-color: var(--principal-color); */
-    background-color: #E5DDBE;
     font-size: 20px;
     padding: 25px;
     border-radius: 5px;
     gap: 25px;
 }
 
+.informacion__card.light{
+    background-color: #E5DDBE;
+}
+
+.informacion__card.dark{
+    background-color: var(--tertiary-color-dark-mode);
+}
+
 .informacion__texto{
     line-height: 1.3;
+}
+
+.informacion__texto.dark{
+    color: var(--primary-color-dark-mode);
 }
 
 /* PERFIL */
@@ -88,7 +104,15 @@
 
 .habilidades-experiencia-container{
     margin-top: 600px;
+}
+
+
+.habilidades-experiencia-container.light{
     background-color: var(--secondary-color);
+}
+
+.habilidades-experiencia-container.dark{
+    background-color: var(--tertiary-color-dark-mode);
 }
 
 .habilidades-experiencia-content{
@@ -115,8 +139,12 @@
     margin: 50px 0;
 }
 
-.experiencia-titulo{
+.experiencia-titulo.light{
     color: var(--primary-color);
+}
+
+.titulo.dark{
+    color: var(--primary-color-dark-mode);
 }
 
 .experiencia-informacion-container{
@@ -234,13 +262,19 @@
 }
 
 .habilidades-logo-content{
-    background-color: var(--primary-color);
     padding: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 80%;
-    /* gap: 60px; */
+}
+
+.habilidades-logo-content.light, .experiencia-informacion-content.light{
+    background-color: var(--primary-color);
+}
+
+.habilidades-logo-content.dark, .experiencia-informacion-content.dark{
+    background-color: var(--secondary-color-dark-mode);
 }
 
 .logo-container{

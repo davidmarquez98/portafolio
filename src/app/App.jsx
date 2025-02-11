@@ -8,8 +8,6 @@ import Footer from './../views/components/footer/Footer.jsx';
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
-import { useLocalStorage } from "@uidotdev/usehooks";
-
 import Router from "./../router/index.jsx";
 
 function App() {
@@ -20,14 +18,18 @@ function App() {
     const elements = document.querySelectorAll(".light, .dark");
 
     elements.forEach((el) => {
+
+      if(el.classList.contains("light")){
         el.classList.replace("light", mode);
+      }else{
         el.classList.replace("dark", mode);
-        console.log("a")
+      }
+
     });
   }, [mode]);
 
   return (
-      <div className="app light">
+      <div className={`app ${mode}`}>
           <AnimatePresence>
             <motion.div className="sobre-mi-container"         
                         initial={{ opacity: 0 }}

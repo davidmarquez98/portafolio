@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+import { useSelector } from 'react-redux';
+
 import perfil from "./../../../perfil.jpeg";
 import byma_logo from "./../../../assets/images/byma-logo.png";
 
@@ -18,6 +20,9 @@ import tailwind_logo from "./../../../assets/images/tailwind-logo.png";
 import bootstrap_logo from "./../../../assets/images/bootstrap-logo.png";
 
 function About(){
+
+    const mode = useSelector((state) => state.mode.value);
+
     const controls = useAnimation();
     const [ref, inView] = useInView({ threshold: .06 });
 
@@ -47,18 +52,18 @@ function About(){
                                     <div className="informacion-container">
                                         <div className="informacion-content">
                                             <div className="sobre-mi-titulo-container">
-                                                <div className="sobre-mi-titulo-content">
+                                                <div className={`sobre-mi-titulo-content ${mode}`}>
                                                     <h3 className="sobre-mi-titulo">Un poco sobre mí...</h3>
                                                 </div>
                                             </div>
-                                            <div className="informacion__card">
-                                                <p className="informacion__texto">Tengo 26 años y vivo en <b>Buenos Aires, Argentina.</b> Tengo más de 2 años desarrollando como <b>programador Full Stack</b>, lo que me ha permitido explorar mi pasión por la tecnología y ampliar mis habilidades en el ámbito informático.
+                                            <div className={`informacion__card ${mode}`}>
+                                                <p className={`informacion__texto ${mode}`}>Tengo 26 años y vivo en <b>Buenos Aires, Argentina.</b> Tengo más de 2 años desarrollando como <b>programador Full Stack</b>, lo que me ha permitido explorar mi pasión por la tecnología y ampliar mis habilidades en el ámbito informático.
                                                 <br/>
                                                 Mi mayor anhelo es explorar Europa y diversos países extranjeros para sumergirme en su cultura, historia y tradiciones. 
                                                 En mis momentos libres, disfruto de una amplia gama de actividades, desde ver películas, escuchar música y leer novelas y mangas hasta programar y jugar videojuegos.
                                                 También comparto momentos especiales con amigos jugando a la pelota y saliendo a tomar algo con mi novia. 
                                                 Encuentro paz y tranquilidad en los días lluviosos, y me encanta experimentar en la cocina de vez en cuando.</p>
-                                                <span><b>Mi filosofía de vida se centra en aprender, crecer y mejorar constantemente, valorando las pequeñas alegrías que la vida tiene para ofrecer y manteniéndome en 
+                                                <span className={`informacion__texto ${mode}`}><b>Mi filosofía de vida se centra en aprender, crecer y mejorar constantemente, valorando las pequeñas alegrías que la vida tiene para ofrecer y manteniéndome en 
                                                 constante movimiento.</b></span>
                                             </div>
                                         </div>
@@ -82,18 +87,18 @@ function About(){
                                 visible: { opacity: 1, y: 0, transition: { duration: .5 } },
                                 hidden: { opacity: 0, y: 0},
                             }}>
-                    <div className="habilidades-experiencia-container">  
+                    <div className={`habilidades-experiencia-container ${mode}`}>  
                         <div className="habilidades-experiencia-content">
                                             {/* HABILIDADES */}
                             <div className="habilidades-container">
                                 <div className="habilidades-content">
                                     <div className="habilidades-titulo-container">
                                         <div className="habilidades-titulo-content">
-                                            <h4>HABILIDADES</h4>
+                                            <h4 className={`titulo ${mode}`}>HABILIDADES</h4>
                                         </div>
                                     </div>
                                     <div className="habilidades-logo-container">
-                                        <div className="habilidades-logo-content">
+                                        <div className={`habilidades-logo-content ${mode}`}>
                                             <div className="logo-container">
                                                 <img className="logo-default" src={react_logo}></img>
                                             </div>
@@ -131,14 +136,14 @@ function About(){
                                 <div className="experiencia-content">
                                     <div className="experiencia-titulo-container">
                                         <div className="experiencia-titulo-content">
-                                            <h4 className="experiencia-titulo">EXPERIENCIA</h4>
+                                            <h4 className={`titulo ${mode}`}>EXPERIENCIA</h4>
                                         </div>
                                     </div>
                                     <div className="experiencia-informacion-container">
-                                        <div className="experiencia-informacion-content">
+                                        <div className={`experiencia-informacion-content ${mode}`}>
 
                                             <div className="trabajo-header">
-                                                        <h3 className="trabajo-nombre">BYMA, Caja de Valores</h3>
+                                                        <h3 className={`trabajo-nombre ${mode}`}>BYMA, Caja de Valores</h3>
 
                                                         
                                                         <div className="trabajo-secondary-titulo-container">
@@ -150,9 +155,6 @@ function About(){
                                                             <h3 className="trabajo-tiempo trabajo-secondary-titulo">2022 Octubre - Actualidad</h3>
                                                         </div>
                                             </div>
-                                            {/* <div className="trabajo_tiempo__container">
-                                                <h3 className="trabajo-tiempo trabajo-secondary-titulo">2022 Octubre - Actualidad</h3>
-                                            </div> */}
                                             <div className="trabajo-info">
                                                 <div className="trabajo-container">
                                                     <div className="trabajo-content">
