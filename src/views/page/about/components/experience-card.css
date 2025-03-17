@@ -1,0 +1,130 @@
+/* EXPERIENCIA */
+.experiencia-container{
+    width: 100%;
+    height: 100%;
+}
+
+.experiencia-content{
+    height: 100%;
+}
+
+.titulo.light{
+    color: var(--primary-color);
+}
+
+.titulo.dark{
+    color: var(--quaternary-color-dark-mode);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); /* Sombra negra suave */
+}
+
+.experiencia-informacion-container{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.experiencia-informacion-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 40%;
+}
+
+.trabajo-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 15px 25px;
+}
+
+.trabajo-header{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-size: 18px;
+    padding: 30px 20px 0;
+}
+
+.trabajo-info{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.trabajo-secondary-titulo-container{
+    display: flex;
+    gap: 20px;
+}
+
+.trabajo_separation__header_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trabajo_separation__header{
+    margin-top: -4px;
+    font-size: 30px;
+    color: #B08879;
+}
+
+.trabajo-nombre.light{
+    color: var(--secondary-color);
+}
+
+.trabajo-nombre.dark{
+    color: var(--quaternary-color-dark-mode);
+}
+
+.trabajo-secondary-titulo{
+    font-size: 20px;
+}
+
+.trabajo-secondary-titulo.light, .trabajo_separation__header.light{
+    color: #B08879;
+}
+
+.trabajo-secondary-titulo.dark, .trabajo_separation__header.dark{
+    color: var(--quaternary-color-dark-mode);
+}
+
+.trabajo_tiempo__container{
+    padding: 20px 20px 0;
+}
+
+.trabajo-parrafo{
+    margin-top: 2px;
+    line-height: 1.3;
+    font-size: 16px;
+}
+
+.trabajo-parrafo.light{
+    color: var(--secondary-color);
+}
+
+.trabajo-parrafo.dark{
+    color: var(--quaternary-color-dark-mode);
+}
+
+.empresa-imagen-container{
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+
+.byma-logo{
+    margin-right: 15px;
+    width: 200px;
+}
+
+.flex-tech-logo{
+    margin-right: 15px;
+    width: 150px;
+}
+
+.bh-logo{
+    margin-right: 15px;
+    width: 130px;
+}

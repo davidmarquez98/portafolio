@@ -4,6 +4,14 @@ footer{
     padding: 20px;
 }
 
+footer.light{
+    background-color: #E3DCC1;
+}
+
+footer.dark{
+    background-color: var(--secondary-color-dark-mode);
+}
+
 .footer-titulo{
     font-size: 15px;
 }
@@ -13,7 +21,7 @@ footer{
 }
 
 .footer-titulo.dark{
-    color: var(--tertiary-color-dark-mode);
+    color: var(--quaternary-color-dark-mode);
 }
 @media (max-width: 800px){
 

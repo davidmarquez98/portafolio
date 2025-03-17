@@ -1,7 +1,6 @@
 import "./card.css";
 
 import { FaCodeBranch } from "react-icons/fa";
-
 import { useSelector } from 'react-redux';
 
 function Card(props){
