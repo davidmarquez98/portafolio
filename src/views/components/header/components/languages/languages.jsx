@@ -23,7 +23,7 @@ const Languages = ({ className }) => {
         <div className="languages-container">
             <div className="languages-content">
                 <div className="item-container">
-                    {
+                    {/* {
                         nowLanguage == español ? 
                         (
                             <button onClick={() => cambiarLenguaje(ingles)}>
@@ -34,7 +34,7 @@ const Languages = ({ className }) => {
                                 <img src={spanishFlag} className={`spanish-flag ${className}`}></img>
                             </button>
                         )
-                    }
+                    } */}
                 </div>
             </div>
         </div>

@@ -25,26 +25,43 @@ body{
   overflow: auto !important;
 }
 
-
-
 /* Cambiar el color del scrollbar */
-::-webkit-scrollbar {
+body.light::-webkit-scrollbar {
   width: 15px; /* Cambiar el ancho del scrollbar */
 }
 
-::-webkit-scrollbar-track {
+body.light::-webkit-scrollbar-track {
   background: #DFD5AA ; /* Cambiar el color de fondo del track */
 }
 
-::-webkit-scrollbar-thumb {
+body.light::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background: var(--secondary-color); /* Cambiar el color del thumb (barra deslizante) */
 }
 
-::-webkit-scrollbar-thumb:hover {
+body.light::-webkit-scrollbar-thumb:hover {
   background: #555; /* Cambiar el color del thumb cuando se pasa el mouse sobre él */
 }
 
+/* Scroll Dark Mode */
+body.dark::-webkit-scrollbar {
+  width: 15px; /* Cambiar el ancho del scrollbar */
+}
+
+body.dark::-webkit-scrollbar-track {
+  background: var(--secondary-color-dark-mode); /* Cambiar el color de fondo del track */
+}
+
+body.dark::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: var(--quaternary-color-dark-mode); /* Cambiar el color del thumb (barra deslizante) */
+}
+
+body.dark::-webkit-scrollbar-thumb:hover {
+  background: var(--tertiary-color-dark-mode); /* Cambiar el color del thumb cuando se pasa el mouse sobre él */
+}
+
+/**/
 #root{
   height: 100%;
   width: 100%;
@@ -57,7 +74,6 @@ body{
 .icono-default__color.dark{
   color: var(--tertiary-color-dark-mode);
 }
-
 
 .icono-default__mid{
   font-size: 50px !important;
@@ -81,4 +97,4 @@ body{
 
 .dark-mode-background-color-third{
   background-color: var( --tertiary-color-dark-mode);
-}
+}  

@@ -11,6 +11,16 @@
     font-size: 45px !important;
 }
 
+.menu-container.light .MuiPaper-root {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2) !important;
+    background-color: var(--primary-color) !important;
+}
+
+.menu-container.dark .MuiPaper-root {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2) !important;
+    background-color: var(--primary-color-dark-mode) !important;    
+}
+
 .menu-content{
     display: flex;
     gap: 20px;

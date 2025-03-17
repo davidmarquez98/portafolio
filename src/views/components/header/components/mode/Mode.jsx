@@ -3,7 +3,6 @@ import { IoIosRadioButtonOn } from "react-icons/io";
 import { useSelector } from 'react-redux';
 import { useDispatch } from "react-redux";
 
-
 import { changeMode } from "../../../../../redux/darkmodeSlide";
 import "./mode.css";
 
@@ -14,7 +13,6 @@ function Mode(){
     const dispatch = useDispatch();
     const handleClick = () => dispatch(changeMode());
 
-
     return (
         <div className='mode-container'>
             <div className='mode-content'>
@@ -22,7 +20,7 @@ function Mode(){
                     <IoIosRadioButtonOn className={`button-dark-mode ${mode}`}/>
                 </button>
             </div>
-        </div>
+        </div> 
     );
 }
 

@@ -106,13 +106,12 @@
     margin-top: 600px;
 }
 
-
 .habilidades-experiencia-container.light{
     background-color: var(--secondary-color);
 }
 
 .habilidades-experiencia-container.dark{
-    background-color: var(--quaternary-color-dark-mode);
+    background-color: var(--secondary-color-dark-mode);
 }
 
 .habilidades-experiencia-content{
@@ -139,12 +138,12 @@
     margin: 50px 0;
 }
 
-.experiencia-titulo.light{
+.titulo.light{
     color: var(--primary-color);
 }
 
 .titulo.dark{
-    color: var(--secondary-color-dark-mode);
+    color: var(--quaternary-color-dark-mode);
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); /* Sombra negra suave */
 }
 
@@ -289,7 +288,7 @@
 }
 
 .habilidades-logo-content.dark, .experiencia-informacion-content.dark{
-    background-color: var(--secondary-color-dark-mode);
+    background-color: var(--primary-color-dark-mode);
 }
 
 .logo-container{

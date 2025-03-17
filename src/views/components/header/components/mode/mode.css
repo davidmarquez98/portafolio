@@ -14,5 +14,5 @@
 }
 
 .button-dark-mode.dark{
-    color: var(--primary-color-dark-mode);
+    color: var(--tertiary-color-dark-mode);
 }

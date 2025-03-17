@@ -13,6 +13,7 @@ function Projects(){
     const mode = useSelector((state) => state.mode.value);
 
     let todoProject = {
+        id: 1,
         iconos: [ <FaReact/> ],
         isDisabled: true
     };
@@ -37,9 +38,14 @@ function Projects(){
                                 <div className="lista-proyectos-container">
                                     <div className="lista-proyectos-content">
                                         {
-                                            projects.map(project => <Card iconos={ project.iconos } isDisabled={project.isDisabled}/>)
+                                            projects.map(project => 
+                                                <Card 
+                                                    key={project.id}
+                                                    iconos={ project.iconos } 
+                                                    isDisabled={project.isDisabled}
+                                                />
+                                            )
                                         }
-                                        
                                     </div>
                                 </div>
                             </div>

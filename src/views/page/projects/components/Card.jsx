@@ -9,7 +9,7 @@ function Card(props){
     const mode = useSelector((state) => state.mode.value);
 
     return (
-        <div className={`card-project-container${mode}`}>
+        <div className={`card-project-container ${mode}`}>
             <div className="card-project-content">
                 <div className="card-header">
                     <h5 className={`card-titulo ${mode}`}>TODO</h5>
@@ -29,24 +29,25 @@ function Card(props){
                             Con "Todo", los usuarios pueden mejorar su productividad y gestionar su tiempo de manera más efectiva.
                         </p>
                         <div className="lista-tools">
-                            {props.iconos.map(Icono => {
-                                return ( 
-                                    <div className={`card-icono-default ${mode}`}>
-                                        { Icono }    
-                                    </div>
-                                )
-                            })}
+                            {
+                                props.iconos.map((Icono, index) => {
+                                    return ( 
+                                        <div className={`card-icono-default ${mode}`} key={index}>
+                                            { Icono }    
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                     <div className="card-project-logo"> 
                         LOGO 
                     </div>
                 </div>
-
                 {
                     props.isDisabled ?  <div className="card-icono-development">
-                                            <FaCodeBranch className="icono-development"/>
-                                            <span className="icono-development-text"><b>En desarrollo..</b></span>
+                                            <FaCodeBranch className={`icono-development ${mode}`}/>
+                                            <span className={`icono-development-text ${mode}`}><b>En desarrollo..</b></span>
                                         </div>  : <></>
                 }
             </div>
