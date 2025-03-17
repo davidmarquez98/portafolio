@@ -1,22 +1,25 @@
 footer{
     margin-top: 350px;
-    /* height: 200px; */
     height: 20vh;
-    background-color: #E3DCC1;
     padding: 20px;
 }
 
 .footer-titulo{
     font-size: 15px;
+}
+
+.footer-titulo.light{
     color: var(--secondary-color);
 }
 
+.footer-titulo.dark{
+    color: var(--tertiary-color-dark-mode);
+}
 @media (max-width: 800px){
 
     footer{
         margin-top: 150px;
         height: 20vh;
-        /* height: 100px; */
     }
 
     .footer-titulo{

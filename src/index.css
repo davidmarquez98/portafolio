@@ -2,8 +2,10 @@
   --primary-color: #FCF3CF;
   --secondary-color: #795548;
   
-  --principal-color-green: #196158;
-  --primary-color-dark-mode: #003B32;
+  --primary-color-dark-mode: #3a4b3d;
+  --secondary-color-dark-mode: #6f8571;
+  --tertiary-color-dark-mode: #96b89c;
+  --quaternary-color-dark-mode: #aec7b2
 }
 
 @font-face {
@@ -23,38 +25,76 @@ body{
   overflow: auto !important;
 }
 
-
-
 /* Cambiar el color del scrollbar */
-::-webkit-scrollbar {
+body.light::-webkit-scrollbar {
   width: 15px; /* Cambiar el ancho del scrollbar */
 }
 
-::-webkit-scrollbar-track {
+body.light::-webkit-scrollbar-track {
   background: #DFD5AA ; /* Cambiar el color de fondo del track */
 }
 
-::-webkit-scrollbar-thumb {
+body.light::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background: var(--secondary-color); /* Cambiar el color del thumb (barra deslizante) */
 }
 
-::-webkit-scrollbar-thumb:hover {
+body.light::-webkit-scrollbar-thumb:hover {
   background: #555; /* Cambiar el color del thumb cuando se pasa el mouse sobre él */
 }
-/* body{
-  height: 2000vh;
-} */
 
+/* Scroll Dark Mode */
+body.dark::-webkit-scrollbar {
+  width: 15px; /* Cambiar el ancho del scrollbar */
+}
+
+body.dark::-webkit-scrollbar-track {
+  background: var(--secondary-color-dark-mode); /* Cambiar el color de fondo del track */
+}
+
+body.dark::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: var(--quaternary-color-dark-mode); /* Cambiar el color del thumb (barra deslizante) */
+}
+
+body.dark::-webkit-scrollbar-thumb:hover {
+  background: var(--tertiary-color-dark-mode); /* Cambiar el color del thumb cuando se pasa el mouse sobre él */
+}
+
+/**/
 #root{
   height: 100%;
   width: 100%;
 }
 
-.icono-default__color{
+.icono-default__color.light{
   color: var(--secondary-color);
+}
+
+.icono-default__color.dark{
+  color: var(--tertiary-color-dark-mode);
 }
 
 .icono-default__mid{
   font-size: 50px !important;
 }
+
+.dark-mode-color-prim{
+  color: var(--primary-color-dark-mode);
+}
+
+.dark-mode-color-sec{
+  color: var(--secondary-color-dark-mode);
+}
+
+.dark-mode-color-third{
+  color: var(--tertiary-color-dark-mode);
+}
+
+.dark-mode-background-color-sec{
+  background-color: var(--secondary-color-dark-mode);
+}
+
+.dark-mode-background-color-third{
+  background-color: var( --tertiary-color-dark-mode);
+}  

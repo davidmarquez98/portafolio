@@ -4,11 +4,16 @@ import { FaReact } from "react-icons/fa";
 
 import { AnimatePresence, motion } from "framer-motion";
 
+import { useSelector } from 'react-redux';
+
 import Card from "./components/Card.jsx"
 
 function Projects(){
 
+    const mode = useSelector((state) => state.mode.value);
+
     let todoProject = {
+        id: 1,
         iconos: [ <FaReact/> ],
         isDisabled: true
     };
@@ -27,15 +32,20 @@ function Projects(){
                             <div>
                                 <div className="titulo-main-container">
                                     <div className="titulo-main-content">
-                                        <h3 className="titulo-main">Proyectos</h3>
+                                        <h3 className={`titulo-main ${mode}`}>Proyectos</h3>
                                     </div>
                                 </div>
                                 <div className="lista-proyectos-container">
                                     <div className="lista-proyectos-content">
                                         {
-                                            projects.map(project => <Card iconos={ project.iconos } isDisabled={project.isDisabled}/>)
+                                            projects.map(project => 
+                                                <Card 
+                                                    key={project.id}
+                                                    iconos={ project.iconos } 
+                                                    isDisabled={project.isDisabled}
+                                                />
+                                            )
                                         }
-                                        
                                     </div>
                                 </div>
                             </div>

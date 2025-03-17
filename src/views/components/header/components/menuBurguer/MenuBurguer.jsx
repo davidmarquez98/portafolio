@@ -3,6 +3,8 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 
+import { useSelector } from 'react-redux';
+
 import './menuBurguer.css';
 import Mode from './../mode/Mode.jsx';
 import Languages from './../languages/languages.jsx';
@@ -13,13 +15,15 @@ export default function MenuBurguer() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
+  const mode = useSelector((state) => state.mode.value);
+
   const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = () => setAnchorEl(null);
 
   return (
     <div className='burguer-container header__item'>
         <div className='burguer-content'>
-            {/* <Button
+            <Button
             id="basic-button"
             aria-controls={open ? 'basic-menu' : undefined}
             aria-haspopup="true"
@@ -54,19 +58,13 @@ export default function MenuBurguer() {
                 MenuListProps={{
                 'aria-labelledby': 'basic-button'
                 }}
- 
-                PaperProps={{ 
-                    style: {
-                        boxShadow: '0px 5px 5px rgba(0, 0, 0, .2)',
-                        backgroundColor: '#FCF3CF'
-                    }
-            }}
+                className={`menu-container ${mode}`}
             >
                 <div className='menu-content'>
                     <Languages/>
                     <Mode />
                 </div>
-            </Menu> */}
+            </Menu>
         </div>
     </div>
   );

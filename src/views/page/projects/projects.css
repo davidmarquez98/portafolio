@@ -9,7 +9,14 @@
 
 .titulo-main{
     font-size: 40px;
+}
+
+.titulo-main.light{
     color: var(--secondary-color);
+}
+
+.titulo-main.dark{
+    color: var(--tertiary-color-dark-mode);
 }
 
 .lista-proyectos-content{

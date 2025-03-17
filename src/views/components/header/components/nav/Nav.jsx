@@ -7,6 +7,7 @@ import LocationWatcher from './../../../../../router/LocationWatcher.jsx'
 
 function Nav(){
 
+    
     const stringPortfolio = "/";
     const stringAboutMe = "/about";
     const stringProjects = "/projects";
@@ -28,20 +29,20 @@ function Nav(){
 
 
     return (
-        <div className='nav-container'>
+        <div className='nav-container light'>
             <LocationWatcher setLocation={setPath}/>
             <div className='nav-content'>
-                <div className="circle-name-selected" style={styleSelected()}/>
+                <div className="circle-name-selected light" style={styleSelected()}/>
                 {/* <div className="circle-name-selected"/> */}
                 <ul className='nav-lista'>
                     <li>
-                        <Link to="/"><h3>Home</h3></Link>
+                        <Link to="/"><h3 className="light">Home</h3></Link>
                     </li>
                     <li>
-                        <Link to="/about"><h3>Sobre Mi</h3></Link>
+                        <Link to="/about"><h3 className="light">Sobre Mi</h3></Link>
                     </li>
                     <li>
-                        <Link to="/projects"><h3>Proyectos</h3></Link>
+                        <Link to="/projects"><h3 className="light">Proyectos</h3></Link>
                     </li>
                 </ul>
             </div>
