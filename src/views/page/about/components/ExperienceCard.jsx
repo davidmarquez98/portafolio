@@ -10,16 +10,24 @@ function ExperienceCard({ title, position, time, description, logo, logo_class }
         <div className={`experiencia-informacion-content ${mode}`}>
 
             <div className="trabajo-header">
-                        <h3 className={`trabajo-nombre ${mode}`}>{title}</h3>
-
-                        <div className="trabajo-secondary-titulo-container">
-                            <span className={`trabajo_separation__header light ${mode}`}>•</span>
-                            <h3 className={`trabajo-puesto trabajo-secondary-titulo ${mode}`}>{position}</h3>
-                        </div>
-                        <div className="trabajo-secondary-titulo-container">
-                            <span className={`trabajo_separation__header light ${mode}`}>•</span>
-                            <h3 className={`trabajo-tiempo trabajo-secondary-titulo ${mode}`}>{time}</h3>
-                        </div>
+                <div className='trabajo-nombre-container'>
+                    <h3 className={`trabajo-nombre ${mode}`}>{title}</h3>
+                    <h3 className={`trabajo-puesto trabajo-secondary-titulo ${mode}`}>{position}</h3>
+                    <h3 className={`trabajo-tiempo trabajo-secondary-titulo ${mode}`}>{time}</h3>
+                    {/* <div className="trabajo-secondary-titulo-container"> */}
+                        {/* <span className={`trabajo_separation__header light ${mode}`}>•</span> */}
+                        {/* <h3 className={`trabajo-puesto trabajo-secondary-titulo ${mode}`}>{position}</h3>
+                    </div>
+                    <div className="trabajo-secondary-titulo-container"> */}
+                        {/* <span className={`trabajo_separation__header light ${mode}`}>•</span> */}
+                        {/* <h3 className={`trabajo-tiempo trabajo-secondary-titulo ${mode}`}>{time}</h3>
+                    </div> */}
+                </div>
+                <div className="empresa-imagen-container">
+                    <div className="empresa-imagen-content">
+                        <img className={logo_class} src={logo}></img>
+                    </div>
+                </div>
             </div>
             <div className="trabajo-info">
                 <div className="trabajo-container">
@@ -29,12 +37,6 @@ function ExperienceCard({ title, position, time, description, logo, logo_class }
                         We practice reactive programming to ensure that APIs are as efficient as possible for the system. In the realm of databases, we use Oracle, ensuring comprehensive data management. 
                         For frontend development, we employ <b>VueJS</b> to create sophisticated and highly functional user interfaces. */}
                         </p>
-                    </div>
-                </div>
-
-                <div className="empresa-imagen-container">
-                    <div className="empresa-imagen-content">
-                        <img className={logo_class} src={logo}></img>
                     </div>
                 </div>
             </div>
