@@ -30,6 +30,7 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
+    gap: 20px;
     width: 48%;
     height: 400px;
 }
@@ -129,15 +130,15 @@
 }
 
 .empresa-imagen-content{
-    width: 100%;
+    margin: auto;
 }
 
 .byma-logo{
-    width: 200px;
+    width: 100px;
 }
 
 .flex-tech-logo{
-    width: 150px;
+    width: 100px;
 }
 
 .bh-logo{
