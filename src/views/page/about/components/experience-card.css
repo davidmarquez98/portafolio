@@ -19,8 +19,9 @@
 
 .experiencia-informacion-container{
     display: flex;
-    gap: 50px;
-    width: 100%;
+    gap: 20px;
+    /* gap: 50px; */
+    /* width: 100%; */
     flex-wrap: wrap;
 }
 
@@ -29,7 +30,9 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    width: 40%;
+    gap: 20px;
+    width: 48%;
+    height: 400px;
 }
 
 .trabajo-content{
@@ -42,20 +45,20 @@
 .trabajo-header{
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    /* gap: 25px; */
     font-size: 18px;
-    padding: 30px 20px 0;
+    /* padding: 30px 20px 0; */
 }
 
 .trabajo-info{
     display: flex;
     flex-direction: row;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .trabajo-secondary-titulo-container{
-    display: flex;
-    gap: 20px;
+    /* display: flex;
+    gap: 20px; */
 }
 
 .trabajo_separation__header_container{
@@ -68,6 +71,17 @@
     margin-top: -4px;
     font-size: 30px;
     color: #B08879;
+}
+
+.trabajo-nombre-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    padding-left: 20px;
+}
+
+.trabajo-nombre{
+    margin-right: 20px;
 }
 
 .trabajo-nombre.light{
@@ -110,21 +124,23 @@
 
 .empresa-imagen-container{
     display: flex;
-    align-items: center;
-    width: 35%;
+    width: 25%;
+    /* align-items: center; */
+    /* width: 35%; */
+}
+
+.empresa-imagen-content{
+    margin: auto;
 }
 
 .byma-logo{
-    margin-right: 15px;
-    width: 200px;
+    width: 100px;
 }
 
 .flex-tech-logo{
-    margin-right: 15px;
-    width: 150px;
+    width: 100px;
 }
 
 .bh-logo{
-    margin-right: 15px;
     width: 130px;
 }
