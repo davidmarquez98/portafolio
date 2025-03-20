@@ -12,11 +12,13 @@
 .card-icono-development{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     flex-direction: column;
     position: absolute;
-    left: 600px;
-    top: 50px;
+    left: 50%; /* Centra horizontalmente */
+    top: 50%; /* Centra verticalmente */
+    transform: translate(-50%, -50%);
     opacity: 0;
     transition: all .3s ease;
     color: #4E4E4E;
