@@ -39,8 +39,9 @@ function Card(props){
                             }
                         </div>
                     </div>
-                    <div className="card-project-logo"> 
-                        LOGO 
+                    <div className={`card-project-logo ${mode}`}> 
+                        <b>?</b>
+                        <b>LOGO</b> 
                     </div>
                 </div>
                 {

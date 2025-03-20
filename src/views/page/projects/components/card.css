@@ -119,8 +119,10 @@
 .card-project-logo{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     width: 35%;
+    font-size: 28px;
 }
 
 .lista-tools{
@@ -132,11 +134,11 @@
     font-size: 40px;
 }
 
-.card-icono-default.light{
+.card-icono-default.light, .card-project-logo.light{
     color: var(--secondary-color);
 }
 
-.card-icono-default.dark{
+.card-icono-default.dark, .card-project-logo.dark{
     color: var(--tertiary-color-dark-mode);
 }
 

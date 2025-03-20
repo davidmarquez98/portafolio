@@ -8,20 +8,28 @@ import { useSelector } from 'react-redux';
 
 import ExperienceCard from "./components/ExperienceCard.jsx";
 
-import perfil from "./../../../perfil.jpeg";
-import react_logo from "./../../../assets/images/react-logo.png";
-import vue_logo from "./../../../assets/images/vue-logo.png";
-import quarkus_logo from "./../../../assets/images/quarkus-logo.png";
-import spring_logo from "./../../../assets/images/spring-logo.png";
-import oracle_logo from "./../../../assets/images/oracle-logo.png";
-import docker_logo from "./../../../assets/images/docker-logo.png";
-import kubernetes_logo from "./../../../assets/images/kubernetes-logo.png";
-import tailwind_logo from "./../../../assets/images/tailwind-logo.png";
-import bootstrap_logo from "./../../../assets/images/bootstrap-logo.png";
+// TECHNOLOGIES
+import perfil from "./../../../assets/images/about-me/perfil.jpeg";
+import react_logo from "./../../../assets/images/about-me/tech-logos/react-logo.png";
+import vue_logo from "./../../../assets/images/about-me/tech-logos/vue-logo.png";
+import quarkus_logo from "./../../../assets/images/about-me/tech-logos/quarkus-logo.png";
+import spring_logo from "./../../../assets/images/about-me/tech-logos/spring-logo.png";
+import oracle_logo from "./../../../assets/images/about-me/tech-logos/oracle-logo.png";
+import docker_logo from "./../../../assets/images/about-me/tech-logos/docker-logo.png";
+import kubernetes_logo from "./../../../assets/images/about-me/tech-logos/kubernetes-logo.png";
+import tailwind_logo from "./../../../assets/images/about-me/tech-logos/tailwind-logo.png";
+import bootstrap_logo from "./../../../assets/images/about-me/tech-logos/bootstrap-logo.png";
+import mysql_logo from "./../../../assets/images/about-me/tech-logos/mysql-logo.png";
+import openshift_logo from "./../../../assets/images/about-me/tech-logos/openshift-logo.png";
+import junit_logo from "./../../../assets/images/about-me/tech-logos/junit-logo.png";
+import mockito_logo from "./../../../assets/images/about-me/tech-logos/mockito-logo.png";
+import jenkins_logo from "./../../../assets/images/about-me/tech-logos/jenkins-logo.png";
 
-import byma_logo from "./../../../assets/images/byma-logo.png";
-import bh_logo from "./../../../assets/images/bh-logo.png";
-import flex_tech_logo from "./../../../assets/images/flex-tech-logo.png";
+// EXPERIENCES
+import byma_logo from "./../../../assets/images/about-me/byma-logo.png";
+import bh_logo from "./../../../assets/images/about-me/bh-logo.png";
+import flex_tech_logo from "./../../../assets/images/about-me/flex-tech-logo.png";
+
 function About(){
 
     const mode = useSelector((state) => state.mode.value);
@@ -35,7 +43,7 @@ function About(){
              ,<b>Hibernate</b> ," y " ,<b>Panache</b>, " para una implementación backend eficiente. Practicamos la " ,<b>programación reactiva</b>,
             " para garantizar que las API sean lo más eficientes posible para el sistema. En el ámbito de las bases de datos utilizamos "
             ,<b>Oracle</b>, " asegurando una gestión integral de los datos. Para el desarrollo frontend, empleamos " ,<b>VueJS</b>, " y " 
-            ,<b>ReactJS</b>, "para crear interfaces de usuario sofisticadas y altamente funcionales."
+            ,<b>ReactJS</b>, " para crear interfaces de usuario sofisticadas y altamente funcionales."
         ],
         logo: byma_logo,
         logo_class: "byma-logo"
@@ -166,7 +174,7 @@ function About(){
                                 <div className="habilidades-content">
                                     <div className="habilidades-titulo-container">
                                         <div className="habilidades-titulo-content">
-                                            <h4 className={`titulo ${mode}`}>HABILIDADES</h4>
+                                            <h4 className={`titulo ${mode}`}>TECNOLOGIAS</h4>
                                         </div>
                                     </div>
                                     <div className="habilidades-logo-container">
@@ -193,10 +201,25 @@ function About(){
                                                 <img className="logo-default" src={kubernetes_logo}></img>
                                             </div>
                                             <div className="logo-container">
-                                                <img className="logo-bigger" src={docker_logo}></img>
+                                                <img className="logo-big" src={docker_logo}></img>
                                             </div>
                                             <div className="logo-container">
-                                                <img className="logo-bigger" src={oracle_logo}></img>
+                                                <img className="logo-big" src={oracle_logo}></img>
+                                            </div>
+                                            <div className="logo-container">
+                                                <img className="logo-mid" src={mysql_logo}></img>
+                                            </div>
+                                            <div className="logo-container">
+                                                <img className="logo-mid" src={junit_logo}></img>
+                                            </div>
+                                            <div className="logo-container">
+                                                <img className="logo-big" src={mockito_logo}></img>
+                                            </div>
+                                            <div className="logo-container">
+                                                <img className="logo-big" src={openshift_logo}></img>
+                                            </div>
+                                            <div className="logo-container">
+                                                <img className="logo-big" src={jenkins_logo}></img>
                                             </div>
                                         </div>
                                     </div>
