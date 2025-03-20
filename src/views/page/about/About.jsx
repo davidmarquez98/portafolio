@@ -31,7 +31,7 @@ function About(){
         position: "Desarrollador de Software",
         time: "2022 Octubre - 2024 Octubre",
         description:[
-            "Me especialize en herramientas como ", <b>Quarkus</b>, ", " ,<b>Spring</b>, ", " ,<b>Apache Kafka</b>, ", " ,<b>JWT</b>, ", "
+            "Me especialice en herramientas como ", <b>Quarkus</b>, ", " ,<b>Spring</b>, ", " ,<b>Apache Kafka</b>, ", " ,<b>JWT</b>, ", "
              ,<b>Hibernate</b> ," y " ,<b>Panache</b>, " para una implementación backend eficiente. Practicamos la " ,<b>programación reactiva</b>,
             " para garantizar que las API sean lo más eficientes posible para el sistema. En el ámbito de las bases de datos utilizamos "
             ,<b>Oracle</b>, " asegurando una gestión integral de los datos. Para el desarrollo frontend, empleamos " ,<b>VueJS</b>, " y " 
