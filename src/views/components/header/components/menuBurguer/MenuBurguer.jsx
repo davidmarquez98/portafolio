@@ -56,9 +56,11 @@ export default function MenuBurguer() {
                 open={open}
                 onClose={handleClose}
                 MenuListProps={{
-                'aria-labelledby': 'basic-button'
+                    'aria-labelledby': 'basic-button'
                 }}
                 className={`menu-container ${mode}`}
+                disablePortal
+                disableScrollLock={true} 
             >
                 <div className='menu-content'>
                     <Languages/>

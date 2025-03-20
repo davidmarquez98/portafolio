@@ -13,6 +13,7 @@ import Router from "./../router/index.jsx";
 function App() {
 
   const mode = useSelector((state) => state.mode.value);
+  const showApp = useSelector((state) => state.showApp.value);
 
   useEffect(() => {
     const elements = document.querySelectorAll(".light, .dark");
@@ -31,20 +32,23 @@ function App() {
   return (
       <div className={`app ${mode}`}>
           <AnimatePresence>
+            { showApp && (
             <motion.div className="sobre-mi-container"         
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 1 }} // Especifica la duración de la animación en segundos
-                        >
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }} // Especifica la duración de la animación en segundos
+            >
 
-              <Header/>
+            <Header/>
 
-              <Router/>
+            <Router/>
 
-              <Footer/>
-              
-            </motion.div>
+            <Footer/>
+            
+          </motion.div>
+          )}
+
           </AnimatePresence>
 
 
