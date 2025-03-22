@@ -146,12 +146,18 @@
     }
 
     .experiencia-informacion-content{
-        width: 80vw;
+        width: 92vw;
         height: 80vw;
     }
 
     .trabajo-header{
         gap: 10px;
+        flex-wrap: nowrap;
+        padding: 20px 20px 0px;
+    }
+
+    .trabajo-nombre-container{
+        padding: 0;
     }
 
     .trabajo_separation__header{
@@ -182,7 +188,7 @@
     }
 
     .trabajo-secondary-titulo{
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
 
     .trabajo-secondary-titulo{
