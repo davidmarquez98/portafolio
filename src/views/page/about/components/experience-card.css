@@ -28,13 +28,13 @@
     justify-content: center;
     margin: auto;
     width: 570px;
+    /* padding-bottom: 40px; */
     height: 400px;
 }
 
 .trabajo-content{
     display: flex;
     flex-direction: column;
-    /* gap: 2px; */
     padding: 0px 25px;
 }
 
@@ -147,13 +147,15 @@
 
     .experiencia-informacion-content{
         width: 92vw;
-        height: 80vw;
+        height: auto;
+        padding-bottom: 10px;
     }
 
     .trabajo-header{
         gap: 10px;
         flex-wrap: nowrap;
-        padding: 20px 20px 0px;
+        padding: 20px 20px 
+        0px;
     }
 
     .trabajo-nombre-container{
@@ -188,11 +190,7 @@
     }
 
     .trabajo-secondary-titulo{
-        /* margin-left: 10px; */
-    }
-
-    .trabajo-secondary-titulo{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .byma-logo{
@@ -210,16 +208,21 @@
     .habilidades-logo-content{
         gap: 20px;
     }
+
     .logo-container{
         margin: 0;
     }
 
     .logo-default{
-        width: 40px;
+        width: 50px;
     }
 
     .logo-big{
         width: 80px;
+    }
+
+    .logo-mid{
+        width: 60px;
     }
 
 }

@@ -158,10 +158,20 @@
         font-size: 12px;
     }
 
+    .card-project-container{
+        padding-right: 0;
+    }
+
     .card-project-container:hover {
         transform: translateY(0px);
     }
     
+    .card-project-logo{
+        font-size: 20px;
+        justify-content: center;
+        margin:  0px 25px;
+    }
+
     .card-project-container:hover .card-project-info{
         opacity: 1;
     }
@@ -180,6 +190,7 @@
     }
 
     .card-icono-development-responsive{
+        color: var(--secondary-color);
         display: flex;
         gap: 5px;
     }
