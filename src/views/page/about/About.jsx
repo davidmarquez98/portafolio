@@ -53,7 +53,7 @@ function About(){
         position: "Desarrollador de Software",
         time: "2024 Octubre - 2025 Enero",
         description:[
-            "Formé parte de un proyecto enfocado en la creación de una biblioteca en Java para gestionar solicitudes de autenticación a un proveedor externo, proporcionando una funcionalidad de inicio de sesión seguro en una aplicación bancaria. El proyecto fue desarrollado para el Banco Hipotecario e incluyó la implementación de pruebas unitarias con JUnit y Mockito para garantizar la confiabilidad y mantenibilidad del código."
+            "Formé parte de un proyecto enfocado en la creación de una biblioteca en " , <b>Java</b> , " para gestionar solicitudes de autenticación a un proveedor externo, proporcionando una funcionalidad de inicio de sesión seguro en una aplicación bancaria. El proyecto fue desarrollado para el Banco Hipotecario e incluyó la implementación de pruebas unitarias con JUnit y Mockito para garantizar la confiabilidad y mantenibilidad del código."
         ],
         logo: flex_tech_logo,
         logo_class: "flex-tech-logo"
@@ -63,7 +63,7 @@ function About(){
         position: "Desarrollador de Software",
         time: "2025 Enero - Actualidad",
         description:[
-            "Trabajo como desarrollador Java en el sector de Middleware, especializándome en frameworks como Spring y Quarkus. Mi rol se centra en el desarrollo y mantenimiento de soluciones de integración y aplicaciones escalables. Actualmente, formo parte de un proyecto clave de migración de múltiples APIs de Spring a Quarkus, optimizando los tiempos de ejecución y modernizando la infraestructura existente para garantizar un rendimiento óptimo en entornos críticos."
+            "Trabajo como desarrollador " , <b>Java</b> , " en el sector de Middleware, especializándome en frameworks como " , <b>Spring</b> , " y " , <b>Quarkus</b> , ". Mi rol se centra en el desarrollo y mantenimiento de soluciones de integración y aplicaciones escalables. Actualmente, formo parte de un proyecto clave de migración de múltiples APIs de Spring a Quarkus, optimizando los tiempos de ejecución y modernizando la infraestructura existente para garantizar un rendimiento óptimo en entornos críticos."
         ],
         logo: bh_logo,
         logo_class: "bh-logo"
