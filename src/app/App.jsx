@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 import Router from "./../router/index.jsx";
+import './../traduction/i18n.js';
 
 function App() {
 

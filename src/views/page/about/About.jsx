@@ -30,21 +30,20 @@ import byma_logo from "./../../../assets/images/about-me/byma-logo.png";
 import bh_logo from "./../../../assets/images/about-me/bh-logo.png";
 import flex_tech_logo from "./../../../assets/images/about-me/flex-tech-logo.png";
 
+import { useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
+
 function About(){
 
     const mode = useSelector((state) => state.mode.value);
+
+    const { t } = useTranslation();
 
     const experiences = [{
         title: "BYMA, Caja de Valores",
         position: "Desarrollador de Software",
         time: "2022 Octubre - 2024 Octubre",
-        description:[
-            "Me especialice en herramientas como ", <b>Quarkus</b>, ", " ,<b>Spring</b>, ", " ,<b>Apache Kafka</b>, ", " ,<b>JWT</b>, ", "
-             ,<b>Hibernate</b> ," y " ,<b>Panache</b>, " para una implementación backend eficiente. Practicamos la " ,<b>programación reactiva</b>,
-            " para garantizar que las API sean lo más eficientes posible para el sistema. En el ámbito de las bases de datos utilizamos "
-            ,<b>Oracle</b>, " asegurando una gestión integral de los datos. Para el desarrollo frontend, empleamos " ,<b>VueJS</b>, " y " 
-            ,<b>ReactJS</b>, " para crear interfaces de usuario sofisticadas y altamente funcionales."
-        ],
+        description: <Trans i18nKey="experience.byma" components={{ b: <b /> }} /> ,
         logo: byma_logo,
         logo_class: "byma-logo"
     },
@@ -52,9 +51,8 @@ function About(){
         title: "Flex Tech Srl",
         position: "Desarrollador de Software",
         time: "2024 Octubre - 2025 Enero",
-        description:[
-            "Formé parte de un proyecto enfocado en la creación de una biblioteca en " , <b>Java</b> , " para gestionar solicitudes de autenticación a un proveedor externo, proporcionando una funcionalidad de inicio de sesión seguro en una aplicación bancaria. El proyecto fue desarrollado para el Banco Hipotecario e incluyó la implementación de pruebas unitarias con JUnit y Mockito para garantizar la confiabilidad y mantenibilidad del código."
-        ],
+        // description: [<span dangerouslySetInnerHTML={{ __html: t("experience.flexTech") }} />],
+        description: <Trans i18nKey="experience.flexTech" components={{ b: <b /> }} /> ,
         logo: flex_tech_logo,
         logo_class: "flex-tech-logo"
     },
@@ -62,9 +60,7 @@ function About(){
         title: "Banco Hipotecario",
         position: "Desarrollador de Software",
         time: "2025 Enero - Actualidad",
-        description:[
-            "Trabajo como desarrollador " , <b>Java</b> , " en el sector de Middleware, especializándome en frameworks como " , <b>Spring</b> , " y " , <b>Quarkus</b> , ". Mi rol se centra en el desarrollo y mantenimiento de soluciones de integración y aplicaciones escalables. Actualmente, formo parte de un proyecto clave de migración de múltiples APIs de Spring a Quarkus, optimizando los tiempos de ejecución y modernizando la infraestructura existente para garantizar un rendimiento óptimo en entornos críticos."
-        ],
+        description: <Trans i18nKey="experience.bh" components={{ b: <b /> }} /> ,
         logo: bh_logo,
         logo_class: "bh-logo"
     }];
