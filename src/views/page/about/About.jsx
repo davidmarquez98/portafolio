@@ -30,14 +30,11 @@ import byma_logo from "./../../../assets/images/about-me/byma-logo.png";
 import bh_logo from "./../../../assets/images/about-me/bh-logo.png";
 import flex_tech_logo from "./../../../assets/images/about-me/flex-tech-logo.png";
 
-import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
 
 function About(){
 
     const mode = useSelector((state) => state.mode.value);
-
-    const { t } = useTranslation();
 
     const experiences = [{
         title: "BYMA, Caja de Valores",

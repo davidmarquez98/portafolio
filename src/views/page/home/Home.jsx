@@ -8,10 +8,13 @@ import IconoEmail from '../../../icons/IconEmail';
 import IconoLinkedin from '../../../icons/IconoLinkedin';
 import IconoGithub from '../../../icons/IconoGithub';
 
+import { Trans } from 'react-i18next';
+
 function Home(){
 
     const mode = useSelector((state) => state.mode.value);
-    
+
+
     const openWindowToSendEmail = () => {
 
         // Definir los detalles del correo electrónico
@@ -39,8 +42,8 @@ function Home(){
                     <div className="home-content">
                         <div className="texto-container">
                             <div className="texto-content">
-                                <h1 className={`texto__titulo ${mode}`}>Hola, Soy David.<span>&#160;</span></h1>
-                                <h3 className={`texto__subtitulo ${mode}`}>Desarrollador Full Stack.<span>&#160;</span></h3>
+                                <h1 className={`texto__titulo ${mode}`}><Trans i18nKey="home.title"/><span>&#160;</span></h1>
+                                <h3 className={`texto__subtitulo ${mode}`}><Trans i18nKey="home.position"/><span>&#160;</span></h3>
                                 <p className={`texto__descripcion ${mode}`}>
                                     Me apasiona la programación y conocer el mundo!<span>&#160;</span>
                                 </p>

@@ -7,11 +7,14 @@ import spanishFlag from "./../../../../../assets/images/spanish.png"
 
 import { useTranslation } from 'react-i18next';
 
+import { changeShowApp } from "./../../../../../redux/appSlide";
+import { useDispatch } from "react-redux";
+
 // HAY QUE AGREGAR UN MENU BURGUER PARA LENGUAJES Y DARK MODE BUTTON
 const Languages = ({ className }) => {
 
-    
     const { i18n } = useTranslation();
+    const dispatch = useDispatch();
 
     const español = 'es'; 
     const ingles = 'en'; 
@@ -20,7 +23,12 @@ const Languages = ({ className }) => {
     const toggleLanguage = () => {
         const newLang = i18n.language === español ? ingles : español;
         i18n.changeLanguage(newLang);
-        setNowLanguage(newLang);
+
+        dispatch(changeShowApp());
+        setTimeout(() => {
+            dispatch(changeShowApp());
+            setNowLanguage(newLang);
+        }, 700);
     };
 
     return(

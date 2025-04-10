@@ -4,6 +4,10 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
+      home: {
+        title: "Hello, I am David.",
+        position: "Developer Full Stack"
+      },
       experience: {
         byma: "I specialized in tools like <b>Quarkus</b>, <b>Spring</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b>, and <b>Panache</b> for efficient backend implementation. We practice <b>reactive programming</b> to ensure APIs are as efficient as possible for the system. In the database field, we use <b>Oracle</b>, ensuring comprehensive data management. For frontend development, we use <b>VueJS</b> and <b>ReactJS</b> to create sophisticated and highly functional user interfaces.",
         
@@ -15,6 +19,10 @@ const resources = {
   },
   es: {
     translation: {
+      home: {
+        title: "Hola, Soy David.",
+        position: "Desarrollador Full Stack"
+      },
       experience: {
         byma: "Me especialicé en herramientas como <b>Quarkus</b>, <b>Spring</b>, <b>Apache Kafka</b>, <b>JWT</b>, <b>Hibernate</b> y <b>Panache</b> para una implementación backend eficiente. Practicamos la <b>programación reactiva</b> para garantizar que las API sean lo más eficientes posible para el sistema. En el ámbito de las bases de datos utilizamos <b>Oracle</b> asegurando una gestión integral de los datos. Para el desarrollo frontend, empleamos <b>VueJS</b> y <b>ReactJS</b> para crear interfaces de usuario sofisticadas y altamente funcionales.",
 

@@ -11,6 +11,7 @@ function Mode(){
 
     const mode = useSelector((state) => state.mode.value);
     const dispatch = useDispatch();
+    
     const handleClick = () => {
         setTimeout(() => {
           dispatch(changeMode());
