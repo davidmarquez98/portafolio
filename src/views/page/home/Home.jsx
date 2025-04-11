@@ -45,7 +45,7 @@ function Home(){
                                 <h1 className={`texto__titulo ${mode}`}><Trans i18nKey="home.title"/><span>&#160;</span></h1>
                                 <h3 className={`texto__subtitulo ${mode}`}><Trans i18nKey="home.position"/><span>&#160;</span></h3>
                                 <p className={`texto__descripcion ${mode}`}>
-                                    Me apasiona la programación y conocer el mundo!<span>&#160;</span>
+                                    <Trans i18nKey="home.description"/><span>&#160;</span>
                                 </p>
                             </div>
                         </div>

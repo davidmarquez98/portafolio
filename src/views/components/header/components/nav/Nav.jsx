@@ -3,11 +3,12 @@ import { useState } from "react";
 
 import './nav.css';
 
-import LocationWatcher from './../../../../../router/LocationWatcher.jsx'
+import LocationWatcher from './../../../../../router/LocationWatcher.jsx';
+
+import { Trans } from 'react-i18next';
 
 function Nav(){
 
-    
     const stringPortfolio = "/";
     const stringAboutMe = "/about";
     const stringProjects = "/projects";
@@ -39,10 +40,10 @@ function Nav(){
                         <Link to="/"><h3 className="light">Home</h3></Link>
                     </li>
                     <li>
-                        <Link to="/about"><h3 className="light">Sobre Mi</h3></Link>
+                        <Link to="/about"><h3 className="light"><Trans i18nKey="nav.about_me"/></h3></Link>
                     </li>
                     <li>
-                        <Link to="/projects"><h3 className="light">Proyectos</h3></Link>
+                        <Link to="/projects"><h3 className="light"><Trans i18nKey="nav.projects"/></h3></Link>
                     </li>
                 </ul>
             </div>

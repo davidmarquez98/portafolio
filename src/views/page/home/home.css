@@ -106,6 +106,7 @@ p span {
     align-items: center;
     flex-direction: column;
     margin: auto;
+    text-align: center;
 }
 
 /* h1 */
@@ -140,7 +141,7 @@ p span {
 
 /* p */
 .texto__descripcion{
-    width: 565px;
+    /* width: 565px; */
     font-size: 20px;
 }
 

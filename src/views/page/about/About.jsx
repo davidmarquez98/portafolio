@@ -92,25 +92,16 @@ function About(){
                                         <div className="informacion-content">
                                             <div className="sobre-mi-titulo-container">
                                                 <div className={`sobre-mi-titulo-content ${mode}`}>
-                                                    <h3 className="sobre-mi-titulo">Un poco sobre mí...</h3>
+                                                    <h3 className="sobre-mi-titulo"><Trans i18nKey="about_me.title"/>   </h3>
                                                 </div>
                                             </div>
                                             <div className={`informacion__card ${mode}`}>
                                                 <p className={`informacion__texto ${mode}`}>
-                                                    Tengo 27 años y vivo en <b>Buenos Aires, Argentina.</b> Soy desarrollador <b>Full Stack</b> con más
-                                                    de dos años de experiencia, lo que me ha permitido profundizar en mi pasión por la tecnología y expandir mis habilidades en el 
-                                                    mundo de la informática.
-                                                    <br/>
-                                                    Uno de mis mayores sueños es explorar Europa y otros países para conocer su cultura, historia y tradiciones de manera más
-                                                    directa. En mi tiempo libre disfruto de actividades como ver películas, escuchar música, leer mangas y jugar videojuegos.
-                                                    También valoro los momentos compartidos con amigos jugando a la pelota o saliendo a disfrutar de un buen trago con mi 
-                                                    novia. Encuentro paz en los días lluviosos.
+                                                    <Trans i18nKey="about_me.description_first" components={{ b: <b /> }} />     
                                                 </p>
                                                 <span className={`informacion__texto ${mode}`}>
                                                     <b>
-                                                        Mi filosofía de vida se basa en el aprendizaje continuo, el crecimiento personal y 
-                                                        la búsqueda constante de la mejora. Creo que la clave está en disfrutar de las pequeñas 
-                                                        alegrías que la vida ofrece mientras me mantengo en movimiento.
+                                                        <Trans i18nKey="about_me.description_second"/>   
                                                     </b>
                                                 </span>
                                             </div>
