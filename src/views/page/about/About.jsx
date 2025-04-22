@@ -38,26 +38,25 @@ function About(){
 
     const experiences = [{
         title: "BYMA, Caja de Valores",
-        position: "Desarrollador de Software",
-        time: "2022 Octubre - 2024 Octubre",
-        description: <Trans i18nKey="experience.byma" components={{ b: <b /> }} /> ,
+        position: <Trans i18nKey="experience.developer_software"/>,
+        time: <Trans i18nKey="experience.byma.time"/>,
+        description: <Trans i18nKey="experience.byma.description" components={{ b: <b /> }} /> ,
         logo: byma_logo,
         logo_class: "byma-logo"
     },
     {
         title: "Flex Tech Srl",
-        position: "Desarrollador de Software",
-        time: "2024 Octubre - 2025 Enero",
-        // description: [<span dangerouslySetInnerHTML={{ __html: t("experience.flexTech") }} />],
-        description: <Trans i18nKey="experience.flexTech" components={{ b: <b /> }} /> ,
+        position: <Trans i18nKey="experience.developer_software"/>,
+        time: <Trans i18nKey="experience.flexTech.time"/>,
+        description: <Trans i18nKey="experience.flexTech.description" components={{ b: <b /> }} /> ,
         logo: flex_tech_logo,
         logo_class: "flex-tech-logo"
     },
     {
         title: "Banco Hipotecario",
-        position: "Desarrollador de Software",
-        time: "2025 Enero - Actualidad",
-        description: <Trans i18nKey="experience.bh" components={{ b: <b /> }} /> ,
+        position: <Trans i18nKey="experience.developer_software"/>,
+        time: <Trans i18nKey="experience.bh.time"/>,
+        description: <Trans i18nKey="experience.bh.description" components={{ b: <b /> }} /> ,
         logo: bh_logo,
         logo_class: "bh-logo"
     }];
@@ -135,7 +134,7 @@ function About(){
                                 <div className="experiencia-content">
                                     <div className="experiencia-titulo-container">
                                         <div className="experiencia-titulo-content">
-                                            <h4 className={`titulo ${mode}`}>EXPERIENCIA</h4>
+                                            <h4 className={`titulo ${mode}`}><Trans i18nKey="experience.title"/></h4>
                                         </div>
                                     </div>
                                     <div className="experiencia-informacion-container">
@@ -158,7 +157,7 @@ function About(){
                                 <div className="habilidades-content">
                                     <div className="habilidades-titulo-container">
                                         <div className="habilidades-titulo-content">
-                                            <h4 className={`titulo ${mode}`}>TECNOLOGIAS</h4>
+                                            <h4 className={`titulo ${mode}`}><Trans i18nKey="technology.title"/></h4>
                                         </div>
                                     </div>
                                     <div className="habilidades-logo-container">

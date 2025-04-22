@@ -3,6 +3,8 @@ import "./card.css";
 import { FaCodeBranch } from "react-icons/fa";
 import { useSelector } from 'react-redux';
 
+import { Trans } from 'react-i18next';
+
 function Card(props){
 
     const mode = useSelector((state) => state.mode.value);
@@ -23,9 +25,7 @@ function Card(props){
                 <div className="card-body">
                     <div className={`card-project-info ${mode}`}>
                         <p>
-                            <b>"Todo"</b> es una aplicación diseñada para ayudar a los usuarios a organizar y gestionar sus tareas diarias de manera eficiente. 
-                            Proporciona una interfaz intuitiva que permite a los usuarios crear, editar, y eliminar tareas, así como establecer prioridades y plazos. 
-                            Con "Todo", los usuarios pueden mejorar su productividad y gestionar su tiempo de manera más efectiva.
+                            <Trans i18nKey="project.todo.description" components={{ b: <b /> }}/>
                         </p>
                         <div className="lista-tools">
                             {

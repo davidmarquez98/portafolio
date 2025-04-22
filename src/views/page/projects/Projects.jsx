@@ -8,6 +8,8 @@ import { useSelector } from 'react-redux';
 
 import Card from "./components/Card.jsx"
 
+import { Trans } from 'react-i18next';
+
 function Projects(){
 
     const mode = useSelector((state) => state.mode.value);
@@ -32,7 +34,7 @@ function Projects(){
                             <div>
                                 <div className="titulo-main-container">
                                     <div className="titulo-main-content">
-                                        <h3 className={`titulo-main ${mode}`}>Proyectos</h3>
+                                        <h3 className={`titulo-main ${mode}`}><Trans i18nKey="project.title"/></h3>
                                     </div>
                                 </div>
                                 <div className="lista-proyectos-container">
