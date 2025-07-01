@@ -34,7 +34,6 @@ function Nav(){
             <LocationWatcher setLocation={setPath}/>
             <div className='nav-content'>
                 <div className="circle-name-selected light" style={styleSelected()}/>
-                {/* <div className="circle-name-selected"/> */}
                 <ul className='nav-lista'>
                     <li>
                         <Link to="/"><h3 className="light">Home</h3></Link>

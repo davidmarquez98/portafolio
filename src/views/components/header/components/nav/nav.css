@@ -47,7 +47,7 @@ ul{
 .circle-name-selected{
     position: absolute;
     border-radius: 50px;
-    width: 20%;
+    width: 120px;
     height: 42px;
     transition: all ease .5s;
 }
@@ -67,7 +67,7 @@ ul{
 }
 
 li{
-    padding: 12px;
+    padding: 0 12px;
     text-align: center;
 }
 
@@ -84,7 +84,6 @@ li h3{
 }
 
 @media (max-width: 800px){
-
     .nav-container{
         display: none;
     }
