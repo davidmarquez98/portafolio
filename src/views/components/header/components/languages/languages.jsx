@@ -1,4 +1,4 @@
-import "./languages.css";
+
 
 import { useState } from 'react';
 
@@ -32,18 +32,18 @@ const Languages = ({ className }) => {
     };
 
     return(
-        <div className="languages-container">
-            <div className="languages-content">
-                <div className="item-container">
+        <div className="m-auto">
+            <div className="flex gap-[30px]">
+                <div>
                     {
                         nowLanguage == español ? 
                         (
                             <button onClick={() => toggleLanguage()}>
-                                <img src={englishFlag} className={`english-flag ${className}`}></img>
+                                <img src={englishFlag} className={`cursor-pointer w-[40px] ${className ?? ''}`}></img>
                             </button>
                         ) : (
                             <button onClick={() => toggleLanguage()}>
-                                <img src={spanishFlag} className={`spanish-flag ${className}`}></img>
+                                <img src={spanishFlag} className={`cursor-pointer w-[40px] ${className ?? ''}`}></img>
                             </button>
                         )
                     }

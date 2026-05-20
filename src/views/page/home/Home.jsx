@@ -1,6 +1,4 @@
-import './home.css';
 
-import { useSelector } from 'react-redux';
 
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -11,9 +9,6 @@ import IconoGithub from '../../../icons/IconoGithub';
 import { Trans } from 'react-i18next';
 
 function Home(){
-
-    const mode = useSelector((state) => state.mode.value);
-
 
     const openWindowToSendEmail = () => {
 
@@ -32,44 +27,46 @@ function Home(){
     return (
         <AnimatePresence>
             {/* INTRODUCCION */}
-            <motion.div className="sobre-mi-container"         
+            <motion.div className="flex w-full h-[70vh]"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: .5 }} // Especifica la duración de la animación en segundos
+                        transition={{ duration: .5 }}
                         >
-                <div className="home-container">
-                    <div className="home-content">
-                        <div className="texto-container">
-                            <div className="texto-content">
-                                <h1 className={`texto__titulo ${mode}`}><Trans i18nKey="home.title"/><span>&#160;</span></h1>
-                                <h3 className={`texto__subtitulo ${mode}`}><Trans i18nKey="home.position"/><span>&#160;</span></h3>
-                                <p className={`texto__descripcion ${mode}`}>
-                                    <Trans i18nKey="home.description"/><span>&#160;</span>
-                                </p>
-                            </div>
+                <div className="flex m-auto w-[90%] max-[800px]:flex-col max-[800px]:items-center max-[800px]:justify-center max-[800px]:gap-[20px]">
+                    <div className="w-full max-[800px]:w-full">
+                        <div className="flex items-center flex-col m-auto text-center gap-[10px]">
+                            <h1 className="text-[100px] max-[800px]:text-[30px] text-[var(--secondary-color)] dark:text-[var(--tertiary-color-dark-mode)]">
+                                <Trans i18nKey="home.title"/><span>&#160;</span>
+                            </h1>
+                            <h3 className="text-[50px] max-[800px]:text-[20px] text-[var(--secondary-color)] dark:text-[var(--secondary-color-dark-mode)]">
+                                <Trans i18nKey="home.position"/><span>&#160;</span>
+                            </h3>
+                            <p className="text-[20px] max-[800px]:text-[10px] text-[var(--secondary-color)] dark:text-[var(--secondary-color-dark-mode)]">
+                                <Trans i18nKey="home.description"/><span>&#160;</span>
+                            </p>
                         </div>
-                        <div className='home-second-container'>
-                            <div className='home-second-content'>
-                                <div className='icono-container'>
-                                    <div className='icono-content'>
-                                        <div className='home-logo-container'>
-                                            <button onClick={() => openWindowToSendEmail()}>
-                                                <IconoEmail className={`home-icono ${mode}`}/>
-                                            </button>
-                                        </div>
+                    </div>
+                    <div className="w-[30%] max-[800px]:w-full">
+                        <div className="flex justify-center">
+                            <div className="flex justify-center w-[60%] mt-[30px]">
+                                <div className="flex items-center justify-center gap-[70px] w-full max-[800px]:gap-[40px]">
+                                    <div className="flex items-center justify-center cursor-pointer w-[20%] h-full">
+                                        <button onClick={() => openWindowToSendEmail()}>
+                                            <IconoEmail className="text-[40px] transition-all duration-300 hover:text-[50px]"/>
+                                        </button>
+                                    </div>
 
-                                        <div className='home-logo-container'>
-                                            <a href="https://www.linkedin.com/in/david-ariel-marquez/" target="_blank">
-                                                <IconoLinkedin className={`home-icono ${mode}`} />
-                                            </a>
-                                        </div>
+                                    <div className="flex items-center justify-center cursor-pointer w-[20%] h-full">
+                                        <a href="https://www.linkedin.com/in/david-ariel-marquez/" target="_blank" rel="noreferrer">
+                                            <IconoLinkedin className="text-[40px] transition-all duration-300 hover:text-[50px]" />
+                                        </a>
+                                    </div>
                                         
-                                        <div className='home-logo-container'>
-                                            <a href="https://github.com/davidmarquez98" target="_blank">
-                                                <IconoGithub className={`home-icono ${mode}`} />
-                                            </a>
-                                        </div>
+                                    <div className="flex items-center justify-center cursor-pointer w-[20%] h-full">
+                                        <a href="https://github.com/davidmarquez98" target="_blank" rel="noreferrer">
+                                            <IconoGithub className="text-[40px] transition-all duration-300 hover:text-[50px]" />
+                                        </a>
                                     </div>
                                 </div>
                             </div>

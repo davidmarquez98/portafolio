@@ -1,4 +1,4 @@
-import "./contact.css"
+
 
 import { useState } from 'react';
 import { Resend } from 'resend';
@@ -22,21 +22,21 @@ function Contact(){
 
 
     return (
-        <div className="contact-container">
+        <div className="flex items-center justify-center w-[100%]">
             <div className="contact-content">
                 <div>
-                    <h3 className="contact-titulo">Contact Us</h3>
+                    <h3 className="text-[var(--secondary-color)] text-[35px]">Contact Us</h3>
                 </div>
-                <div className="form-container">
-                    <div className="form-content">
+                <div className="mt-[50px]">
+                    <div className="flex flex-col gap-[60px]">
                         <div>
-                            <input type="text" className="input-default" placeholder="Nombre" onChange={(e) => setNombre(e.target.value) }></input>
+                            <input type="text" className="h-[30px]" placeholder="Nombre" onChange={(e) => setNombre(e.target.value) }></input>
                         </div>
                         <div>
-                            <input type="email" className="input-default" placeholder="Email" onChange={(e) => setEmail(e.target.value) }></input>
+                            <input type="email" className="h-[30px]" placeholder="Email" onChange={(e) => setEmail(e.target.value) }></input>
                         </div>
                         <div>
-                            <input type="text" className="input-mensaje" placeholder="Mensaje" onChange={(e) => setMensaje(e.target.value) }></input> 
+                            <input type="text" className="h-[100px] transform-[translateY(-30px)] visibility-[hidden]" placeholder="Mensaje" onChange={(e) => setMensaje(e.target.value) }></input> 
                         </div>
                         <button onClick={sendEmail}>Enviar</button>
                     </div>

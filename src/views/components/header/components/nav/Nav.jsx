@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import './nav.css';
-
 import LocationWatcher from './../../../../../router/LocationWatcher.jsx';
 
 import { Trans } from 'react-i18next';
@@ -29,21 +27,32 @@ function Nav(){
     }
 
 
-    return (
-        <div className='nav-container light'>
+return (
+        <div className='fixed z-[100] left-1/2 -translate-x-1/2 -translate-y-1/2 flex h-[60px] w-[600px] mt-[80px] rounded-[50px] bg-[rgb(252_243_207_/_0.7)] backdrop-blur-[10px] max-[800px]:hidden'>
             <LocationWatcher setLocation={setPath}/>
-            <div className='nav-content'>
-                <div className="circle-name-selected light" style={styleSelected()}/>
-                <ul className='nav-lista'>
-                    <li>
-                        <Link to="/"><h3 className="light">Home</h3></Link>
+            <div className='relative flex justify-center items-center w-full'>
+                <div className="absolute rounded-[50px] w-[120px] h-[42px] transition-all ease-[ease] duration-500 bg-[#D5CAC7]" style={styleSelected()}/>
+                
+                <ul className='relative z-[1] flex flex-row gap-[80px] list-none m-0 p-0'>
+                    
+                    <li className="px-[12px] py-0 text-center flex items-center justify-center">
+                        <Link to="/" className="cursor-pointer !no-underline text-[16px] font-bold !text-[#795548] visited:!text-[#795548] active:!text-[#795548] focus:!text-[#795548]">
+                            Home
+                        </Link>
                     </li>
-                    <li>
-                        <Link to="/about"><h3 className="light"><Trans i18nKey="nav.about_me"/></h3></Link>
+                    
+                    <li className="px-[12px] py-0 text-center flex items-center justify-center">
+                        <Link to="/about" className="cursor-pointer !no-underline text-[16px] font-bold !text-[#795548] visited:!text-[#795548] active:!text-[#795548] focus:!text-[#795548]">
+                            <Trans i18nKey="nav.about_me"/>
+                        </Link>
                     </li>
-                    <li>
-                        <Link to="/projects"><h3 className="light"><Trans i18nKey="nav.projects"/></h3></Link>
+                    
+                    <li className="px-[12px] py-0 text-center flex items-center justify-center">
+                        <Link to="/projects" className="cursor-pointer !no-underline text-[16px] font-bold !text-[#795548] visited:!text-[#795548] active:!text-[#795548] focus:!text-[#795548]">
+                            <Trans i18nKey="nav.projects"/>
+                        </Link>
                     </li>
+
                 </ul>
             </div>
         </div>

@@ -1,12 +1,7 @@
 import HomeIcon from '@mui/icons-material/Home';
 
-import { useSelector } from 'react-redux';
-
 function IconoHome({ className }){
-
-    const mode = useSelector((state) => state.mode.value);
-
-    return (<HomeIcon className={`icono-default__color light ${className}`}/>);
+    return (<HomeIcon className={`text-[var(--secondary-color)] dark:text-[var(--tertiary-color-dark-mode)] ${className}`} />);
 };
 
 export default IconoHome;

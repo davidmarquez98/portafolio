@@ -1,4 +1,4 @@
-import "./about.css";
+
 
 import { useEffect } from "react";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
@@ -42,7 +42,7 @@ function About(){
         time: <Trans i18nKey="experience.byma.time"/>,
         description: <Trans i18nKey="experience.byma.description" components={{ b: <b /> }} /> ,
         logo: byma_logo,
-        logo_class: "byma-logo"
+        logo_class: "w-[100px]"
     },
     {
         title: "Flex Tech Srl",
@@ -50,7 +50,7 @@ function About(){
         time: <Trans i18nKey="experience.flexTech.time"/>,
         description: <Trans i18nKey="experience.flexTech.description" components={{ b: <b /> }} /> ,
         logo: flex_tech_logo,
-        logo_class: "flex-tech-logo"
+        logo_class: "w-[100px]"
     },
     {
         title: "Banco Hipotecario",
@@ -58,7 +58,7 @@ function About(){
         time: <Trans i18nKey="experience.bh.time"/>,
         description: <Trans i18nKey="experience.bh.description" components={{ b: <b /> }} /> ,
         logo: bh_logo,
-        logo_class: "bh-logo"
+        logo_class: "w-[130px]"
     }];
 
     const controls = useAnimation();
@@ -73,43 +73,41 @@ function About(){
     }, [controls, inView]);
 
     return (
-        <div className="about-container">
-            <div className="about-content">
+        <div className="w-full mt-[100px]">
+            <div>
 
                 <AnimatePresence>
                     {/* INTRODUCCION */}
-                    <motion.div className="sobre-mi-container"         
+                    <motion.div className="w-full"
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                transition={{ duration: .5 }} // Especifica la duración de la animación en segundos
+                                transition={{ duration: .5 }}
                                 >
-                        <div className="sobre-mi-content">
-                            <div className="introduccion-container">
-                                <div className="introduccion-content">
-                                    <div className="informacion-container">
-                                        <div className="informacion-content">
-                                            <div className="sobre-mi-titulo-container">
-                                                <div className={`sobre-mi-titulo-content ${mode}`}>
-                                                    <h3 className="sobre-mi-titulo"><Trans i18nKey="about_me.title"/>   </h3>
-                                                </div>
-                                            </div>
-                                            <div className={`informacion__card ${mode}`}>
-                                                <p className={`informacion__texto ${mode}`}>
-                                                    <Trans i18nKey="about_me.description_first" components={{ b: <b /> }} />     
-                                                </p>
-                                                <span className={`informacion__texto ${mode}`}>
-                                                    <b>
-                                                        <Trans i18nKey="about_me.description_second"/>   
-                                                    </b>
-                                                </span>
-                                            </div>
+                        <div className="flex flex-col mt-[100px]">
+                            <div className="flex items-center justify-center">
+                                <div className="flex items-center justify-center w-[90%] max-[800px]:w-full">
+                                    <div className="w-full max-[800px]:w-full text-[var(--secondary-color)]">
+                                        <div className="mb-[50px] ml-[30px] max-[800px]:m-0 max-[800px]:w-full">
+                                            <h3 className="text-[35px] text-[var(--secondary-color)] dark:text-[var(--tertiary-color-dark-mode)]">
+                                                <Trans i18nKey="about_me.title" />
+                                            </h3>
+                                        </div>
+                                        <div className="bg-[var(--primary-color)] dark:bg-[var(--tertiary-color-dark-mode)] rounded-[5px] flex flex-col gap-[25px] p-[25px] text-[20px] leading-[1.3]">
+                                            <p className="leading-[1.3] text-[var(--secondary-color)] dark:text-[var(--primary-color-dark-mode)]">
+                                                <Trans i18nKey="about_me.description_first" components={{ b: <b /> }} />
+                                            </p>
+                                            <span className="leading-[1.3] text-[var(--secondary-color)] dark:text-[var(--primary-color-dark-mode)]">
+                                                <b>
+                                                    <Trans i18nKey="about_me.description_second" />
+                                                </b>
+                                            </span>
                                         </div>
                                     </div>
-                                    <div className="perfil-container">
-                                        <div className="perfil-content">
-                                            <img className="imagen-perfil" src={perfil}></img>
-                                            <div className="perfil-fade"></div>
+                                    <div className="flex rounded-[20px] w-[30%] max-[800px]:hidden">
+                                        <div className="relative w-[350px] h-[466px] rounded-[20px] pt-[30px]">
+                                            <img className="absolute w-full rounded-[10%_10%_0_0]" src={perfil} alt="Perfil" />
+                                            <div className="absolute w-full h-full"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -125,19 +123,18 @@ function About(){
                                 visible: { opacity: 1, y: 0, transition: { duration: .5 } },
                                 hidden: { opacity: 0, y: 0},
                             }}>
-                    <div className={`habilidades-experiencia-container ${mode}`}>  
-                        <div className="habilidades-experiencia-content">
+                    <div className="mt-[600px] w-full bg-[var(--secondary-color)] dark:bg-[var(--secondary-color-dark-mode)]">
+                        <div className="flex flex-col w-full gap-[20px]">
 
-                            
-                                            {/* EXPERIENCIA */}
-                            <div className="experiencia-container">
-                                <div className="experiencia-content">
-                                    <div className="experiencia-titulo-container">
-                                        <div className="experiencia-titulo-content">
-                                            <h4 className={`titulo ${mode}`}><Trans i18nKey="experience.title"/></h4>
-                                        </div>
+                            {/* EXPERIENCIA */}
+                            <div className="w-full">
+                                <div className="flex flex-col w-full">
+                                    <div className="flex items-center justify-center w-full text-[35px] m-[50px_0]">
+                                        <h4 className="text-[35px] text-[var(--secondary-color)] dark:text-[var(--tertiary-color-dark-mode)]">
+                                            <Trans i18nKey="experience.title" />
+                                        </h4>
                                     </div>
-                                    <div className="experiencia-informacion-container">
+                                    <div className="flex flex-wrap justify-center gap-[20px]">
                                         {
                                             experiences.map(experience => <ExperienceCard 
                                                                             title={experience.title}
@@ -151,67 +148,65 @@ function About(){
                                     </div>
                                 </div>
                             </div>
-                            
-                                            {/* HABILIDADES */}
-                            <div className="habilidades-container">
-                                <div className="habilidades-content">
-                                    <div className="habilidades-titulo-container">
-                                        <div className="habilidades-titulo-content">
-                                            <h4 className={`titulo ${mode}`}><Trans i18nKey="technology.title"/></h4>
-                                        </div>
+                            {/* HABILIDADES */}
+                            <div className="w-full">
+                                <div className="flex flex-col items-center">
+                                    <div className="flex items-center justify-center w-full text-[35px] m-[50px_0]">
+                                        <h4 className="text-[25px] text-[var(--primary-color)] dark:text-[var(--primary-color-dark-mode)]">
+                                            <Trans i18nKey="technology.title" />
+                                        </h4>
                                     </div>
-                                    <div className="habilidades-logo-container">
-                                        <div className={`habilidades-logo-content ${mode}`}>
-                                            <div className="logo-container">
-                                                <img className="logo-default" src={react_logo}></img>
+                                    <div className="flex items-center justify-center mb-[50px] w-full">
+                                        <div className="flex flex-wrap justify-center gap-[20px] max-w-[80%] p-[20px] bg-[var(--primary-color)] dark:bg-[var(--primary-color-dark-mode)]">
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[80px]" src={react_logo} alt="React" />
                                             </div>
-                                            <div className="logo-container">
-                                                <img className="logo-default" src={vue_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[80px]" src={vue_logo} alt="Vue" />
                                             </div>
-                                            <div className="logo-container">
-                                                <img className="logo-default" src={tailwind_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[80px]" src={tailwind_logo} alt="Tailwind" />
                                             </div>
-                                            <div className="logo-container">
-                                                <img className="logo-default" src={bootstrap_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[80px]" src={bootstrap_logo} alt="Bootstrap" />
                                             </div>
-                                            <div className="logo-container">
-                                                <img className="logo-default" src={quarkus_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[80px]" src={quarkus_logo} alt="Quarkus" />
                                             </div>
-                                            <div className="logo-container"> 
-                                                <img className="logo-default" src={spring_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[80px]" src={spring_logo} alt="Spring" />
                                             </div>
-                                            <div className="logo-container">
-                                                <img className="logo-default" src={kubernetes_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[80px]" src={kubernetes_logo} alt="Kubernetes" />
                                             </div>
-                                            <div className="logo-container">
-                                                <img className="logo-big" src={docker_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[160px]" src={docker_logo} alt="Docker" />
                                             </div>
-                                            <div className="logo-container">
-                                                <img className="logo-big" src={oracle_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[160px]" src={oracle_logo} alt="Oracle" />
                                             </div>
-                                            <div className="logo-container">
-                                                <img className="logo-mid" src={mysql_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[130px]" src={mysql_logo} alt="MySQL" />
                                             </div>
-                                            <div className="logo-container">
-                                                <img className="logo-mid" src={junit_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[130px]" src={junit_logo} alt="JUnit" />
                                             </div>
-                                            <div className="logo-container">
-                                                <img className="logo-big" src={mockito_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[160px]" src={mockito_logo} alt="Mockito" />
                                             </div>
-                                            <div className="logo-container">
-                                                <img className="logo-big" src={openshift_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[160px]" src={openshift_logo} alt="OpenShift" />
                                             </div>
-                                            <div className="logo-container">
-                                                <img className="logo-big" src={jenkins_logo}></img>
+                                            <div className="flex items-center m-[10px_50px]">
+                                                <img className="w-[160px]" src={jenkins_logo} alt="Jenkins" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>                     
+                        </div>
                     </div>
                 </motion.div>
-        
             </div>
         </div>
     );

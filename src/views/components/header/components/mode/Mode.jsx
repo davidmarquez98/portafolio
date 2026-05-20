@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 
 import { changeMode } from "./../../../../../redux/darkmodeSlide";
 import { changeShowApp } from "./../../../../../redux/appSlide";
-import "./mode.css";
+
 
 function Mode(){
 
@@ -24,13 +24,13 @@ function Mode(){
       };
 
     return (
-        <div className='mode-container'>
-            <div className='mode-content'>
+        <div className="m-auto">
+            <div className="cursor-pointer">
                 <button onClick={handleClick}>
-                    <IoIosRadioButtonOn className={`button-dark-mode ${mode}`}/>
+                    <IoIosRadioButtonOn className={`text-[40px] text-[var(--secondary-color)] dark:text-[var(--tertiary-color-dark-mode)]`} />
                 </button>
             </div>
-        </div> 
+        </div>
     );
 }
 

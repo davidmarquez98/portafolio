@@ -1,3 +1,6 @@
+
+@import "tailwindcss";
+
 :root {
   --primary-color: #FCF3CF;
   --secondary-color: #795548;
@@ -61,22 +64,89 @@ body.dark::-webkit-scrollbar-thumb:hover {
   background: var(--tertiary-color-dark-mode); /* Cambiar el color del thumb cuando se pasa el mouse sobre él */
 }
 
+h1, h3, p {
+  position: relative;
+}
+
+h1 span,
+h3 span,
+p span {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  border-left: 5px solid transparent;
+}
+
+.light h1 span,
+.light h3 span,
+.light p span {
+  background: var(--primary-color);
+}
+
+.dark h1 span,
+.dark h3 span,
+.dark p span {
+  background-color: var(--primary-color-dark-mode);
+}
+
+h1 span {
+  animation: escribir .8s steps(16) forwards, aparecer 0s forwards, desaparecer 0s .84s forwards;
+}
+
+h3 span {
+  animation: escribir .8s 1s steps(16) forwards, aparecer 0s 1s forwards, desaparecer 0s 1.84s forwards;
+}
+
+p span {
+  animation: escribir .8s 2s steps(16) forwards, aparecer 0s 2s forwards, desaparecer 0s 2.84s forwards;
+}
+
+@keyframes escribir {
+  from { width: 100%; }
+  to { width: 0; border-color: transparent; }
+}
+
+@keyframes aparecer {
+  from { border-color: transparent; }
+  to { border-color: var(--secondary-color); }
+}
+
+@keyframes desaparecer {
+  from { border-color: var(--secondary-color); }
+  to { border-color: transparent; }
+}
+
+.dark h1 span {
+  animation: escribir-dark .8s steps(16) forwards, aparecer-dark 0s forwards, desaparecer-dark 0s .84s forwards;
+}
+
+.dark h3 span {
+  animation: escribir-dark .8s 1s steps(16) forwards, aparecer-dark 0s 1s forwards, desaparecer-dark 0s 1.84s forwards;
+}
+
+.dark p span {
+  animation: escribir-dark .8s 2s steps(16) forwards, aparecer-dark 0s 2s forwards, desaparecer-dark 0s 2.84s forwards;
+}
+
+@keyframes escribir-dark {
+  from { width: 100%; }
+  to { width: 0; border-color: transparent; }
+}
+
+@keyframes aparecer-dark {
+  from { border-color: transparent; }
+  to { border-color: var(--tertiary-color-dark-mode); }
+}
+
+@keyframes desaparecer-dark {
+  from { border-color: var(--tertiary-color-dark-mode); }
+  to { border-color: transparent; }
+}
+
 /**/
 #root{
   height: 100%;
   width: 100%;
-}
-
-.icono-default__color.light{
-  color: var(--secondary-color);
-}
-
-.icono-default__color.dark{
-  color: var(--tertiary-color-dark-mode);
-}
-
-.icono-default__mid{
-  font-size: 50px !important;
 }
 
 .dark-mode-color-prim{

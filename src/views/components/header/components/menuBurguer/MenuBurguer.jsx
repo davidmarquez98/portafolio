@@ -5,7 +5,7 @@ import Menu from '@mui/material/Menu';
 
 import { useSelector } from 'react-redux';
 
-import './menuBurguer.css';
+
 import Mode from './../mode/Mode.jsx';
 import Languages from './../languages/languages.jsx';
 import IconoMenuBurguer from './../../../../../icons/IconoMenuBurguer.jsx'
@@ -21,8 +21,8 @@ export default function MenuBurguer() {
   const handleClose = () => setAnchorEl(null);
 
   return (
-    <div className='burguer-container header__item'>
-        <div className='burguer-content'>
+    <div className="flex justify-end max-[800px]:hidden">
+        <div className="mt-[50px] mr-[110px] mb-[50px] ml-[110px] max-[800px]:m-[20px]">
             <Button
             id="basic-button"
             aria-controls={open ? 'basic-menu' : undefined}
@@ -47,7 +47,7 @@ export default function MenuBurguer() {
                 },
             }}
             >
-                <IconoMenuBurguer className="burguer-icono"/>
+                <IconoMenuBurguer className="text-[45px] max-[800px]:text-[30px]"/>
             </Button>
             
             <Menu
@@ -58,11 +58,11 @@ export default function MenuBurguer() {
                 MenuListProps={{
                     'aria-labelledby': 'basic-button'
                 }}
-                className={`menu-container ${mode}`}
                 disablePortal
-                disableScrollLock={true} 
+                disableScrollLock={true}
+                PaperProps={{ sx: { boxShadow: '0px 5px 5px rgba(0,0,0,0.2)', backgroundColor: mode === 'light' ? 'var(--primary-color)' : 'var(--primary-color-dark-mode)' } }}
             >
-                <div className='menu-content'>
+                <div className="flex gap-[20px] m-[20px]">
                     <Languages/>
                     <Mode />
                 </div>

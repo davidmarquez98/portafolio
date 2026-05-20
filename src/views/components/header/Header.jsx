@@ -1,4 +1,4 @@
-import './header.css'
+
 
 import Logo from './components/logo/Logo.jsx';
 import Nav from './components/nav/Nav.jsx';
@@ -9,7 +9,7 @@ function Header(){
     
     return (
         <header>
-            <div className='header-content'>
+            <div className="flex items-center justify-start w-full h-full">
 
                 <Logo/>
 

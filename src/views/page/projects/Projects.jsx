@@ -1,18 +1,14 @@
-import "./projects.css";
+
 
 import { FaReact } from "react-icons/fa";
 
 import { AnimatePresence, motion } from "framer-motion";
-
-import { useSelector } from 'react-redux';
 
 import Card from "./components/Card.jsx"
 
 import { Trans } from 'react-i18next';
 
 function Projects(){
-
-    const mode = useSelector((state) => state.mode.value);
 
     let todoProject = {
         id: 1,
@@ -30,25 +26,23 @@ function Projects(){
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: .5 }}>
-                        <div className="proyecto-container">
-                            <div>
-                                <div className="titulo-main-container">
-                                    <div className="titulo-main-content">
-                                        <h3 className={`titulo-main ${mode}`}><Trans i18nKey="project.title"/></h3>
-                                    </div>
+                        <div className="w-full">
+                            <div className="flex h-[100px]">
+                                <div className="m-auto">
+                                    <h3 className="text-[35px] text-[var(--secondary-color)] dark:text-[var(--tertiary-color-dark-mode)]"><Trans i18nKey="project.title"/></h3>
                                 </div>
-                                <div className="lista-proyectos-container">
-                                    <div className="lista-proyectos-content">
-                                        {
-                                            projects.map(project => 
-                                                <Card 
-                                                    key={project.id}
-                                                    iconos={ project.iconos } 
-                                                    isDisabled={project.isDisabled}
-                                                />
-                                            )
-                                        }
-                                    </div>
+                            </div>
+                            <div className="w-full">
+                                <div className="m-[50px_0] flex flex-col items-center gap-[20px]">
+                                    {
+                                        projects.map(project => 
+                                            <Card 
+                                                key={project.id}
+                                                iconos={ project.iconos } 
+                                                isDisabled={project.isDisabled}
+                                            />
+                                        )
+                                    }
                                 </div>
                             </div>
                         </div>

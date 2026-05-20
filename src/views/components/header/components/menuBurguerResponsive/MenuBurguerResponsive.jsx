@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 
-import './menuBurguerResponsive.css'
+
 
 import Languages from './../languages/languages.jsx';
 import Mode from './../mode/Mode.jsx';
@@ -19,45 +20,46 @@ import IconoMenuBurguer from './../../../../../icons/IconoMenuBurguer.jsx';
 export default function MenuBurguerResponsive() {
 
     const [open, setOpen] = React.useState(false);
+    const mode = useSelector((state) => state.mode.value);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
 
   const DrawerList = (
-    <div className='drawerList'>
-        <ul className={'menuBurguerResponsive__opcion_lista'}>
-            <li className='menuBurguerResponsive_opcion'>
+    <div className="z-[10000]">
+        <ul className={'flex flex-col mt-[50px] w-full'}>
+            <li className="mb-[30px] pl-[20px]">
                 <Link to="/" onClick={toggleDrawer(false)}>
-                    <div className='menuBurguerResponsive_opcion__container'>
+                    <div className="flex flex-row gap-[20px]">
                         <div>
-                            <IconoHome className={'menuBurguerResponsive__opcion_icono'}/>
+                            <IconoHome className={'text-[30px]'}/>
                         </div>
-                        <div className='menuBurguerResponsive_opcion__text'>
+                        <div className="flex items-center justify-center text-[var(--secondary-color)] dark:text-[var(--secondary-color-dark-mode)]">
                             <h3>Home</h3>
                         </div>
                     </div>
                 </Link>
             </li>
-            <li className='menuBurguerResponsive_opcion'>
+            <li className="mb-[30px] pl-[20px]">
                 <Link to="/about" onClick={toggleDrawer(false)}>
-                    <div className='menuBurguerResponsive_opcion__container'>
+                    <div className="flex flex-row gap-[20px]">
                         <div>
-                            <IconoAbout className={'menuBurguerResponsive__opcion_icono'}/>
+                            <IconoAbout className={'text-[30px]'}/>
                         </div>
-                        <div className='menuBurguerResponsive_opcion__text'>
+                        <div className="flex items-center justify-center text-[var(--secondary-color)] dark:text-[var(--secondary-color-dark-mode)]">
                             <h3>Sobre Mi</h3>
                         </div>
                     </div>
                 </Link>
             </li>
-            <li className='menuBurguerResponsive_opcion'>
+            <li className="mb-[30px] pl-[20px]">
                 <Link to="/projects" onClick={toggleDrawer(false)}>
-                    <div className='menuBurguerResponsive_opcion__container'>
+                    <div className="flex flex-row gap-[20px]">
                         <div>
-                            <IconoProjects className={'menuBurguerResponsive__opcion_icono'}/>
+                            <IconoProjects className={'text-[30px]'}/>
                         </div>
-                        <div className='menuBurguerResponsive_opcion__text'>
+                        <div className="flex items-center justify-center text-[var(--secondary-color)] dark:text-[var(--secondary-color-dark-mode)]">
                             <h3>Proyectos</h3>
                         </div>
                     </div>
@@ -65,15 +67,15 @@ export default function MenuBurguerResponsive() {
             </li>
         </ul>
         {/* <Divider/>
-        <ul className={'menuBurguerResponsive__opcion_lista'}>
+        <ul className={'flex flex-col gap-[20px]'}>
             <li>
-                <div className='menuBurguerResponsive_opcion__container'>
-                    <div className='menuBurguerResponsive_opcion_second__content'>
+                <div className="flex flex-row gap-[20px]">
+                    <div className="flex items-center justify-center m-[auto] gap-[40px]">
                         <div>
                             <Languages className={'menuBurguerResponsive_languages'}/>
                         </div>
                         <div>
-                            <Mode className='menuBurguerResponsive_mode'/>
+                            <Mode className="text-[50px]"/>
                         </div>
                     </div>
                 </div>
@@ -84,8 +86,8 @@ export default function MenuBurguerResponsive() {
   );
 
   return (
-    <div className='menuBurguerResponsive-container header__item'>
-        <div className='burguer-content'>
+    <div className="flex min-[800px]:hidden justify-end">
+        <div className='mt-[50px] mr-[110px] mb-[50px] ml-[110px] max-[800px]:m-[20px]'>
             <Button
             id="basic-button"
             aria-controls={open ? 'basic-menu' : undefined}
@@ -110,7 +112,7 @@ export default function MenuBurguerResponsive() {
                 },
             }}
             >
-                <IconoMenuBurguer className="burguer-icono"/>
+                <IconoMenuBurguer className="text-[30px]"/>
             </Button>
             <Drawer
                 anchor={"right"}
@@ -118,7 +120,7 @@ export default function MenuBurguerResponsive() {
                 onClose={toggleDrawer( false)}
                 sx={{
                     '& .MuiPaper-root' : {
-                        backgroundColor : "#FCF3CF",
+                        backgroundColor : mode === 'light' ? 'var(--primary-color)' : 'var(--primary-color-dark-mode)',
                         width: "50%"
                     }
                 }}
