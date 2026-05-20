@@ -17,24 +17,15 @@ function App() {
   const showApp = useSelector((state) => state.showApp.value);
 
   useEffect(() => {
-    const elements = document.querySelectorAll(".light, .dark");
-
-    elements.forEach((el) => {
-
-      if(el.classList.contains("light")){
-        el.classList.replace("light", mode);
-      }else{
-        el.classList.replace("dark", mode);
-      }
-
-    });
+    document.body.classList.remove("light", "dark");
+    document.body.classList.add(mode);
   }, [mode]);
 
   return (
       <div className={`app ${mode}`}>
           <AnimatePresence>
             { showApp && (
-            <motion.div className="w-full h-full"
+            <motion.div className="min-h-screen w-full flex flex-col"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -43,7 +34,9 @@ function App() {
 
             <Header/>
 
-            <Router/>
+            <main className="flex-1 w-full">
+              <Router/>
+            </main>
 
             <Footer/>
             

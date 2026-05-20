@@ -4,9 +4,6 @@ import { useSelector } from 'react-redux';
 
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
-import Divider from '@mui/material/Divider';
-
-
 
 import Languages from './../languages/languages.jsx';
 import Mode from './../mode/Mode.jsx';
@@ -27,9 +24,9 @@ export default function MenuBurguerResponsive() {
   };
 
   const DrawerList = (
-    <div className="z-[10000]">
-        <ul className={'flex flex-col mt-[50px] w-full'}>
-            <li className="mb-[30px] pl-[20px]">
+    <div className="z-[10000] flex h-full flex-col justify-between p-[24px]">
+        <ul className="flex w-full flex-col gap-[24px]">
+            <li>
                 <Link to="/" onClick={toggleDrawer(false)}>
                     <div className="flex flex-row gap-[20px]">
                         <div>
@@ -41,19 +38,19 @@ export default function MenuBurguerResponsive() {
                     </div>
                 </Link>
             </li>
-            <li className="mb-[30px] pl-[20px]">
+            <li>
                 <Link to="/about" onClick={toggleDrawer(false)}>
                     <div className="flex flex-row gap-[20px]">
                         <div>
                             <IconoAbout className={'text-[30px]'}/>
                         </div>
                         <div className="flex items-center justify-center text-[var(--secondary-color)] dark:text-[var(--secondary-color-dark-mode)]">
-                            <h3>Sobre Mi</h3>
+                            <h3>Sobre mi</h3>
                         </div>
                     </div>
                 </Link>
             </li>
-            <li className="mb-[30px] pl-[20px]">
+            <li>
                 <Link to="/projects" onClick={toggleDrawer(false)}>
                     <div className="flex flex-row gap-[20px]">
                         <div>
@@ -66,28 +63,17 @@ export default function MenuBurguerResponsive() {
                 </Link>
             </li>
         </ul>
-        {/* <Divider/>
-        <ul className={'flex flex-col gap-[20px]'}>
-            <li>
-                <div className="flex flex-row gap-[20px]">
-                    <div className="flex items-center justify-center m-[auto] gap-[40px]">
-                        <div>
-                            <Languages className={'menuBurguerResponsive_languages'}/>
-                        </div>
-                        <div>
-                            <Mode className="text-[50px]"/>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul> */}
+        <div className="flex items-center justify-center gap-[34px] border-t border-[rgb(121_85_72_/_0.18)] pt-[22px] dark:border-[rgb(174_199_178_/_0.18)]">
+            <Languages />
+            <Mode />
+        </div>
     </div>
 
   );
 
   return (
-    <div className="flex min-[800px]:hidden justify-end">
-        <div className='mt-[50px] mr-[110px] mb-[50px] ml-[110px] max-[800px]:m-[20px]'>
+    <div className="relative z-[140] flex min-[800px]:hidden justify-end">
+        <div>
             <Button
             id="basic-button"
             aria-controls={open ? 'basic-menu' : undefined}
@@ -110,9 +96,11 @@ export default function MenuBurguerResponsive() {
                 '& .MuiTouchRipple-root': {
                     display: 'none', // Deshabilitar el efecto ripple
                 },
+                minWidth: '52px',
+                padding: '8px',
             }}
             >
-                <IconoMenuBurguer className="text-[30px]"/>
+                <IconoMenuBurguer className="text-[38px]"/>
             </Button>
             <Drawer
                 anchor={"right"}
@@ -121,7 +109,7 @@ export default function MenuBurguerResponsive() {
                 sx={{
                     '& .MuiPaper-root' : {
                         backgroundColor : mode === 'light' ? 'var(--primary-color)' : 'var(--primary-color-dark-mode)',
-                        width: "50%"
+                        width: "min(320px, 85vw)"
                     }
                 }}
             >

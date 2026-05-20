@@ -1,6 +1,5 @@
 import { IoIosRadioButtonOn } from "react-icons/io";
 
-import { useSelector } from 'react-redux';
 import { useDispatch } from "react-redux";
 
 import { changeMode } from "./../../../../../redux/darkmodeSlide";
@@ -9,7 +8,6 @@ import { changeShowApp } from "./../../../../../redux/appSlide";
 
 function Mode(){
 
-    const mode = useSelector((state) => state.mode.value);
     const dispatch = useDispatch();
     
     const handleClick = () => {

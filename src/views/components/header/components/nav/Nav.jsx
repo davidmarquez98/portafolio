@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
-
-import LocationWatcher from './../../../../../router/LocationWatcher.jsx';
+import { useLocation } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 import { Trans } from 'react-i18next';
+import './nav.css';
 
 function Nav(){
 
-    const stringPortfolio = "/";
-    const stringAboutMe = "/about";
-    const stringProjects = "/projects";
+    const { pathname } = useLocation();
+    const mode = useSelector((state) => state.mode.value);
 
     const styleNameSelected = {
         home: { left: '53px' },
@@ -17,45 +16,39 @@ function Nav(){
         projects: { left: '400px' }
     };
 
-    let [ path, setPath ] = useState("");
-
-
     const styleSelected = () => {
-        return path == stringPortfolio ||  path == (stringPortfolio + '/') ? styleNameSelected.home : 
-                                path == stringAboutMe ?  styleNameSelected.aboutMe :
-                                path == stringProjects ?  styleNameSelected.projects : {};
-    }
-
+        return pathname === "/" || pathname === "" ? styleNameSelected.home :
+            pathname === "/about" ? styleNameSelected.aboutMe :
+            pathname === "/projects" ? styleNameSelected.projects : {};
+    };
 
 return (
-        <div className='fixed z-[100] left-1/2 -translate-x-1/2 -translate-y-1/2 flex h-[60px] w-[600px] mt-[80px] rounded-[50px] bg-[rgb(252_243_207_/_0.7)] backdrop-blur-[10px] max-[800px]:hidden'>
-            <LocationWatcher setLocation={setPath}/>
-            <div className='relative flex justify-center items-center w-full'>
-                <div className="absolute rounded-[50px] w-[120px] h-[42px] transition-all ease-[ease] duration-500 bg-[#D5CAC7]" style={styleSelected()}/>
-                
-                <ul className='relative z-[1] flex flex-row gap-[80px] list-none m-0 p-0'>
+        <nav className={`nav-container ${mode}`}>
+            <div className='nav-content'>
+                <div className={`circle-name-selected ${mode}`} style={styleSelected()}/>
+                <ul className='nav-lista'>
                     
-                    <li className="px-[12px] py-0 text-center flex items-center justify-center">
-                        <Link to="/" className="cursor-pointer !no-underline text-[16px] font-bold !text-[#795548] visited:!text-[#795548] active:!text-[#795548] focus:!text-[#795548]">
-                            Home
+                    <li>
+                        <Link to="/">
+                            <h3 className={`nav-link-text ${mode}`}>Home</h3>
                         </Link>
                     </li>
                     
-                    <li className="px-[12px] py-0 text-center flex items-center justify-center">
-                        <Link to="/about" className="cursor-pointer !no-underline text-[16px] font-bold !text-[#795548] visited:!text-[#795548] active:!text-[#795548] focus:!text-[#795548]">
-                            <Trans i18nKey="nav.about_me"/>
+                    <li>
+                        <Link to="/about">
+                            <h3 className={`nav-link-text ${mode}`}><Trans i18nKey="nav.about_me"/></h3>
                         </Link>
                     </li>
                     
-                    <li className="px-[12px] py-0 text-center flex items-center justify-center">
-                        <Link to="/projects" className="cursor-pointer !no-underline text-[16px] font-bold !text-[#795548] visited:!text-[#795548] active:!text-[#795548] focus:!text-[#795548]">
-                            <Trans i18nKey="nav.projects"/>
+                    <li>
+                        <Link to="/projects">
+                            <h3 className={`nav-link-text ${mode}`}><Trans i18nKey="nav.projects"/></h3>
                         </Link>
                     </li>
 
                 </ul>
             </div>
-        </div>
+        </nav>
     );
 }
 

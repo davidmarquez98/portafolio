@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux';
 import Mode from './../mode/Mode.jsx';
 import Languages from './../languages/languages.jsx';
 import IconoMenuBurguer from './../../../../../icons/IconoMenuBurguer.jsx'
+import './menuBurguer.css';
 
 export default function MenuBurguer() {
 
@@ -21,8 +22,8 @@ export default function MenuBurguer() {
   const handleClose = () => setAnchorEl(null);
 
   return (
-    <div className="flex justify-end max-[800px]:hidden">
-        <div className="mt-[50px] mr-[110px] mb-[50px] ml-[110px] max-[800px]:m-[20px]">
+    <div className="burguer-container">
+        <div className="burguer-content">
             <Button
             id="basic-button"
             aria-controls={open ? 'basic-menu' : undefined}
@@ -45,9 +46,11 @@ export default function MenuBurguer() {
                 '& .MuiTouchRipple-root': {
                     display: 'none', // Deshabilitar el efecto ripple
                 },
+                minWidth: '46px',
+                padding: '0',
             }}
             >
-                <IconoMenuBurguer className="text-[45px] max-[800px]:text-[30px]"/>
+                <IconoMenuBurguer className="burguer-icono"/>
             </Button>
             
             <Menu

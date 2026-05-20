@@ -8,14 +8,6 @@ const modeSlide = createSlice({
     reducers: {
         changeMode: (state) => { 
             state.value = state.value === "light" ? "dark" : "light";
-
-            if (state.value === "dark") {
-                document.body.classList.remove("light");
-                document.body.classList.add("dark");
-            } else {
-                document.body.classList.remove("light");
-                document.body.classList.add("dark");
-            }
          }
     }
 });
