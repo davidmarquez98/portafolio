@@ -39,6 +39,11 @@ const resources = {
         bh: {
           description: "I work as a <b>Java</b> developer in the Middleware sector, specializing in frameworks like <b>Spring</b> and <b>Quarkus</b>. My role focuses on developing and maintaining integration solutions and scalable applications. Currently, I am part of a key project to migrate multiple APIs from Spring to Quarkus, optimizing execution times and modernizing the existing infrastructure to ensure optimal performance in critical environments.",
           time: "January 2025 - Present"
+        },
+
+        macro: {
+          description: "Developed high-availability reactive and imperative APIs using <b>Java 21</b>, <b>Spring Boot</b>, and <b>WebFlux</b> for financial solutions. Implemented robust security with <b>Spring Security</b> and <b>JWT</b>, and scaled infrastructure on <b>AWS</b> and <b>Google Cloud</b>. Ensured high code quality via <b>SonarQube</b> CI/CD integration and leveraged <b>Gemini AI</b> to accelerate unit testing (<b>JUnit</b>/<b>Mockito</b>) and technical documentation.",
+          time: "Present"
         }
       },
 
@@ -47,7 +52,7 @@ const resources = {
       },
 
       project: {
-        title: "PROJECTS",
+        title: "Projects",
         todo: {
           title: "TODO",
           description: "<b>'Todo'</b> is an application designed to help users organize and manage their daily tasks efficiently. It provides an intuitive interface that allows users to create, edit, and delete tasks, as well as set priorities and deadlines. With <b>'Todo'</b>, users can boost their productivity and manage their time more effectively."
@@ -89,6 +94,11 @@ const resources = {
         bh: {
           description:"Trabajo como desarrollador <b>Java</b> en el sector de Middleware, especializándome en frameworks como <b>Spring</b> y <b>Quarkus</b>. Mi rol se centra en el desarrollo y mantenimiento de soluciones de integración y aplicaciones escalables. Actualmente, formo parte de un proyecto clave de migración de múltiples APIs de Spring a Quarkus, optimizando los tiempos de ejecución y modernizando la infraestructura existente para garantizar un rendimiento óptimo en entornos críticos.",
           time: "Enero 2025 - Actualidad"
+        },
+
+        macro: {
+          description:"DesarrollÃ© APIs reactivas e imperativas de alta disponibilidad usando <b>Java 21</b>, <b>Spring Boot</b> y <b>WebFlux</b> para soluciones financieras. ImplementÃ© seguridad robusta con <b>Spring Security</b> y <b>JWT</b>, y escalÃ© infraestructura en <b>AWS</b> y <b>Google Cloud</b>. AsegurÃ© alta calidad de cÃ³digo mediante integraciÃ³n CI/CD con <b>SonarQube</b> y utilicÃ© <b>Gemini AI</b> para acelerar pruebas unitarias (<b>JUnit</b>/<b>Mockito</b>) y documentaciÃ³n tÃ©cnica.",
+          time: "Actualidad"
         }
       },
 
@@ -97,7 +107,7 @@ const resources = {
       },
 
       project: {
-        title: "PROYECTOS",
+        title: "Proyectos",
         todo: {
           title: "TODO",
           description: "<b>'Todo'</b> es una aplicación diseñada para ayudar a los usuarios a organizar y gestionar sus tareas diarias de manera eficiente. Proporciona una interfaz intuitiva que permite a los usuarios crear, editar y eliminar tareas, así como establecer prioridades y plazos. Con <b>'Todo'</b>, los usuarios pueden mejorar su productividad y gestionar su tiempo de manera más efectiva."
@@ -111,7 +121,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: "es",
+    lng: "en",
     fallbackLng: "en",
     interpolation: {
       escapeValue: false,

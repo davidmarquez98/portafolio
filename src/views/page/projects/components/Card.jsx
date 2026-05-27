@@ -7,7 +7,7 @@ import { Trans } from 'react-i18next';
 function Card(props){
 
     return (
-        <article className="relative mx-auto w-full rounded-[8px] bg-[#E5DDBE] p-[24px] shadow dark:bg-[var(--primary-color-dark-mode)]">
+        <article className="relative mx-auto w-full max-w-[760px] rounded-[8px] bg-[#E5DDBE] p-[24px] shadow dark:bg-[var(--primary-color-dark-mode)]">
             <div className="relative flex flex-col">
                 <div className="flex mb-[18px] flex-wrap gap-[16px] items-center justify-between">
                     <h5 className="text-[24px] leading-[1.2] text-[var(--secondary-color)] dark:text-[var(--tertiary-color-dark-mode)]">{props.title}</h5>

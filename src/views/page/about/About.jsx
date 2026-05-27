@@ -59,6 +59,13 @@ function About(){
         description: <Trans i18nKey="experience.bh.description" components={{ b: <b /> }} /> ,
         logo: bh_logo,
         logo_class: "experience-logo"
+    },
+    {
+        title: "Banco Macro",
+        position: <Trans i18nKey="experience.developer_software"/>,
+        time: <Trans i18nKey="experience.macro.time"/>,
+        description: <Trans i18nKey="experience.macro.description" components={{ b: <b /> }} />,
+        logo_class: "experience-logo"
     }];
 
     const controls = useAnimation();

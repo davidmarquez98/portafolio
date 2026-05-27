@@ -17,7 +17,7 @@
 }
 
 .sobre-mi-titulo-content {
-    margin: 0 0 50px 30px;
+    margin: 0 0 50px 90px;
     width: 40%;
 }
 
@@ -129,7 +129,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 34px;
+    gap: 64px;
     width: min(1180px, 90%);
     margin: 0 auto;
 }
@@ -186,11 +186,23 @@
 
 .experiencia-lista {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: center;
     align-items: stretch;
-    gap: 22px;
+    gap: 28px;
     width: 100%;
+}
+
+.experience-card {
+    padding: 34px;
+}
+
+.experience-card__header {
+    padding-bottom: 22px;
+}
+
+.experience-card__body {
+    padding-top: 4px;
 }
 
 .habilidades-logo-container {
@@ -291,12 +303,20 @@
 
     .habilidades-experiencia-content {
         width: 90%;
-        gap: 28px;
+        gap: 48px;
     }
 
     .experiencia-lista {
         grid-template-columns: 1fr;
         gap: 50px;
+    }
+
+    .experience-card {
+        padding: 22px;
+    }
+
+    .experience-card__header {
+        padding-bottom: 16px;
     }
 
     .habilidades-logo-content {

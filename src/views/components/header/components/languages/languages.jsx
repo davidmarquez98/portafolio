@@ -13,10 +13,12 @@ const Languages = ({ className }) => {
 
     const spanish = 'es'; 
     const english = 'en'; 
-    const [nowLanguage, setNowLanguage] = useState(spanish);
+    const [nowLanguage, setNowLanguage] = useState(i18n.resolvedLanguage || i18n.language || spanish);
+    const normalizedLanguage = nowLanguage.split('-')[0];
 
     const toggleLanguage = () => {
-        const newLang = i18n.language === spanish ? english : spanish;
+        const currentLanguage = i18n.language.split('-')[0];
+        const newLang = currentLanguage === spanish ? english : spanish;
         i18n.changeLanguage(newLang);
 
         dispatch(changeShowApp());
@@ -26,7 +28,7 @@ const Languages = ({ className }) => {
         }, 700);
     };
 
-    const showEnglishFlag = nowLanguage === spanish;
+    const showEnglishFlag = normalizedLanguage === spanish;
 
     return(
         <div className="m-auto">

@@ -9,7 +9,7 @@ function Footer () {
         <footer className={mode}>
             <div className="flex items-center justify-center h-full">
                <h3 className={`footer-titulo ${mode}`}>
-                   &copy; 2024 David Marquez
+                   &copy; 2026 David Marquez
                </h3>
             </div>
         </footer>

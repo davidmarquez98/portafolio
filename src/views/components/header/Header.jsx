@@ -11,13 +11,13 @@ function Header(){
     return (
         <header>
             <div className="header-content">
-                <div className="header__item">
+                <div className="header__item header__brand">
                     <Logo/>
                 </div>
 
                 <Nav/>
                 
-                <div className="header__item">
+                <div className="header__item header__actions">
                     <MenuBurger/> 
                     <MenuBurguerResponsive/>
                 </div>

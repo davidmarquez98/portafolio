@@ -1,3 +1,20 @@
+.projects-section {
+    padding-top: 140px;
+}
+
+.projects-page-content {
+    gap: 140px;
+}
+
+.projects-title-content {
+    width: 100%;
+}
+
+.projects-list-content {
+    width: 100%;
+    margin-bottom: 38px;
+}
+
 .titulo-main-container{
     display: flex;
     height: 200px;
@@ -24,6 +41,13 @@
 }
 
 @media (max-width: 800px){
+    .projects-section {
+        padding-top: 80px;
+    }
+
+    .projects-page-content {
+        gap: 90px;
+    }
 
     .proyecto-container{
         margin-bottom: 300px;

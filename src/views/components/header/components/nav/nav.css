@@ -10,7 +10,7 @@
 .nav-lista {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 44px;
   padding: 0;
   margin: 0;
 }
@@ -18,16 +18,17 @@
 .nav-link-text {
   margin: 0;
   font-size: 16px;
+  font-weight: 700;
   cursor: pointer;
   display: inline-block;
 }
 
 .nav-link-text.light {
-  color: rgb(217 119 6);
+  color: #6D4C41;
 }
 
 .nav-link-text.dark {
-  color: rgb(229 231 235);
+  color: var(--tertiary-color-dark-mode);
 }
 
 .circle-name-selected {

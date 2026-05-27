@@ -32,8 +32,8 @@ export default function MenuBurguerResponsive() {
                         <div>
                             <IconoHome className={'text-[30px]'}/>
                         </div>
-                        <div className="flex items-center justify-center text-[var(--secondary-color)] dark:text-[var(--secondary-color-dark-mode)]">
-                            <h3>Home</h3>
+                        <div className="flex items-center justify-center text-[#6D4C41] dark:text-[var(--tertiary-color-dark-mode)]">
+                            <h3 className="font-bold">Home</h3>
                         </div>
                     </div>
                 </Link>
@@ -44,8 +44,8 @@ export default function MenuBurguerResponsive() {
                         <div>
                             <IconoAbout className={'text-[30px]'}/>
                         </div>
-                        <div className="flex items-center justify-center text-[var(--secondary-color)] dark:text-[var(--secondary-color-dark-mode)]">
-                            <h3>Sobre mi</h3>
+                        <div className="flex items-center justify-center text-[#6D4C41] dark:text-[var(--tertiary-color-dark-mode)]">
+                            <h3 className="font-bold">Sobre mi</h3>
                         </div>
                     </div>
                 </Link>
@@ -56,8 +56,8 @@ export default function MenuBurguerResponsive() {
                         <div>
                             <IconoProjects className={'text-[30px]'}/>
                         </div>
-                        <div className="flex items-center justify-center text-[var(--secondary-color)] dark:text-[var(--secondary-color-dark-mode)]">
-                            <h3>Proyectos</h3>
+                        <div className="flex items-center justify-center text-[#6D4C41] dark:text-[var(--tertiary-color-dark-mode)]">
+                            <h3 className="font-bold">Proyectos</h3>
                         </div>
                     </div>
                 </Link>

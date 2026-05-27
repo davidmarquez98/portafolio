@@ -23,7 +23,7 @@ function Nav(){
     };
 
 return (
-        <nav className={`nav-container hidden md:flex ${mode}`}>
+        <nav className={`nav-container hidden min-[800px]:flex ${mode}`}>
             <div className='nav-content'>
                 <div className={`circle-name-selected ${mode}`} style={styleSelected()}/>
                 <ul className='nav-lista'>
