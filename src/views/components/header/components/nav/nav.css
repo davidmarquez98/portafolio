@@ -18,6 +18,16 @@
 .nav-link-text {
   margin: 0;
   font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.nav-link-text.light {
+  color: rgb(217 119 6);
+}
+
+.nav-link-text.dark {
+  color: rgb(229 231 235);
 }
 
 .circle-name-selected {

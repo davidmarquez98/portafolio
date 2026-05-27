@@ -23,26 +23,26 @@ function Nav(){
     };
 
 return (
-        <nav className={`nav-container ${mode}`}>
+        <nav className={`nav-container hidden md:flex ${mode}`}>
             <div className='nav-content'>
                 <div className={`circle-name-selected ${mode}`} style={styleSelected()}/>
                 <ul className='nav-lista'>
                     
                     <li>
                         <Link to="/">
-                            <h3 className={`nav-link-text ${mode}`}>Home</h3>
+                            <h3 className={`nav-link-text text-neutral-300 hover:text-blue-500 transition-colors duration-200 ${mode}`}>Home</h3>
                         </Link>
                     </li>
                     
                     <li>
                         <Link to="/about">
-                            <h3 className={`nav-link-text ${mode}`}><Trans i18nKey="nav.about_me"/></h3>
+                            <h3 className={`nav-link-text text-neutral-300 hover:text-blue-500 transition-colors duration-200 ${mode}`}><Trans i18nKey="nav.about_me"/></h3>
                         </Link>
                     </li>
                     
                     <li>
                         <Link to="/projects">
-                            <h3 className={`nav-link-text ${mode}`}><Trans i18nKey="nav.projects"/></h3>
+                            <h3 className={`nav-link-text text-neutral-300 hover:text-blue-500 transition-colors duration-200 ${mode}`}><Trans i18nKey="nav.projects"/></h3>
                         </Link>
                     </li>
 

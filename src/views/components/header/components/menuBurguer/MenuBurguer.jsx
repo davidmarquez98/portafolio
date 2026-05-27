@@ -22,7 +22,7 @@ export default function MenuBurguer() {
   const handleClose = () => setAnchorEl(null);
 
   return (
-    <div className="burguer-container">
+    <div className="burguer-container hidden md:flex">
         <div className="burguer-content">
             <Button
             id="basic-button"
