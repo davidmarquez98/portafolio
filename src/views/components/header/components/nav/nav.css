@@ -1,0 +1,28 @@
+.nav-container {
+  display: block;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+
+.nav-lista {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link-text {
+  margin: 0;
+  font-size: 16px;
+}
+
+.circle-name-selected {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
