@@ -9,7 +9,7 @@ import './header.css';
 function Header(){
     
     return (
-        <header className="bg-zinc-950 w-full">
+        <header>
             <div className="header-content">
                 <div className="header__item">
                     <Logo/>

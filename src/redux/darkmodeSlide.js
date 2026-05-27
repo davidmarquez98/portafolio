@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit"
 
-const initialState = { value: "light" };
+const initialState = { value: "dark" };
 
 const modeSlide = createSlice({
     name: "mode",
