@@ -1,21 +1,17 @@
-import Contact from "@/components/Contact";
-import BentoDashboard from "@/components/BentoDashboard";
-import Experience from "@/components/Experience";
+import Hero from "@/components/Hero";
+import AboutMe from "@/components/AboutMe";
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import Projects from "@/components/Projects";
+import Portfolio from "@/components/Portfolio";
+import WhatIDo from "@/components/WhatIDo";
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-zinc-100">
-      <Navbar />
-      <div className="mx-auto max-w-6xl space-y-24 px-4 py-10 sm:px-6 md:space-y-32 lg:px-8">
-        <BentoDashboard />
-        <Experience />
-        <Projects />
-        <Contact />
-      </div>
+    <>
+      <Hero />
+      <WhatIDo />
+      <AboutMe />
+      <Portfolio />
       <Footer />
-    </main>
+    </>
   );
 }
