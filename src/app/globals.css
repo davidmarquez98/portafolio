@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  color-scheme: light;
+  --page: oklch(0.98 0.006 80);
+  --surface: oklch(1 0 0);
+  --foreground: oklch(0.2 0.012 255);
+  --muted-foreground: oklch(0.48 0.015 255);
+  --border: oklch(0.88 0.01 255);
+  --accent: oklch(0.48 0.08 245);
+  --accent-foreground: oklch(0.99 0.004 245);
+  --focus-ring: oklch(0.52 0.12 245);
+  --radius-control: 0.5rem;
+  --radius-card: 0.75rem;
+  --content-width: 80rem;
+  --text-measure: 68ch;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --page: oklch(0.18 0.012 255);
+  --surface: oklch(0.22 0.014 255);
+  --foreground: oklch(0.94 0.008 255);
+  --muted-foreground: oklch(0.72 0.014 255);
+  --border: oklch(0.34 0.014 255);
+  --accent: oklch(0.7 0.075 245);
+  --accent-foreground: oklch(0.18 0.012 255);
+  --focus-ring: oklch(0.74 0.1 245);
+}
+
+@theme inline {
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-focus-ring: var(--focus-ring);
+  --radius-control: var(--radius-control);
+  --radius-card: var(--radius-card);
+}
+
+* {border-color: var(--border);}
+html {background: var(--page);}
+
+html {
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--page);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
