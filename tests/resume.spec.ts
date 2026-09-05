@@ -4,7 +4,7 @@ const resumes = [
   {
     route: '/',
     path: '/resume/david-marquez-en.pdf',
-    label: 'Download résumé'
+    label: 'Download Resume'
   },
   {
     route: '/es',
