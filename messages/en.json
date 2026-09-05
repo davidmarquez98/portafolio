@@ -1,0 +1,168 @@
+{
+  "Metadata": {
+    "title": "David Marquez | Software Engineer",
+    "description": "Software Engineer specializing in Java backend and distributed systems, with experience in Spring Boot, Quarkus, Kafka, AWS SQS and financial software."
+  },
+  "Navigation": {
+    "skipToContent": "Skip to content",
+    "homeLabel": "David Marquez, home",
+    "primaryLabel": "Primary navigation",
+    "mobileLabel": "Mobile navigation",
+    "languageLabel": "Choose language",
+    "themeLabel": "Toggle color theme",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "about": "About",
+    "experience": "Experience",
+    "expertise": "Expertise",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "eyebrow": "Hello, I'm David.",
+    "headline": "Software Engineer building scalable distributed systems.",
+    "supportingCopy": "Backend-focused engineer specialized in Java, cloud-native architectures and modern web applications.",
+    "technologies": "Java · Spring · Quarkus · Kafka · AWS",
+    "primaryCta": "Explore my work",
+    "resumeCta": "Download Resume",
+    "availability": "Available for international remote opportunities"
+  },
+  "About": {
+    "heading": "About",
+    "lead": "I build software for systems where reliability, scalability and maintainability matter.",
+    "body": "Backend-focused Software Engineer working in the Java ecosystem across distributed, microservice and event-driven environments. My experience is grounded in financial and enterprise production software, with the flexibility to contribute to modern frontend interfaces when needed.",
+    "facts": {
+      "experience": {
+        "value": "3+ years",
+        "label": "Production software experience"
+      },
+      "english": {
+        "value": "B2+",
+        "label": "English"
+      }
+    }
+  },
+  "Experience": {
+    "heading": "Experience",
+    "lead": "Building production software for the financial industry.",
+    "technologiesLabel": "Technologies used",
+    "roles": {
+      "bancoMacro": {
+        "company": "Banco Macro",
+        "dates": "September 2025 — Present",
+        "role": "Software Developer / Semi Senior",
+        "summary": "Develop REST APIs for Cash Management workflows using Java 21 and Spring Boot 3.x.",
+        "highlights": {
+          "restApis": "Develop REST APIs within an established microservice architecture.",
+          "messaging": "Implement asynchronous workflows as both producer and consumer with AWS SQS.",
+          "security": "Implement API and service security with JWT and OAuth2 Client Credentials.",
+          "quality": "Document endpoints with Swagger/OpenAPI and maintain tests with JUnit and Mockito.",
+          "delivery": "Deliver assigned features from refinement through implementation, testing and bug fixing."
+        }
+      },
+      "bancoHipotecario": {
+        "company": "Banco Hipotecario",
+        "dates": "January 2025 — June 2025",
+        "role": "Software Developer",
+        "summary": "Migrated backend microservices from Spring to Quarkus while preserving existing business behavior.",
+        "highlights": {
+          "migration": "Adapted dependencies and application logic across assigned microservices.",
+          "testing": "Created and adapted automated tests with JUnit and Mockito.",
+          "apis": "Maintained Java APIs and fixed defects during testing and validation.",
+          "delivery": "Worked through Jira, Jenkins pipelines and OpenShift environment verification."
+        }
+      },
+      "flexTechArg": {
+        "company": "FLEX TECH ARG",
+        "dates": "October 2024 — December 2024",
+        "role": "Software Developer",
+        "summary": "Co-developed an internal reusable Java authentication library for banking applications.",
+        "highlights": {
+          "authentication": "Centralized authentication-related functionality as an internal dependency.",
+          "encryption": "Implemented secure credential handling and encryption.",
+          "testing": "Delivered features end to end with JUnit, Mockito and Git alongside a senior developer."
+        }
+      },
+      "byma": {
+        "company": "BYMA — Caja de Valores",
+        "dates": "October 2022 — October 2024",
+        "role": "Software Developer",
+        "summary": "Contributed to the modernization of a Spring monolith into Quarkus microservices and delivered new financial functionality.",
+        "highlights": {
+          "migration": "Implemented services according to architecture defined by the technical team.",
+          "frontend": "Built substantial Vue.js functionality, including tables, filtering, login flows and complete sections.",
+          "events": "Implemented Kafka producers and consumers for transactional message routing and decoupling.",
+          "persistence": "Delivered REST APIs and portfolio functionality using Oracle SQL, Hibernate and Panache."
+        }
+      }
+    }
+  },
+  "Expertise": {
+    "heading": "Expertise",
+    "lead": "Software Engineer focused on Java backend and distributed systems.",
+    "areas": {
+      "backend": {
+        "title": "Backend Engineering",
+        "technologies": "Java 21 · Spring Boot 3.x · Quarkus · REST APIs · JPA · Hibernate · Panache"
+      },
+      "distributed": {
+        "title": "Distributed Systems & Messaging",
+        "technologies": "Microservices · Apache Kafka · AWS SQS · Event-driven systems"
+      },
+      "security": {
+        "title": "Security & APIs",
+        "technologies": "OAuth2 · JWT · Swagger / OpenAPI"
+      },
+      "testing": {
+        "title": "Testing",
+        "technologies": "JUnit · Mockito · Postman"
+      },
+      "frontend": {
+        "title": "Frontend",
+        "technologies": "Vue.js · JavaScript · HTML · CSS"
+      },
+      "data": {
+        "title": "Data",
+        "technologies": "PostgreSQL · Oracle · SQL"
+      },
+      "delivery": {
+        "title": "Delivery & Collaboration",
+        "technologies": "Git · Bitbucket · Jenkins · Jira · Scrum · OpenShift environments"
+      }
+    },
+    "additional": {
+      "title": "Additional familiarity",
+      "technologies": "React · Docker · Kubernetes · AWS S3 · DynamoDB · MySQL · Nginx"
+    }
+  },
+  "Education": {
+    "heading": "Education & continuous learning",
+    "lead": "A compact record of language study and ongoing technical learning.",
+    "items": {
+      "westminster": {
+        "institution": "Westminster School of Languages",
+        "details": "English — B2+"
+      },
+      "mentoring": {
+        "institution": "Udemy",
+        "details": "Java Global Mentoring — Ubaldo Acosta"
+      },
+      "platzi": {
+        "institution": "Platzi",
+        "details": "Java SE Introduction · Vue.js Introduction and Fundamentals · Professional React · React Render Patterns"
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Let's work together",
+    "title": "Looking for a Software Engineer?",
+    "body": "I'm open to international remote software engineering opportunities, with a focus on backend and distributed systems.",
+    "emailCta": "Email me",
+    "linkedIn": "LinkedIn",
+    "github": "GitHub",
+    "opensInNewTab": "(opens in a new tab)"
+  },
+  "Footer": {
+    "rights": "All rights reserved"
+  }
+}
