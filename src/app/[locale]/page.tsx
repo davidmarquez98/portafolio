@@ -3,6 +3,7 @@ import {setRequestLocale} from 'next-intl/server';
 import {SiteHeader} from '@/components/layout/site-header';
 import {About} from '@/components/sections/about';
 import {Experience} from '@/components/sections/experience';
+import {SelectedWork} from '@/components/sections/selected-work';
 import {Expertise} from '@/components/sections/expertise';
 import {Education} from '@/components/sections/education';
 import {Contact} from '@/components/sections/contact';
@@ -23,6 +24,7 @@ export default async function HomePage({params}: HomePageProps) {
         <Hero locale={locale} />
         <About locale={locale} />
         <Experience locale={locale} />
+        <SelectedWork locale={locale} />
         <Expertise locale={locale} />
         <Education locale={locale} />
         <Contact locale={locale} />

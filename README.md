@@ -1,8 +1,8 @@
 # David Marquez Portfolio
 
-Bilingual portfolio foundation built with Next.js App Router, TypeScript, Tailwind CSS, and `next-intl`.
+Bilingual portfolio built with Next.js App Router, TypeScript, Tailwind CSS, and `next-intl`.
 
-The portfolio sections are intentionally not implemented yet. Product, content, responsive, design-system, and architecture decisions live in `docs/`.
+The homepage includes navigation, hero, about, experience, expertise, education, contact, and footer in English and Spanish. Selected Work remains intentionally hidden until a real public project is available. Product, content, responsive, design-system, and architecture decisions live in `docs/`.
 
 ## Requirements
 

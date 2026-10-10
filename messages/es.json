@@ -97,6 +97,41 @@
       }
     }
   },
+  "SelectedWork": {
+    "heading": "Trabajo seleccionado",
+    "index": "01",
+    "name": "Alisados Maca",
+    "subtitle": "Plataforma de Turnos y Pagos",
+    "description": "Plataforma full-stack de reservas y pagos desarrollada para un negocio real, reemplazando la gestión manual de turnos por WhatsApp con reservas online, gestión de disponibilidad y pagos de seña mediante Mercado Pago.",
+    "metadata": {
+      "role": {
+        "label": "Rol",
+        "value": "Desarrollador único"
+      },
+      "status": {
+        "label": "Estado",
+        "value": "En producción"
+      },
+      "stack": "Stack"
+    },
+    "liveProject": "Ver proyecto",
+    "opensInNewTab": "(se abre en una pestaña nueva)",
+    "challenge": {
+      "heading": "Desafío",
+      "body": "Los turnos se gestionaban manualmente por WhatsApp, incluyendo la verificación de disponibilidad, la coordinación de agenda y la confirmación de señas."
+    },
+    "solution": {
+      "heading": "Solución",
+      "body": "Una plataforma full-stack que centraliza disponibilidad, reservas, clientes y pagos de seña, con validación del lado del servidor para la disponibilidad y el estado de pago."
+    },
+    "highlights": {
+      "heading": "Aspectos técnicos",
+      "booking": "Disponibilidad real, bloqueos de agenda y un ciclo de reserva con retenciones de 30 minutos y protección contra dobles reservas a nivel de base de datos.",
+      "payments": "Integración con Mercado Pago Orders API, idempotencia, webhooks firmados y verificación de pagos del lado del servidor.",
+      "admin": "Supabase Auth y un panel protegido para gestionar clientes, reservas y estados operativos.",
+      "production": "Desplegada en Vercel para un negocio de clientes reales."
+    }
+  },
   "Expertise": {
     "heading": "Especialidades",
     "lead": "Ingeniero de Software enfocado en backend Java y sistemas distribuidos.",

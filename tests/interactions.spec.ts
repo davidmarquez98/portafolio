@@ -44,7 +44,10 @@ test('mobile menu opens, closes, and restores focus', async ({page}) => {
     'href',
     '#experience'
   );
-  await expect(dialog.locator('a[href="#work"]')).toHaveCount(0);
+  await expect(dialog.getByRole('link', {name: 'Work'})).toHaveAttribute(
+    'href',
+    '#work'
+  );
   await expect(dialog.locator('a[href="#contact"]')).toHaveCount(1);
 
   await page.getByRole('button', {name: 'Close menu'}).click();

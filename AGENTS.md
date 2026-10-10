@@ -1,89 +1,50 @@
 # AGENTS.md — David Marquez Portfolio
 
-## Project purpose
-Build a bilingual (EN/ES), minimalist, professional, aesthetic portfolio for David Marquez, a Software Engineer focused on backend engineering, distributed systems, cloud-native architectures, and modern web development.
+## Purpose and factual content
 
-Primary business goal: support international remote job applications, especially for Software Engineer / Backend Engineer / Java Engineer roles.
+This is a bilingual (EN/ES) portfolio for David Marquez, focused on international remote Software Engineer, Backend Engineer, and Java Engineer opportunities.
 
-## Source of truth
-Before coding, read these files in order:
-1. `docs/product-requirements.md`
-2. `docs/content.md`
-3. `docs/design-system.md`
-4. `docs/responsive-spec.md`
-5. `docs/architecture.md`
+Do not invent professional achievements, technologies, employers, metrics, dates, education, project results, or public artifacts. Treat `docs/content.md` as the source of truth for professional claims. Do not expose confidential employer information, internal names, endpoints, repositories, client data, architecture secrets, credentials, or private business logic.
 
-Do not invent professional achievements, technologies, employers, metrics, dates, education, or project results that are not present in `docs/content.md`.
+## Minimum context
 
-## Stack
-- Next.js (App Router)
-- React
-- TypeScript
-- Tailwind CSS
-- next-intl for i18n
-- Motion / Framer Motion only where it improves clarity or polish
-- Lucide icons
-- Vercel for deployment
+Do **not** read all docs, all skills, all `.sdd/` files, or all source code by default. Load only:
 
-## Engineering rules
-- TypeScript strict mode.
-- Prefer Server Components unless interactivity requires Client Components.
-- Keep components small and reusable.
-- Avoid unnecessary dependencies.
-- Semantic HTML first.
-- WCAG AA accessibility target.
-- Mobile-first responsive implementation.
-- Respect `prefers-reduced-motion`.
-- No visual effects that harm readability, performance, or accessibility.
-- No skill percentage bars.
-- No fake terminals, matrix effects, particle backgrounds, 3D gimmicks, or decorative animations without purpose.
-- No fake testimonials, fake clients, fake projects, fake statistics, or fake GitHub activity.
-- Never expose confidential employer information, internal names, endpoints, repositories, client data, architecture secrets, credentials, or private business logic.
+1. this file;
+2. affected code;
+3. relevant skill(s);
+4. relevant stable documentation; and
+5. active change artifacts, when a Medium or Large change has them.
 
-## Quality gates
-After every meaningful implementation task:
-1. Run lint.
-2. Run typecheck.
-3. Run build.
-4. Check responsive behavior at mobile, tablet, and desktop sizes.
-5. Check keyboard navigation and visible focus states.
-6. Check color contrast.
-7. Check reduced-motion behavior if animations were added.
+Use `docs/` for current product truth and `.sdd/` for workflow, current implementation decisions, and active change artifacts. See `.sdd/config.yaml` for the change-level policy.
 
-Do not mark a task complete while lint, typecheck, or build fails.
+## Classify and route work
 
-## Delivery workflow
-Implement one scoped task at a time. Do not redesign unrelated sections while completing a ticket.
+Classify each scoped task before implementing it.
 
-Recommended sequence:
-1. Project setup
-2. Internationalization infrastructure
-3. Light and dark semantic design tokens
-4. Navbar
-5. Hero
-6. About
-7. Experience
-8. Selected Work
-9. Expertise
-10. Secondary education information
-11. Contact / Footer
-12. Theme controls
-13. Motion polish, only if justified
-14. Responsive audit
-15. Accessibility audit
-16. SEO / Open Graph
-17. Performance audit
-18. Deploy
+| Level | Typical scope | Required flow |
+| --- | --- | --- |
+| Small | Copy, CSS, spacing, color, typo, favicon, simple rename, isolated visual bug | Inspect → implement → smallest meaningful validation. No `.sdd/changes/` artifact by default. |
+| Medium | New component, one-section redesign, filter, localized refactor, meaningful UI behavior, responsive feature work | Proposal → tasks → implement → verify. Create `.sdd/changes/<change-name>/`. |
+| Large | CMS, authentication, admin area, important backend, major integration, architectural migration, structural refactor | Proposal → specs → design → tasks → implement → verify → document. Create `.sdd/changes/<change-name>/`. |
 
-## Definition of done
-A section is done when:
-- It matches the written requirements.
-- Content is accurate.
-- It works in EN and ES when translations are available.
-- It is responsive.
-- It is keyboard accessible.
-- It does not introduce unnecessary layout shift.
-- It builds successfully.
+Route UI, CSS, components, responsive work, and visual UX to `frontend` and `qa`. Load `docs/design-system.md` and `docs/responsive-spec.md` only when visual or responsive decisions are affected. Route localization, routes, theme, SEO, or application structure to `frontend` and `qa`; load `docs/architecture.md` when the change affects those boundaries. Load `docs/content.md` for professional content or translation changes. Load `docs/product-requirements.md` when scope or product behavior is in question.
+
+## Verification
+
+Use proportional validation. Small changes require the smallest meaningful check; run lint, typecheck, or targeted tests when relevant or inexpensive enough to add useful confidence. Medium changes normally run lint and typecheck, then build and tests according to affected behavior. Large changes receive complete validation appropriate to their architectural risk.
+
+Check responsive behavior, keyboard navigation, visible focus states, contrast, localization, and reduced motion when the change can affect them. Do not mark an implementation complete while required checks for its scope are failing.
+
+## Architecture and safety invariants
+
+- Preserve TypeScript strictness, semantic HTML, WCAG AA intent, and mobile-first implementation.
+- Prefer Server Components; add Client Components only for browser interaction.
+- Preserve the existing `next-intl` route and message/content boundaries.
+- Avoid unnecessary dependencies and visual effects that harm readability, performance, or accessibility.
+- Do not add fake testimonials, clients, projects, statistics, GitHub activity, skill percentages, fake terminals, particles, or decorative 3D effects.
+- Implement one scoped task at a time; do not redesign unrelated sections.
+- Before modifying Next.js application code, read the relevant current guide in `node_modules/next/dist/docs/`.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

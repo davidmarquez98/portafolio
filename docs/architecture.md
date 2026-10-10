@@ -10,11 +10,11 @@
 - Client Components only for browser interaction such as the mobile menu, language switcher, and theme switcher.
 - No API routes, database, CMS, authentication, or runtime content fetching in v1.
 
-## Initial project foundation
+## Current project foundation
 
 Internationalization and both light and dark semantic design tokens are part of initial project setup. They must not be deferred until after homepage sections are built.
 
-The initial foundation includes configuration, localized routing, theme infrastructure, semantic tokens, empty localized page shells, and minimal smoke tests. It does not include the Navbar, Hero, About, Experience, Expertise, Contact, or final visual design.
+The current foundation includes configuration, localized routing, theme infrastructure, semantic tokens, implemented homepage sections, and automated browser coverage.
 
 ## Authoritative structure
 
@@ -33,6 +33,8 @@ src/
     ui/
     visuals/
   content/
+    experience.ts
+    homepage-sections.ts
     selected-work.ts
   i18n/
     navigation.ts
@@ -95,7 +97,7 @@ The initial state is `hidden`. Do not create or display a project that does not 
 
 ## Education
 
-Education is not a standalone homepage section in v1. Education content may exist as typed data and may later be presented as secondary information within another appropriate area.
+Education is currently implemented as a standalone homepage section with secondary visual weight relative to Experience. Its content remains supporting information rather than primary portfolio positioning.
 
 ## Resume availability
 
@@ -148,7 +150,7 @@ Required scripts:
 - `test`
 - `check`
 
-The initial Playwright suite contains only a basic locale smoke test and a basic automated accessibility smoke test. Expand interaction and responsive coverage as features are implemented.
+The Playwright suite covers locale routing, implemented sections, résumé links, interaction and focus behavior, theme behavior, responsive overflow, SEO, and automated accessibility checks. Expand targeted coverage when new behavior is introduced.
 
 After each meaningful implementation task, run lint, typecheck, production build, and relevant tests. Manual responsive, keyboard, focus, contrast, and reduced-motion checks remain required when applicable.
 

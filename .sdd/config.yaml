@@ -1,0 +1,27 @@
+profile: portfolio
+
+default_skills:
+  - frontend
+  - qa
+
+change_levels:
+  small:
+    flow: [inspect, implement, validate]
+    artifacts: []
+  medium:
+    flow: [proposal, tasks, implement, verify]
+    artifacts: [state.yaml, proposal.md, tasks.md, verification.md]
+  large:
+    flow: [proposal, specs, design, tasks, implement, verify, document]
+    artifacts: [state.yaml, proposal.md, specs.md, design.md, tasks.md, verification.md]
+
+context:
+  policy: minimum-necessary
+  product_truth: docs/
+  process_and_change_history: .sdd/
+  read_all_by_default: false
+
+verification:
+  small: smallest-meaningful-check
+  medium: lint-and-typecheck-normally; build-and-tests-by-affected-behavior
+  large: complete-validation-appropriate-to-architectural-risk

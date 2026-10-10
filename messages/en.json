@@ -97,6 +97,41 @@
       }
     }
   },
+  "SelectedWork": {
+    "heading": "Selected work",
+    "index": "01",
+    "name": "Alisados Maca",
+    "subtitle": "Booking & Payments Platform",
+    "description": "A full-stack booking and payment platform built for a real beauty business, replacing manual WhatsApp scheduling with online reservations, availability management and Mercado Pago deposits.",
+    "metadata": {
+      "role": {
+        "label": "Role",
+        "value": "Sole Developer"
+      },
+      "status": {
+        "label": "Status",
+        "value": "Live"
+      },
+      "stack": "Stack"
+    },
+    "liveProject": "View live project",
+    "opensInNewTab": "(opens in a new tab)",
+    "challenge": {
+      "heading": "Challenge",
+      "body": "Appointments were managed manually through WhatsApp, including availability checks, schedule coordination and deposit verification."
+    },
+    "solution": {
+      "heading": "Solution",
+      "body": "A full-stack platform that centralizes availability, reservations, clients and deposit payments, with server-side validation of booking availability and payment state."
+    },
+    "highlights": {
+      "heading": "Technical highlights",
+      "booking": "Real availability, schedule blocking and a reservation lifecycle with 30-minute holds and database-level double-booking protection.",
+      "payments": "Mercado Pago Orders API integration with idempotency, signed webhooks and server-side payment verification.",
+      "admin": "Supabase Auth and a protected dashboard for managing clients, bookings and operational status.",
+      "production": "Deployed on Vercel for a real customer business."
+    }
+  },
   "Expertise": {
     "heading": "Expertise",
     "lead": "Software Engineer focused on Java backend and distributed systems.",

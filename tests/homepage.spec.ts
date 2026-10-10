@@ -19,7 +19,10 @@ test('renders the English Navbar and Hero at /', async ({page}) => {
   await expect(
     page.getByText('Java · Spring · Quarkus · Kafka · AWS', {exact: true})
   ).toBeVisible();
-  await expect(page.getByRole('link', {name: 'Explore my work'})).toHaveCount(0);
+  await expect(page.getByRole('link', {name: 'Explore my work'})).toHaveAttribute(
+    'href',
+    '#work'
+  );
   const englishResume = page.getByTestId('hero').locator('a[download]');
   await expect(englishResume).toHaveCount(1);
   await expect(englishResume).toHaveAttribute(
@@ -47,7 +50,10 @@ test('renders the Spanish Navbar and Hero at /es', async ({page}) => {
   await expect(
     page.getByText('Java · Spring · Quarkus · Kafka · AWS', {exact: true})
   ).toBeVisible();
-  await expect(page.getByRole('link', {name: 'Ver mi trabajo'})).toHaveCount(0);
+  await expect(page.getByRole('link', {name: 'Ver mi trabajo'})).toHaveAttribute(
+    'href',
+    '#work'
+  );
   const spanishResume = page.getByTestId('hero').locator('a[download]');
   await expect(spanishResume).toHaveCount(1);
   await expect(spanishResume).toHaveAttribute(
@@ -73,11 +79,17 @@ test('links only to portfolio sections that are implemented', async ({page}) => 
   await expect(page).toHaveURL(/#experience$/);
   await expect(page.locator('#experience')).toBeVisible();
 
+  const workLink = navigation.getByRole('link', {name: 'Work'});
+  await expect(workLink).toHaveAttribute('href', '#work');
+  await workLink.click();
+  await expect(page).toHaveURL(/#work$/);
+  await expect(page.locator('#work')).toBeVisible();
+
   const contactLink = navigation.getByRole('link', {name: 'Contact'});
   await expect(contactLink).toHaveAttribute('href', '#contact');
   await contactLink.click();
   await expect(page).toHaveURL(/#contact$/);
   await expect(page.locator('#contact')).toBeVisible();
 
-  await expect(page.locator('a[href="#work"]')).toHaveCount(0);
+  await expect(page.locator('a[href="#work"]')).toHaveCount(2);
 });
